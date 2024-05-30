@@ -165,7 +165,7 @@ background-position: center;
     transition: background-color 2s ease;
 }
 
-@keyframes slide {
+@keyframes slide2 {
     0%, 15% { transform: translateX(0); } /* Start from initial position */
     20%, 35% { transform: translateX(-420px); } /* Slide to the left by 600px */
     40%, 55% { transform: translateX(-840px); } /* Slide further left by another 600px */
@@ -174,23 +174,15 @@ background-position: center;
     100% { transform: translateX(-2100px); } /* Stay at the final position */
 }
 
-
+.carousel-container {
+    overflow-x: hidden;
+}
 .carousel-track {
     display: flex;
-    width: 3360px;
-    animation: slide 30s infinite forwards;
+    transition: transform 0.3s ease-in-out;
 }
-
-.carousel-container {
-    overflow: hidden;
-}
-.carousel-containermd {
-    width: 800px;
-    overflow: hidden;
-}
-.carousel-containerlg{
-    width: 800px;
-    overflow: hidden;
+.carousel-item {
+    flex: 0 0 auto;
 }
 
 .divsm{
