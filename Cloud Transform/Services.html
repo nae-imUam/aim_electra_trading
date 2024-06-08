@@ -3,93 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar and Sidebar</title>
+    <title>
+        Cloud transformation Case Studies with Aim Electra Trading 
+       </title>   
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Include CSS File -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 
 </head>
 <body class="bg-gray-100">
 
-    <!-- Fixed Top Navigation -->
-    <nav class="fixed top-0 w-full bg-white shadow-md z-50 py-4">
-        <div class="container max-w-7xl mx-auto px-4 py-2 flex justify-between md:flex-col lg:flex-row lg:justify-between items-center">
-            <div class="">
-                <div class="text-xl font-bold"><img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" class="w-48 md:w-80 lg:w-48" /></div>
-            </div>
-            <div class="md:w-full lg:w-auto flex justify-between md:pt-2 lg:pt-0">
-                <div class="flex space-x-6">
-                    <div class="lg:hidden">
-                        <button id="menu-toggle" class="text-3xl focus:outline-none text-blue-800">&#9776;</button>
-                    </div>
-                    <div class="hidden lg:flex space-x-5 font-light">
-                        <!-- Portfolio Accordion -->
-                        <div class="relative inline-block text-left">
-                            <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
-                                <p>PORTFOLIO</p>
-                                <svg class=" ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
-                                    <a href="cybersecurity/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cyber Security</a>
-                                    <a href="Data Center/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Data Center Modernization</a>
-                                    <a href="Network/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Network Transformation</a>
-                                    <a href="Cloud Transform/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cloud Transformation</a>
-                                    <a href="Digital Workplace/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Digital Workplace</a>
-                                    <a href="IT managed/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">IT Managed Services</a>
-                                </div>
+    
+  <!-- Fixed Top Navigation -->
+  <nav class="fixed top-0 w-full bg-white shadow-sm z-50 pt-4 pb-0">
+    <div class="container max-w-7xl mx-auto px-4 py-2 flex justify-between md:flex-col lg:flex-row lg:justify-between items-center">
+        <div class="">
+            <div class="text-xl font-bold"><a href="../homepage.html"><img src="..\images\xclogo.png" class="w-48 md:w-80 lg:w-48" /></a></div>
+        </div>
+        <div class="md:w-full lg:w-auto flex justify-between md:pt-2 lg:pt-0">
+            <div class="flex space-x-6">
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="text-3xl focus:outline-none text-blue-800">&#9776;</button>
+                </div>
+                <div class="hidden lg:flex space-x-5 font-light">
+                    <!-- Portfolio Accordion -->
+                    <div class="relative inline-block text-left">
+                        <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
+                            <p>PORTFOLIO</p>
+                            <svg class=" ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
+                                <a href="../cybersecurity/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cyber Security</a>
+                                <a href="../Data Center/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Data Center Modernization</a>
+                                <a href="../Network/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Network Transformation</a>
+                                <a href="../Cloud Transform/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cloud Transformation</a>
+                                <a href="../Digital Workplace/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Digital Workplace</a>
+                                <a href="../IT managed/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">IT Managed Services</a>
                             </div>
                         </div>
-                        <!-- About Accordion -->
-                        <div class="relative inline-block text-left">
-                            <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
-                                <p>ABOUT</p>
-                                <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
-                                    <a href="About.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">About ValuePoint</a>
-                                    <a href="About.html/#why-valuepoint" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Why ValuePoint</a>
-                                    <a href="About.html/#the-board" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">The Board</a>
-                                    <a href="About.html/#our-leadership" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Our Leadership</a>
-                                    <a href="About.html/#awards-recognition" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Awards & Recognition</a>
-                                </div>
+                    </div>
+                    <!-- About Accordion -->
+                    <div class="relative inline-block text-left">
+                        <a href="About.html" class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
+                            <p>ABOUT</p>
+                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
+                                <a href="../About.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">About ValuePoint</a>
+                                <a href="../About.html/#why-valuepoint" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Why ValuePoint</a>
+                                <a href="../About.html/#the-board" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">The Board</a>
+                                <a href="../About.html/#our-leadership" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Our Leadership</a>
+                                <a href="../About.html/#awards-recognition" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Awards & Recognition</a>
                             </div>
                         </div>
-                        <a href="Partners.html" class="hover:text-blue-800">PARTNERS</a>
-                        <a href="Industries.html" class="hover:text-blue-800">INDUSTRIES</a>
-                        <a href="Blogs.html" class="hover:text-blue-800">BLOGS</a>
-                        <a href="Career.html" class="hover:text-blue-800">CAREERS</a>
-                        <a href="contact.html" class="hover:text-blue-800">CONTACT</a>
                     </div>
-                </div>
-                <div class="hidden md:flex lg:hidden w-128 bg-[#0133b6] hover:bg-green-950 rounded-tl-2xl rounded-br-2xl ">
-                    <div class="ml-2 p-4 mx-5 text-white font-bold">
-                        +917899900121
-                    </div>
-                    
+                    <a href="../Partners.html" class="hover:text-blue-800">PARTNERS</a>
+                    <a href="../Industries.html" class="hover:text-blue-800">INDUSTRIES</a>
+                    <a href="../Blogs.html" class="hover:text-blue-800">BLOGS</a>
+                    <a href="../Career.html" class="hover:text-blue-800">CAREERS</a>
+                    <a href="../contact.html" class="hover:text-blue-800">CONTACT</a>
                 </div>
             </div>
-            <div class="hidden  lg:flex w-128 bg-[#0133b6] hover:bg-green-950 rounded-tl-2xl rounded-br-2xl  ">
+            <div class="hidden md:flex lg:hidden w-128 bg-[#0133b6] hover:bg-green-500 rounded-tl-2xl rounded-br-2xl ">
                 <div class="ml-2 p-4 mx-5 text-white font-bold">
                     +917899900121
                 </div>
                 
             </div>
         </div>
+        <div class="hidden  lg:flex w-128 bg-[#0133b6] hover:bg-green-500 rounded-tl-2xl rounded-br-2xl  ">
+            <div class="ml-2 p-4 mx-5 text-white font-bold">
+                +917899900121
+            </div>
+            
+        </div>
+    </div>
+
+        <!-- Fixed Top Navigation2 -->
+        <div class="w-full bg-gray-400 shadow-md">
+            <div class="relative container mx-auto  justify-center items-center py-1 px-6 ">
+                <!-- Page Name -->
+                <div class=" absolute text-lg top-0 left-0 font-medium text-gray-700 p-1">
+                    Network Transformation
+                </div>
+                <!-- Navigation Links -->
+                <div class="flex space-x-8 pt-6 md:pt-0 justify-center">
+                    <a href="Overview.html" class="text-gray-700 hover:text-blue-700">Overview</a>
+                    <a href="Services.html" class="text-gray-700 hover:text-blue-700">Services</a>
+                    <a href="CaseStudies.html" class="text-gray-700 hover:text-blue-700">Case Studies</a>
+                    <a href="Webinars.html" class="text-gray-700 hover:text-blue-700">Webinars</a>
+
+                </div>
+            </div>
+        </div>
     </nav>
     
+    
+    
     <!-- Sidebar -->
-    <div id="sidebar" class="fixed top-0 left-0 w-[360px] bg-white shadow-md h-full z-50 transform -translate-x-full transition-transform duration-200 lg:hidden">
+    <div id="sidebar" class="fixed top-0 left-0 w-[360px] bg-white shadow-md h-full z-50 transform -translate-x-full transition-transform duration-200 lg:hidden z-20">
         <div class="mt-5 mb-6 ml-72 w-12 p-0 bg-blue-700 rounded-tl-lg rounded-br-lg flex justify-center items-center">
             <div id="menu-close" class=" font-bold text-2xl text-white">&times;</div>
         </div>
-        <img  src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\clogo.png" class="w-full " />
+        <a href="homepage.html"><img  src="images\clogo.png" class="w-full " /></a>
         <nav class="mt-3 mx-5">
         <!-- Accordion -->
         <div class="w-full max-w-lg mx-auto bg-white rounded-lg">
@@ -112,12 +135,12 @@
             </div>
             <!-- Accordion Item 2 -->
             <div class="border-b">
-                <button class="accordion-button w-full text-left px-4 py-2 text-gray-800 hover:text-blue-800 font-medium focus:outline-none flex justify-between"">
+                <a  href="About.html"  class="accordion-button w-full text-left px-4 py-2 text-gray-800 hover:text-blue-800 font-medium focus:outline-none flex justify-between"">
                     <p>About</p>
                     <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
-                </button>
+                </a>
                 <div class="accordion-content hidden px-4 py-2 text-gray-700">
                     <a href="About.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">About ValuePoint</a>
                     <a href="About.html/#why-valuepoint" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Why ValuePoint</a>
@@ -138,47 +161,918 @@
     </div>
 
     <!-- Main Content -->
-    <div id="main-content" class="container mx-auto p-4 h-full">
-        <div class="pt-24 md:pt-48 lg:pt-24"></div>
-        <h1 class="text-2xl font-bold">Welcome to MyWebsite</h1>
-        <p class="mt-4">Content goes here...</p>
+    <div id="main-content" class="">
+        <div class="mt-24 md:mt-48 lg:mt-32"></div>
+        <main class="mt-8 md:mt-5">
+            <div>
+                <div>
+                    <section class="w-full bg-[#e3f4fc]">
+                        <div class=" relative w-full flex flex-col md:flex-row items-center bg-[#e3f4fc] py-20" >
+                            <img class="w-full px-4 md:w-[30%]"  src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/elements-isometric-distributed-cloud-vector-concept-24V2XK7-2020-01-18.png" />
+                            <div class="w-full flex justify-center items-center text-[#263351] text-5xl lg:text-[80px] font-bold">
+                                <p>Services</p>
+                            </div>
+                        </div>
+                       </section>
+                 <section class="py-12 px-3 bg-white flex flex-col justify-center ">
+                
+                <section>
+                 
+                 <div>
+                  <div>
+                   <div class="w-full flex justify-center">
+                    <section class="w-full md:max-w-5xl">
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-4">
+                      <div class="mx-2 p-4 border-[1px] hover:shadow-2xl rounded-xl">
+                       <div>
+                        <div>
+                         <div>
+                          <img alt="" height="813" sizes="(max-width: 1024px) 100vw, 1024px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/happy-people-with-cloud-and-technology-icons-P87T32E-1024x813.jpg" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/happy-people-with-cloud-and-technology-icons-P87T32E-1024x813.jpg 1024w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/happy-people-with-cloud-and-technology-icons-P87T32E-300x238.jpg 300w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/happy-people-with-cloud-and-technology-icons-P87T32E-768x610.jpg 768w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/happy-people-with-cloud-and-technology-icons-P87T32E-1536x1219.jpg 1536w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/happy-people-with-cloud-and-technology-icons-P87T32E.jpg 1800w" width="1024"/>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div>
+                       <div>
+                        <div>
+                         <div>
+                          <p class="pb-2 text-lg">
+                           Cloud transformation is the comprehensive process of moving your work to the cloud including migration of applications, software programs, desktops, data, or an entire IT infrastructure in full alignment with the business objectives of your company.
+                          </p>
+                          <p class="py-2 text-lg">
+                           Value Point Systems has developed a deep domain understanding and delivered measurable end-to-end cloud transformation advisory, exploratory, and execution services to an enviable list of clients across multiple domains.
+                          </p>
+                          <p class="py-2 text-lg">
+                           We have helped each of our customers leverage the latest and most effective virtual capabilities and make the most of the industry’s leading best practices in their respective business transformation journeys.
+                          </p>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </section>
+                   </div>
+                  </div>
+                 </div>
+                </section>
+                <section>
+                 <div>
+                  <div>
+                   <div>
+                    <div>
+                     <div class="w-full text-center py-12">
+                      <h2 class="text-5xl font-extrabold">
+                       Our Cloud Offerings
+                      </h2>
+                     </div>
+                    </div>
+                    <section class="w-full flex justify-center py-8">
+                     <div class="w-full md:max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-2">
+                      <div class="mx-2 p-4 border-[1px] hover:shadow-2xl rounded-xl">
+                       <div>
+                        <div>
+                         <div>
+                          <div>
+                           <figure class="w-full flex justify-center p-6">
+                            <a href="../Cloud Transform/devops-services-consultants-company/" tabindex="-1">
+                             <img class="w-24 h-12" alt="" height="70" src="https://www.valuepointsystems.com/wp-content/uploads/2021/08/devops-services-consultant.png" width="162"/>
+                            </a>
+                           </figure>
+                           <div class="w-full px-2 py-4 text-center">
+                            <h3 class="text-2xl font-bold">
+                             <a href="../Cloud Transform/devops-services-consultants-company/">
+                              DevOps
+                              <br/>
+                              Services
+                             </a>
+                            </h3>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div>
+                         <div>
+                          <ul  class="divide-y divide-gray-300">
+                           <li class="flex space-x-2 items-start py-1">
+                            <a href="#" class="flex space-x-2 items-start">
+                             <span class="text-indigo-500 py-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                             </span>
+                             <span>
+                              Source Code Management
+                             </span>
+                            </a>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Application Refactoring
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Static Code Analysis
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Build Tools
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Artifacts Storage
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Containerization
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Container Orchestration
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Continuous Integration and Continuous Deployment (CI/CD)
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             AWS DevOps
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Azure DevOps
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Continuous Cloud Monitoring (Azure, AWS, O365, GCP)
+                            </span>
+                           </li>
+                          </ul>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="mx-2 p-4 border-[1px] hover:shadow-2xl rounded-xl">
+                       <div>
+                        <div>
+                         <div>
+                          <div>
+                           <figure class="w-full flex justify-center p-6">
+                            <a href="../Cloud Transform/cloud-migration-services/" tabindex="-1">
+                             <img class="w-12 h-12" alt="" height="200" sizes="(max-width: 200px) 100vw, 200px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/08/cloud_icon.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/08/cloud_icon.png 200w, https://www.valuepointsystems.com/wp-content/uploads/2021/08/cloud_icon-150x150.png 150w" width="200"/>
+                            </a>
+                           </figure>
+                           <div class="w-full px-2 py-4 text-center">
+                            <h3 class="text-2xl font-bold">
+                             <a href="../Cloud Transform/cloud-migration-services/">
+                              Cloud Migration Services
+                             </a>
+                            </h3>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div>
+                         <div>
+                          <ul  class="divide-y divide-gray-300">
+                           <li class="flex space-x-2 items-start py-1">
+                            <a href="#" class="flex space-x-2 items-start">
+                             <span class="text-indigo-500 py-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                             </span>
+                             <span>
+                              Lift And Shift Services For Apps And DB
+                             </span>
+                            </a>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Firewall as a Service
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Elastic Load Balancers
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Simple, Elastic &amp; Hybrid Storage
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Platform Migrations
+                            </span>
+                           </li>
+                          </ul>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="mx-2 p-4 border-[1px] hover:shadow-2xl rounded-xl">
+                       <div>
+                        <div>
+                         <div>
+                          <div>
+                           <figure class="w-full flex justify-center p-6">
+                            <a href="../Cloud Transform/bcp-and-dr/" tabindex="-1">
+                             <img class="w-12 h-12" alt="" height="200" sizes="(max-width: 200px) 100vw, 200px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/08/server_icon.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/08/server_icon.png 200w, https://www.valuepointsystems.com/wp-content/uploads/2021/08/server_icon-150x150.png 150w" width="200"/>
+                            </a>
+                           </figure>
+                           <div class="w-full px-2 py-4 text-center">
+                            <h3 class="text-2xl font-bold">
+                             <a href="../Cloud Transform/bcp-and-dr/">
+                              Cloud BCP
+                              <br/>
+                              &amp; DR
+                             </a>
+                            </h3>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div>
+                         <div>
+                          <ul  class="divide-y divide-gray-300">
+                           <li class="flex space-x-2 items-start py-1">
+                            <a href="#" class="flex space-x-2 items-start">
+                             <span class="text-indigo-500 py-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                             </span>
+                             <span>
+                              BCP Planning Per Best Practices
+                             </span>
+                            </a>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Azure Site Recovery (ASR)
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Amazon DR Services
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Workload Backup Services
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Database Availability In Cloud
+                            </span>
+                           </li>
+                          </ul>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="mx-2 p-4 border-[1px] hover:shadow-2xl rounded-xl">
+                       <div>
+                        <div>
+                         <div>
+                          <div>
+                           <figure class="w-full flex justify-center p-6">
+                            <a href="../Cloud Transform/cloud-security/" tabindex="-1">
+                             <img class="w-12 h-12" alt="" height="200" sizes="(max-width: 200px) 100vw, 200px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/08/firewall_icon.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/08/firewall_icon.png 200w, https://www.valuepointsystems.com/wp-content/uploads/2021/08/firewall_icon-150x150.png 150w" width="200"/>
+                            </a>
+                           </figure>
+                           <div class="w-full px-2 py-4 text-center">
+                            <h3 class="text-2xl font-bold">
+                             <a href="../Cloud Transform/cloud-security/">
+                              Cloud
+                              <br/>
+                              Security
+                             </a>
+                            </h3>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div>
+                         <div>
+                          <ul  class="divide-y divide-gray-300">
+                           <li class="flex space-x-2 items-start py-1">
+                            <a href="#" class="flex space-x-2 items-start">
+                             <span class="text-indigo-500 py-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                             </span>
+                             <span>
+                              O365 Advanced Threat Protection
+                             </span>
+                            </a>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             O365 DLP &amp; Endpoint Security
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Cloud Apps Security
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Cloud-Native SEIM
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Cloud Access Security Brokers
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             DDoS On Cloud
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Identity And Access Management
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Cloud Domain Services
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Intune - Mobile Device Management
+                            </span>
+                           </li>
+                          </ul>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </section>
+                    <section class="w-full flex justify-center py-8">
+                     <div class="w-full md:max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-2">
+                      <div class="mx-2 p-4 border-[1px] hover:shadow-2xl rounded-xl">
+                       <div>
+                        <div>
+                         <div>
+                          <div>
+                           <figure class="w-full flex justify-center p-6">
+                            <a href="../Cloud Transform/cloud-optimization/" tabindex="-1">
+                             <img class="w-12 h-12" alt="" height="70" src="https://www.valuepointsystems.com/wp-content/uploads/2021/08/cloud-optimization.png" width="70"/>
+                            </a>
+                           </figure>
+                           <div class="w-full px-2 py-4 text-center">
+                            <h3 class="text-2xl font-bold">
+                             <a href="../Cloud Transform/cloud-optimization/">
+                              Cloud Optimization
+                             </a>
+                            </h3>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div>
+                         <div>
+                          <ul  class="divide-y divide-gray-300">
+                           <li class="flex space-x-2 items-start py-1">
+                            <a href="#" class="flex space-x-2 items-start">
+                             <span class="text-indigo-500 py-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                             </span>
+                             <span>
+                              AI based Automated Cloud Optimization
+                             </span>
+                            </a>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Detailed Consumption Analytics
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Consolidation Of Workloads
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Automated Spot Management
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Automated Service Uptimes
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Rehosting Recommendations Across Cloud Publishers
+                            </span>
+                           </li>
+                          </ul>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="mx-2 p-4 border-[1px] hover:shadow-2xl rounded-xl">
+                       <div>
+                        <div>
+                         <div>
+                          <div>
+                           <figure class="w-full flex justify-center p-6">
+                            <a href="../Cloud Transform/cloud-managed-services/" tabindex="-1">
+                             <img class="w-12 h-12" alt="" height="70" src="https://www.valuepointsystems.com/wp-content/uploads/2021/08/managed-workstations-B.png" width="70"/>
+                            </a>
+                           </figure>
+                           <div class="w-full px-2 py-4 text-center">
+                            <h3 class="text-2xl font-bold">
+                             <a href="../Cloud Transform/cloud-managed-services/">
+                              Cloud Managed Services
+                             </a>
+                            </h3>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div>
+                         <div>
+                          <ul  class="divide-y divide-gray-300">
+                           <li class="flex space-x-2 items-start py-1">
+                            <a href="#" class="flex space-x-2 items-start">
+                             <span class="text-indigo-500 py-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                             </span>
+                             <span>
+                              Multi-Cloud Management
+                             </span>
+                            </a>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Service Desk with Ticket Management
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Security &amp; Policy Management
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Backup and Restore Management
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Database Management
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Short Term Or Annual Contracts
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Proactive Services
+                            </span>
+                           </li>
+                          </ul>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="mx-2 p-4 border-[1px] hover:shadow-2xl rounded-xl">
+                       <div>
+                        <div>
+                         <div>
+                          <div>
+                           <figure class="w-full flex justify-center p-6">
+                            <a href="../Cloud Transform/virtual-desktop-infrastructure/" tabindex="-1">
+                             <img class="w-12 h-12" alt="" height="200" sizes="(max-width: 200px) 100vw, 200px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/08/screen_icon.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/08/screen_icon.png 200w, https://www.valuepointsystems.com/wp-content/uploads/2021/08/screen_icon-150x150.png 150w" width="200"/>
+                            </a>
+                           </figure>
+                           <div class="w-full px-2 py-4 text-center">
+                            <h3 class="text-2xl font-bold">
+                             <a href="../Cloud Transform/virtual-desktop-infrastructure/">
+                              VDI
+                              <br/>
+                              on Cloud
+                             </a>
+                            </h3>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div>
+                         <div>
+                          <ul  class="divide-y divide-gray-300">
+                           <li class="flex space-x-2 items-start py-1">
+                            <a href="#" class="flex space-x-2 items-start">
+                             <span class="text-indigo-500 py-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                             </span>
+                             <span>
+                              Windows 10 Virtual Desktops (WVD)
+                             </span>
+                            </a>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Remote Desktop Services (RDS)
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Amazon Workspaces (VDI)
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Amazon App Streaming
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Vmware VDI Services
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Enterprise Mobility
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Cloud Collaboration Via Teams
+                            </span>
+                           </li>
+                          </ul>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="mx-2 p-4 border-[1px] hover:shadow-2xl rounded-xl">
+                       <div>
+                        <div>
+                         <div>
+                          <div>
+                           <figure class="w-full flex justify-center p-6">
+                            <a href="../Cloud Transform/data-and-analytics/" tabindex="-1">
+                             <img class="w-12 h-12" alt="" height="200" sizes="(max-width: 200px) 100vw, 200px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/08/code_icon.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/08/code_icon.png 200w, https://www.valuepointsystems.com/wp-content/uploads/2021/08/code_icon-150x150.png 150w" width="200"/>
+                            </a>
+                           </figure>
+                           <div class="w-full px-2 py-4 text-center">
+                            <h3 class="text-2xl font-bold">
+                             <a href="../Cloud Transform/data-and-analytics/">
+                              Data
+                              <br/>
+                              &amp; Analytics
+                             </a>
+                            </h3>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div>
+                         <div>
+                          <ul  class="divide-y divide-gray-300">
+                           <li class="flex space-x-2 items-start py-1">
+                            <a href="#" class="flex space-x-2 items-start">
+                             <span class="text-indigo-500 py-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                             </span>
+                             <span>
+                              Elastic DBs And Cloud Availability
+                             </span>
+                            </a>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Azure Databases As A Service
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             RDS For MySQL &amp; PostgreSQL
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             AI-Powered Self-Service BI
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Intelligent Company Dashboards
+                            </span>
+                           </li>
+                           <li class="flex space-x-2 items-start py-1">
+                            <span class="text-indigo-500 py-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+                            <span>
+                             Power BI Services
+                            </span>
+                           </li>
+                          </ul>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </section>
+                   </div>
+                  </div>
+                 </div>
+                </section>
+                
+                 </section>
 
-        <div class="w-1/2">
-            <div class="flex flex-col items-center">
-                <!-- Large Box with Text -->
-                <div class="relative bg-blue-500 w-24 h-72 flex justify-center items-center cursor-pointer">
-                    <p class="absolute -right-8 transform -rotate-90 text-white">Hello Kid</p>
-                </div>
-                <!-- Square Boxes with Icon -->
-                <div class="relative bg-green-500 w-12 h-12 flex justify-center items-center transition-all duration-500 hover:w-24">
-                    <div class="flex items-center justify-center w-full h-full">
-                        <i class="fas fa-phone text-white"></i>
-                    </div>
-                    <p class="absolute right-0 transform translate-x-full text-white opacity-0 transition-opacity duration-500">Hello again</p>
-                </div>
-                <div class="relative bg-yellow-500 w-12 h-12 flex justify-center items-center transition-all duration-500 hover:w-24">
-                    <div class="flex items-center justify-center w-full h-full">
-                        <i class="fas fa-phone text-white"></i>
-                    </div>
-                    <p class="absolute right-0 transform translate-x-full text-white opacity-0 transition-opacity duration-500">Hello again</p>
-                </div>
-            </div>
+                 <section>
+                    <div id="parallax-2" class="parallax bg-cover bg-center" style="background-image: url('https://www.valuepointsystems.com/wp-content/uploads/2021/11/young-lady-using-voice-assistant-on-cellphone-and-pc.jpg')">
+                        <div class="w-full h-full bg-black bg-opacity-60  text-white flex flex-col justify-center items-center px-4 py-32">
+                            <div class="w-full max-w-7xl flex  flex-col justify-center items-center">
+                                <div>
+                                    <p class="text-3xl font-bold text-center text-white">Want to know how your business can benefit from our deliverables?</p>
+                                    <div><p class="text-lg break-words font-medium text-center px-16 lg:px-40 py-6">Value Point Systems is helping global businesses on their digital transformation journeys: one business at a time.</p></div>
+                                </div>
             
-            <!-- Consultation Form Popup -->
-            <div id="consultation-form" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-bold mb-4">Consultation Form</h2>
-                    <!-- Form fields go here -->
-                    <button id="close-toggle" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 focus:outline-none">&times;</button>
+                                <div class="text-sm px-6 py-5 font-bold text-white bg-[#0133b6] hover:bg-green-500 w-64 rounded-tl-[20px] rounded-br-[20px] text-center mt-4 mb-6 "><a href="contact.html">Contact Us Today</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>   
                 </div>
-            </div>
-            
-        </div>    
-        
-        
+               </div>
+        </main>
     </div>
 
-    
+
+
+
     <!-- Footer Section -->
     <footer class="bg-white w-full">
         <div class="bg-green-100 rounded-br-[220px] flex justify-center items-center">
@@ -222,7 +1116,7 @@
                 <div class="grid grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 lg:gap-4">
                     <div class="col-span-3 grid grid-rows-3 md:grid-cols-3 gap-1 md:grid-rows-1 md:gap-4 sm:w-full md:w-auto justify-around md:flex-row space-x-3">
                         <div class="text-center p-3">
-                            <img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" alt="Placeholder Image" class="mx-auto mb-4 py-2 md:py-10">
+                            <a href="homepage.html"><img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\..\images\xclogo.png" alt="Placeholder Image" class="mx-auto mb-4 py-2 md:py-10"></a>
                             <p class="mb-4 text-lg text-medium text-green-950">Accelerating our clients’ business transformation journeys through our competence in Consulting, Integration, Security by delivering Next-Gen Digital Infrastructure Solutions.</p>
                             <div class="flex justify-center space-x-2">
                                 <a href="#" class="rounded-full bg-white p-2 w-10 h-10 flex justify--center items-center">
@@ -242,23 +1136,23 @@
                         <div class="text-green-950">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Quick Links</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
-                                <li><a href="About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
-                                <li><a href="Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
-                                <li><a href="#" class="hover:text-[#0133b6] text-lg font-medium">Shop</a></li>
-                                <li><a href="Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
-                                <li><a href="contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="#" class="hover:text-[#0133b6] text-lg font-medium">Shop</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
                             </ul>
                         </div>
                         <div class="text-green-950 my-10">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Portfolio</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
-                                <li><a href="Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
-                                <li><a href="Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
-                                <li><a href="Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
-                                <li><a href="Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
-                                <li><a href="IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
                             </ul>
                         </div>
                     </div>
@@ -288,7 +1182,7 @@
                 <div class="flex flex-col space-y-6">
                     <div class="grid-cols-3 gap-1 grid-rows-1 gap-4 sm:w-full md:w-auto justify-around">
                         <div class="text-center p-3">
-                            <img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" alt="Placeholder Image" class="mx-auto mb-4 py-2 md:py-10">
+                            <img src="..\images\xclogo.png" alt="Placeholder Image" class="mx-auto mb-4 py-2 md:py-10">
                             <p class="mb-4 text-lg text-medium text-green-950">Accelerating our clients’ business transformation journeys through our competence in Consulting, Integration, Security by delivering Next-Gen Digital Infrastructure Solutions.</p>
                             <div class="flex justify-center space-x-2">
                                 <a href="#" class="rounded-full bg-white p-2 w-10 h-10 flex justify--center items-center">
@@ -308,23 +1202,23 @@
                         <div class="text-green-950">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Quick Links</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
-                                <li><a href="About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
-                                <li><a href="Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
-                                <li><a href="#" class="hover:text-[#0133b6] text-lg font-medium">Shop</a></li>
-                                <li><a href="Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
-                                <li><a href="contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="#" class="hover:text-[#0133b6] text-lg font-medium">Shop</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
                             </ul>
                         </div>
                         <div class="text-green-950 my-10">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Portfolio</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
-                                <li><a href="Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
-                                <li><a href="Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
-                                <li><a href="Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
-                                <li><a href="Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
-                                <li><a href="IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
+                                <li class="flex space-x-2 items-start py-1"><a href="IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
                             </ul>
                         </div>
                     </div>
@@ -372,8 +1266,9 @@
         </div>
     </footer>
 
+
      <!-- Fixed Bottom Bar / Sticky Side Bar -->
-    <div id="bottom-bar" class="fixed bottom-0 left-0 w-full bg-white shadow-md grid grid-cols-3 justify-around items-center lg:hidden">
+    <div id="bottom-bar" class="fixed bottom-0 left-0 w-full bg-white shadow-md grid grid-cols-3 justify-around items-center lg:hidden z-20">
         <div id="consultationSection2" class="flex flex-col items-center bg-blue-800">
             <span class="fas fa-envelope text-white  mt-1"></span>
             <span class="text-white text-sm font-light" style="font-size: 12px">Free Consult</span>
@@ -386,7 +1281,7 @@
         </a>
     </div>
 
-    <div id="side-bar" class="hidden lg:flex fixed top-1/2 right-0 transform -translate-y-1/2 flex justify-end text-white">
+    <div id="side-bar" class="hidden lg:flex fixed top-1/2 right-0 transform -translate-y-1/2 flex justify-end text-white z-20">
         <div class="flex flex-col items-end">
             <div id="consultationSection" class="bg-blue-800 w-11 h-40 rounded-tl-2xl flex justify-center items-center">
                 <span class="text-sm transform -rotate-90 whitespace-nowrap"><span class="fas fa-envelope mx-2 py-1"></span>Free Consult</span>
@@ -408,7 +1303,7 @@
 
 
     <!-- Sliding Form from right side -->
-    <div class="fixed top-1/2 mr-11 mb-24 right-0 transform -translate-y-1/2 w-900px" style="margin-top: -115px;">
+    <div class="fixed top-1/2 mr-11 mb-24 right-0 transform -translate-y-1/2 w-900px z-20" style="margin-top: -115px;">
         <div id="formSlideOut" class="hidden bg-blue-50 border-2 border-blue-100 p-5 w-900px rounded-lg absolute top-0 right-0 flex flex-col justify-center items-center transition-all duration-100 ease-in-out">
             <div class="flex justify-between w-full">
                 <p class="flex text-blue-800 font-medium">Free Consultation</p>
@@ -424,7 +1319,7 @@
         </div>
     </div>
     <!-- Sliding Form from bottom side -->
-    <div class="fixed top-1/2 right-0 transform -translate-y-1/2 lg:mr-11 lg:mb-24 lg:top-auto lg:translate-y-0 w-full lg:hidden" style="margin-top: 0px">
+    <div class="fixed top-1/2 right-0 transform -translate-y-1/2 lg:mr-11 lg:mb-24 lg:top-auto lg:translate-y-0 w-full lg:hidden z-20" style="margin-top: 0px">
         <div id="formSlideOut2" class="hidden bg-blue-100 border border-grey-50 p-5 w-auto w-full rounded-tl-2xl rounded-tr-2xl absolute top-0 right-0 hover:flex flex flex-col justify-center items-center transition-all duration-100 ease-in-out">
             <div class="flex justify-between w-full font-medium">
                 <p class="flex text-blue-800">Free Consultation</p>
@@ -465,8 +1360,9 @@
     
     <!-- Include JavaScript File -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="index.js"></script>
-
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="../index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

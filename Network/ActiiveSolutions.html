@@ -4,93 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        Digital Transformation Catalyst - Value Point Systems Pvt Ltd
-    </title>    <script src="https://cdn.tailwindcss.com"></script>
+        Network Transformation Services - ValuePoint
+       </title>  
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Include CSS File -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        @keyframes slide {
+        0%, 20% { transform: translateX(0%); }
+        25%, 45% { transform: translateX(-100%); }
+        50%, 70% { transform: translateX(-200%); }
+        75%, 95% { transform: translateX(-300%); }
+        100% { transform: translateX(-300%); }
+        }
 
+        .carousel-container {
+        max-width: 2xl;
+        margin: auto;
+        overflow: hidden;
+        }
+
+        .carousel-track {
+        display: flex;
+        animation: slide 16s infinite;
+        }
+
+        .carousel-item {
+        flex-shrink: 0;
+        width: 100%;
+        }
+
+        .carousel-item img {
+        width: 100%;
+        object-fit: cover;
+        }
+
+    </style>
 </head>
 <body class="bg-gray-100">
 
-    <!-- Fixed Top Navigation -->
-    <nav class="fixed top-0 w-full bg-white shadow-md z-50 py-4">
-        <div class="container max-w-7xl mx-auto px-4 py-2 flex justify-between md:flex-col lg:flex-row lg:justify-between items-center">
-            <div class="">
-                <div class="text-xl font-bold"><a href="homepage.html"><img src="images\xclogo.png" class="w-48 md:w-80 lg:w-48" /></a></div>
-            </div>
-            <div class="md:w-full lg:w-auto flex justify-between md:pt-2 lg:pt-0">
-                <div class="flex space-x-6">
-                    <div class="lg:hidden">
-                        <button id="menu-toggle" class="text-3xl focus:outline-none text-blue-800">&#9776;</button>
-                    </div>
-                    <div class="hidden lg:flex space-x-5 font-light">
-                        <!-- Portfolio Accordion -->
-                        <div class="relative inline-block text-left">
-                            <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
-                                <p>PORTFOLIO</p>
-                                <svg class=" ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
-                                    <a href="cybersecurity/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cyber Security</a>
-                                    <a href="Data Center/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Data Center Modernization</a>
-                                    <a href="Network/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Network Transformation</a>
-                                    <a href="Cloud Transform/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cloud Transformation</a>
-                                    <a href="Digital Workplace/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Digital Workplace</a>
-                                    <a href="IT managed/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">IT Managed Services</a>
-                                </div>
+  <!-- Fixed Top Navigation -->
+  <nav class="fixed top-0 w-full bg-white shadow-sm z-50 pt-4 pb-0">
+    <div class="container max-w-7xl mx-auto px-4 py-2 flex justify-between md:flex-col lg:flex-row lg:justify-between items-center">
+        <div class="">
+            <div class="text-xl font-bold"><a href="../homepage.html"><img src="..\images\xclogo.png" class="w-48 md:w-80 lg:w-48" /></a></div>
+        </div>
+        <div class="md:w-full lg:w-auto flex justify-between md:pt-2 lg:pt-0">
+            <div class="flex space-x-6">
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="text-3xl focus:outline-none text-blue-800">&#9776;</button>
+                </div>
+                <div class="hidden lg:flex space-x-5 font-light">
+                    <!-- Portfolio Accordion -->
+                    <div class="md:relative inline-block text-left">
+                        <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
+                            <p>PORTFOLIO</p>
+                            <svg class=" ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content hidden origin-top-right md:absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
+                                <a href="../cybersecurity/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cyber Security</a>
+                                <a href="../Data Center/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Data Center Modernization</a>
+                                <a href="../Network/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Network Transformation</a>
+                                <a href="../Cloud Transform/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cloud Transformation</a>
+                                <a href="../Digital Workplace/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Digital Workplace</a>
+                                <a href="../IT managed/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">IT Managed Services</a>
                             </div>
                         </div>
-                        <!-- About Accordion -->
-                        <div class="relative inline-block text-left">
-                            <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
-                                <p>ABOUT</p>
-                                <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
-                                    <a href="About.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">About ValuePoint</a>
-                                    <a href="About.html/#why-valuepoint" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Why ValuePoint</a>
-                                    <a href="About.html/#the-board" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">The Board</a>
-                                    <a href="About.html/#our-leadership" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Our Leadership</a>
-                                    <a href="About.html/#awards-recognition" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Awards & Recognition</a>
-                                </div>
+                    </div>
+                    <!-- About Accordion -->
+                    <div class="md:relative inline-block text-left">
+                        <a href="About.html" class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
+                            <p>ABOUT</p>
+                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <div class="accordion-content hidden origin-top-right md:absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
+                                <a href="../About.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">About ValuePoint</a>
+                                <a href="../About.html/#why-valuepoint" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Why ValuePoint</a>
+                                <a href="../About.html/#the-board" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">The Board</a>
+                                <a href="../About.html/#our-leadership" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Our Leadership</a>
+                                <a href="../About.html/#awards-recognition" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Awards & Recognition</a>
                             </div>
                         </div>
-                        <a href="Partners.html" class="hover:text-blue-800">PARTNERS</a>
-                        <a href="Industries.html" class="hover:text-blue-800">INDUSTRIES</a>
-                        <a href="Blogs.html" class="hover:text-blue-800">BLOGS</a>
-                        <a href="Career.html" class="hover:text-blue-800">CAREERS</a>
-                        <a href="contact.html" class="hover:text-blue-800">CONTACT</a>
                     </div>
-                </div>
-                <div class="hidden md:flex lg:hidden w-128 bg-[#0133b6] hover:bg-green-500 rounded-tl-2xl rounded-br-2xl ">
-                    <div class="ml-2 p-4 mx-5 text-white font-bold">
-                        +917899900121
-                    </div>
-                    
+                    <a href="../Partners.html" class="hover:text-blue-800">PARTNERS</a>
+                    <a href="../Industries.html" class="hover:text-blue-800">INDUSTRIES</a>
+                    <a href="../Blogs.html" class="hover:text-blue-800">BLOGS</a>
+                    <a href="../Career.html" class="hover:text-blue-800">CAREERS</a>
+                    <a href="../contact.html" class="hover:text-blue-800">CONTACT</a>
                 </div>
             </div>
-            <div class="hidden  lg:flex w-128 bg-[#0133b6] hover:bg-green-500 rounded-tl-2xl rounded-br-2xl  ">
+            <div class="hidden md:flex lg:hidden w-128 bg-[#0133b6] hover:bg-green-500 rounded-tl-2xl rounded-br-2xl ">
                 <div class="ml-2 p-4 mx-5 text-white font-bold">
                     +917899900121
                 </div>
                 
             </div>
         </div>
+        <div class="hidden  lg:flex w-128 bg-[#0133b6] hover:bg-green-500 rounded-tl-2xl rounded-br-2xl  ">
+            <div class="ml-2 p-4 mx-5 text-white font-bold">
+                +917899900121
+            </div>
+            
+        </div>
+    </div>
+
+        <!-- Fixed Top Navigation2 -->
+        <div class="w-full bg-gray-400 shadow-md">
+            <div class="md:relative container mx-auto  justify-center items-center py-1 px-6 ">
+                <!-- Page Name -->
+                <div class=" md:absolute text-lg top-0 left-0 font-medium text-gray-700 p-1">
+                    Network Transformation
+                </div>
+                <!-- Navigation Links -->
+                <div class="flex space-x-8 pt-6 md:pt-0 justify-center">
+                    <a href="Overview.html" class="text-gray-700 hover:text-blue-700">Overview</a>
+                    <a href="ActiiveSolutions.html" class="text-gray-700 hover:text-blue-700">Active Solutions</a>
+                    <a href="NetworkInfra.html" class="text-gray-700 hover:text-blue-700">Network Infra & Integration</a>
+                    <a href="CaseStudies.html" class="text-gray-700 hover:text-blue-700">Case Studies</a>
+                </div>
+            </div>
+        </div>
     </nav>
+    
     
     <!-- Sidebar -->
     <div id="sidebar" class="fixed top-0 left-0 w-[360px] bg-white shadow-md h-full z-50 transform -translate-x-full transition-transform duration-200 lg:hidden z-20">
         <div class="mt-5 mb-6 ml-72 w-12 p-0 bg-blue-700 rounded-tl-lg rounded-br-lg flex justify-center items-center">
             <div id="menu-close" class=" font-bold text-2xl text-white">&times;</div>
         </div>
-        <a href="homepage.html"><img  src="images\clogo.png" class="w-full " /></a>
+        <a href="../homepage.html"><img   src="..\images\xclogo.png" class="w-full " /></a>
         <nav class="mt-3 mx-5">
         <!-- Accordion -->
         <div class="w-full max-w-lg mx-auto bg-white rounded-lg">
@@ -103,46 +152,934 @@
                     </svg>
                 </button>
                 <div class="accordion-content hidden px-4 py-2 text-gray-700">
-                    <a href="cybersecurity/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cyber Security</a>
-                    <a href="Data Center/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Data Center Modernization</a>
-                    <a href="Network/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Network Transformation</a>
-                    <a href="Cloud Transform/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cloud Transformation</a>
-                    <a href="Digital Workplace/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Digital Workplace</a>
-                    <a href="IT managed/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">IT Managed Services</a>
+                    <a href="../cybersecurity/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cyber Security</a>
+                    <a href="../Data Center/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Data Center Modernization</a>
+                    <a href="../Network/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Network Transformation</a>
+                    <a href="../Cloud Transform/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cloud Transformation</a>
+                    <a href="../Digital Workplace/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Digital Workplace</a>
+                    <a href="../IT managed/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">IT Managed Services</a>
                 </div>
             </div>
             <!-- Accordion Item 2 -->
             <div class="border-b">
-                <button class="accordion-button w-full text-left px-4 py-2 text-gray-800 hover:text-blue-800 font-medium focus:outline-none flex justify-between"">
+                <a  href="About.html"  class="accordion-button w-full text-left px-4 py-2 text-gray-800 hover:text-blue-800 font-medium focus:outline-none flex justify-between"">
                     <p>About</p>
                     <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
-                </button>
+                </a>
                 <div class="accordion-content hidden px-4 py-2 text-gray-700">
-                    <a href="About.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">About ValuePoint</a>
-                    <a href="About.html/#why-valuepoint" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Why ValuePoint</a>
-                    <a href="About.html/#the-board" class="block py-2 text-sm text-gray-700 hover:text-blue-800">The Board</a>
-                    <a href="About.html/#our-leadership" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Our Leadership</a>
-                    <a href="About.html/#awards-recognition" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Awards & Recognition</a>
+                    <a href="../About.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">About ValuePoint</a>
+                    <a href="../About.html/#why-valuepoint" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Why ValuePoint</a>
+                    <a href="../About.html/#the-board" class="block py-2 text-sm text-gray-700 hover:text-blue-800">The Board</a>
+                    <a href="../About.html/#our-leadership" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Our Leadership</a>
+                    <a href="../About.html/#awards-recognition" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Awards & Recognition</a>
                 </div>
             </div>
             <!-- Additional Accordion Items can be added here following the same structure -->
         </div>
 
-        <a href="Partners.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Partner</a>
-        <a href="Industries.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Industries</a>
-        <a href="Blogs.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Blog</a>
-        <a href="Career.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Career</a>
-        <a href="contact.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Contact</a>
+        <a href="../Partners.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Partner</a>
+        <a href="../Industries.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Industries</a>
+        <a href="../Blogs.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Blog</a>
+        <a href="../Career.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Career</a>
+        <a href="../contact.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Contact</a>
     </nav>
     </div>
 
     <!-- Main Content -->
     <div id="main-content" class="">
-        <div class="pt-24 md:pt-48 lg:pt-24"></div>
-        Main Content 
+        <div class="mt-24 md:mt-48 lg:mt-32"></div>
+        <main class="mt-8 md:mt-5">
+            <div>
+                <section class="w-full">
+                    <div class="bg-cover bg-start bg-no-repeat  w-full flex items-center justify-center text-white" style="background-image: url('https://www.valuepointsystems.com/wp-content/uploads/2021/11/nwt.png');">
+                     <div class="bg-gradient-to-r from-indigo-500 py-16 md:py-24 lg:py-32 w-full flex justify-center ">
+                      <div class="w-full md:max-w-6xl flex justify-start">
+                       <div class="w-full p-6">
+                         <h2 class="text-4xl md:text-5xl lg:text-6xl font-medium text-white py-2 md:py-4 lg:py-6">
+                            IT Network Active Solutions
+                         </h2>
+
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                </section> 
+            
+                <section class="w-full bg-white flex flex-col justify-center">
+                 <div>
+                  <div>
+                   <div class="w-full flex flex-col justify-center items-center">
+                    <div class="md:md:relative">
+                     <div class="md:md:absolute  md:top-[-60px] md:left-[-170px] bg-white p-6 w-[320px]">
+                      <h4 class="text-xl font-bold text-center">
+                       Our Partners
+                      </h4>
+                     </div>
+                    </div>
+                    <section class="w-full md:max-w-6xl p-6">
+                     <div class="grid grid-cols-1 md:grid-cols-5 gap-4 ">
+                      
+                          <img class="w-full" alt="" height="86" sizes="(max-width: 327px) 100vw, 327px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/aruba.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/aruba.png 327w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/aruba-300x79.png 300w" width="327"/>
+                         
+                      
+                          <img class="w-full" alt="" height="81" sizes="(max-width: 316px) 100vw, 316px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/cisco.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/cisco.png 316w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/cisco-300x77.png 300w" width="316"/>
+                         
+                      
+                          <img class="w-full" alt="" height="50" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cisco-Meraki-01-e1557822904186.png" width="188"/>
+                         
+                      
+                          <img class="w-full" alt="ruckus" height="71" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/ruckus.png" width="170"/>
+                         
+                      
+                          <img class="w-full" alt="" height="104" sizes="(max-width: 362px) 100vw, 362px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/silverpeak.jpg" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/12/silverpeak.jpg 362w, https://www.valuepointsystems.com/wp-content/uploads/2021/12/silverpeak-300x86.jpg 300w" width="362"/>
+                        
+                      
+                          <img class="w-full" alt="nivetti-systems-logo" height="90" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/nivetti-systems-logo.png" width="267"/>
+                         
+                      
+                          <img class="w-full" alt="" height="206" sizes="(max-width: 433px) 100vw, 433px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/versa.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/versa.png 433w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/versa-300x143.png 300w" width="433"/>
+                         
+                      
+                          <img class="w-full" alt="" height="50" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Viptela-01-e1557823659661.png" width="188"/>
+                         
+                      
+                          <img class="w-full" alt="" height="50" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Fortinet-01-e1557823017338.png" width="188"/>
+                         
+                      
+                          <img class="w-full" alt="" height="61" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/logitech.png" width="225"/>
+                         
+                     </div>
+                    
+                    </section>
+                   </div>
+                  </div>
+                 </div>
+                </section> 
+                <section>
+                    <div>
+                     <div>
+                      <div class="w-full flex flex-col justify-center items-center">
+                       <div>
+                        <div class="text-center">
+                         <h2 class="text-3xl md:text-4xl py-12 font-medium">
+                          Network Active Solutions
+                         </h2>
+                        </div>
+                       </div>
+                       <section class="w-full flex justify-center">
+                        <div class="md:max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-4">
+                         <div class="grid grid-cols-1 gap-6">
+                          <div>
+                           <div>
+                            <div class="my-12">
+                             <div class="flex flex-col md:flex-row items-center space-x-4">
+                              <div class="flex justify-center items-center rounded-full bg-[#1b2b4e]">
+                            <span class="m-4 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-wifi-2" viewBox="0 0 16 16">
+                                    <path d="M13.229 8.271c.216-.216.194-.578-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.577 1.336c.205.132.48.108.652-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.408.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.611-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .708 0l.707-.707z"/>
+                                  </svg>
+                               </span>
+                              </div>
+                              <div>
+                               <h5 class="font-bold text-[#0f1923]">
+                                <span>
+                                 Wifi Solutions
+                                </span>
+                               </h5>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                           <div>
+                            <div class="my-12">
+                             <div class="flex flex-col md:flex-row items-center space-x-4">
+                              <div class="flex justify-center items-center rounded-full bg-[#1b2b4e]">
+                            <span class="m-4 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-fill-gear" viewBox="0 0 16 16">
+                                    <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4m9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+                                  </svg>
+                               </span>
+                              </div>
+                              <div>
+                               <h5 class="font-bold text-[#0f1923]">
+                                <span>
+                                 Network Assessment &amp; Consulting
+                                </span>
+                               </h5>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                         <div class="grid grid-cols-1 gap-6">
+                          <div>
+                           <div>
+                            <div class="my-12">
+                             <div class="flex flex-col md:flex-row items-center space-x-4">
+                              <div class="flex justify-center items-center rounded-full bg-[#1b2b4e]">
+                            <span class="m-4 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707m0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707m-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707"/>
+                                  </svg>
+                               </span>
+                              </div>
+                              <div>
+                               <h5 class="font-bold text-[#0f1923]">
+                                <span>
+                                 SD-WAN
+                                </span>
+                               </h5>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                           <div>
+                            <div class="my-12">
+                             <div class="flex flex-col md:flex-row items-center space-x-4">
+                              <div class="flex justify-center items-center rounded-full bg-[#1b2b4e]">
+                            <span class="m-4 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bezier2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 0 1 2.5 1h1A1.5 1.5 0 0 1 5 2.5h4.134a1 1 0 1 1 0 1h-2.01q.269.27.484.605C8.246 5.097 8.5 6.459 8.5 8c0 1.993.257 3.092.713 3.7.356.476.895.721 1.787.784A1.5 1.5 0 0 1 12.5 11h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5H6.866a1 1 0 1 1 0-1h1.711a3 3 0 0 1-.165-.2C7.743 11.407 7.5 10.007 7.5 8c0-1.46-.246-2.597-.733-3.355-.39-.605-.952-1-1.767-1.112A1.5 1.5 0 0 1 3.5 5h-1A1.5 1.5 0 0 1 1 3.5zM2.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm10 10a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                                  </svg>
+                               </span>
+                              </div>
+                              <div>
+                               <h5 class="font-bold text-[#0f1923]">
+                                <span>
+                                 Managed NW and Infrastructure Services
+                                </span>
+                               </h5>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                         <div class="grid grid-cols-1 gap-6">
+                          <div>
+                           <div>
+                            <div class="my-12">
+                             <div class="flex flex-col md:flex-row items-center space-x-4">
+                              <div class="flex justify-center items-center rounded-full bg-[#1b2b4e]">
+                            <span class="m-4 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
+                                    <path d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5"/>
+                                  </svg>
+                               </span>
+                              </div>
+                              <div>
+                               <h5 class="font-bold text-[#0f1923]">
+                                <span>
+                                 Switching
+                                </span>
+                               </h5>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                           <div>
+                            <div class="my-12">
+                             <div class="flex flex-col md:flex-row items-center space-x-4">
+                                <div class="flex justify-center items-center rounded-full bg-[#1b2b4e]">
+                                    <span class="m-4 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-lightning-charge" viewBox="0 0 16 16">
+                                    <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41z"/>
+                                  </svg>
+                               </a>
+                              </div>
+                              <div>
+                               <h5  class="font-bold text-[#0f1923]">                                <a href="#">
+                                 NMS &amp; NOC services
+                                </a>
+                               </h5>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                         <div class="grid grid-cols-1 gap-6">
+                          <div>
+                           <div>
+                            <div class="my-12">
+                             <div class="flex flex-col md:flex-row items-center space-x-4">
+                              <div class="flex justify-center items-center rounded-full bg-[#1b2b4e]">
+                            <span class="m-4 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.6 9.6 0 0 0 7.556 8a9.6 9.6 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.6 10.6 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.6 9.6 0 0 0 6.444 8a9.6 9.6 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5"/>
+                                    <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192"/>
+                                  </svg>
+                               </span>
+                              </div>
+                              <div>
+                               <h5 class="font-bold text-[#0f1923]">
+                                <span>
+                                 Routing
+                                </span>
+                               </h5>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </section>
+                      </div>
+                     </div>
+                    </div>
+                </section>
+
+
+
+                <section class="bg-white  py-12 flex justify-center">
+                    <div class="w-full md:max-w-6xl">
+                     <div>
+                      <div class="grid grid-cols-1 gap-8 md:gap-20 lg:gap-12">
+                       <section>
+                        <div class="grid grid-cols-1 md:grid-cols-2 py-8">
+                         <div>
+                          <div>
+                           <div>
+                            <div>
+                             <img class="w-full p-8" alt="Wireless Connect" height="502" sizes="(max-width: 666px) 100vw, 666px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Wireless-Connect.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Wireless-Connect.png 666w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Wireless-Connect-300x226.png 300w" width="666"/>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                         <div class="w-full md:relative flex justify-center items-center p-8">
+                          <div class=" md:absolute top-0 md:top-[50px] left-0 md:left-[-100px] bg-white p-12 w-full h-full">
+                           <div>
+                            <div>
+                             <h3 class="text-4xl font-bold text-[#1b2b4e] py-6">
+                              Wi-Fi and wireless solutions
+                             </h3>
+                            </div>
+                           </div>
+                           <div>
+                            <div>
+                             <div>
+                              <div>
+                               <div>
+                                <div>
+                                 <div>
+                                  <div>
+                                   <div>
+                                    <div>
+                                     <div>
+                                      <div>
+                                       <div>
+                                        <div>
+                                         <p class="text-gray-400">
+                                          Cloud virtual resources enable you to integrate and deliver wireless solutions that meet the specific needs of your business. We offer a comprehensive range of wireless products and solutions, including:
+                                         </p>
+                                         <ul class="text-gray-400">
+                                          <li>
+                                           Secure VPN connectivity for remote users working away from the office, allowing them to connect securely and efficiently with their corporate network.
+                                          </li>
+                                          <li>
+                                           Easy installation of network devices, including wireless APs, cabling, and other accessories.
+                                          </li>
+                                          <li>
+                                           Reduction of operating costs through the automation of various tasks related to your wireless network.
+                                          </li>
+                                         </ul>
+                                        </div>
+                                       </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                   </div>
+                                  </div>
+                                 </div>
+                                </div>
+                               </div>
+                              </div>
+                             </div>
+                             <div>
+                              <div>
+                               <div>
+                                <div>
+                                </div>
+                               </div>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </section>
+                       <section>
+                        <div class="grid grid-cols-1 md:grid-cols-2 py-8">
+                         <div class="w-full md:relative flex justify-center items-center p-8">
+                            <div class=" md:absolute top-0 md:top-[50px] left-0 md:left-[100px] bg-white p-12 w-full h-full">
+                                <div>
+                            <div>
+                             <h3 class="text-4xl font-bold text-[#1b2b4e] py-6">
+                              SD-WAN
+                             </h3>
+                            </div>
+                           </div>
+                           <div>
+                            <div>
+                             <div>
+                              <div>
+                               <p class="text-gray-400">
+                                A Software-Defined Wide Area Network (SD-WAN) is a networking solution that provides fast, secure, and flexible connectivity between your branches. It enables you to create a WAN infrastructure that uses the internet instead of MPLS lines for network connection.
+                               </p>
+                               <p class="text-gray-400">
+                                This can reduce costs by up to 80% compared with traditional wide area networks (WANs), while still providing optimal performance for business-critical applications.
+                               </p>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                         <div>
+                          <div>
+                           <div>
+                            <div>
+                             <img class="w-full p-8" alt="Network Infrastructure" height="502" sizes="(max-width: 666px) 100vw, 666px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Network-Infrastructure.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Network-Infrastructure.png 666w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Network-Infrastructure-300x226.png 300w" width="666"/>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </section>
+                       <section>
+                        <div class="grid grid-cols-1 md:grid-cols-2 py-8">
+                         <div>
+                          <div>
+                           <div>
+                            <div>
+                             <img class="w-full p-8" alt="" height="502" sizes="(max-width: 666px) 100vw, 666px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Master-MSP.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Master-MSP.png 666w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Master-MSP-300x226.png 300w" width="666"/>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                         <div class="w-full md:relative flex justify-center items-center p-8">
+                            <div class=" md:absolute top-0 md:top-[50px] left-0 md:left-[-100px] bg-white p-12 w-full h-full">
+                                <div>
+                            <div>
+                             <h3 class="text-4xl font-bold text-[#1b2b4e] py-6">
+                              Switching
+                             </h3>
+                            </div>
+                           </div>
+                           <div>
+                            <div>
+                             <div>
+                              <div>
+                               <div>
+                                <div>
+                                 <div>
+                                  <div>
+                                   <div>
+                                    <div>
+                                     <div>
+                                      <div>
+                                       <div>
+                                        <div>
+                                         <p class="text-gray-400">
+                                          Switching is a valuable asset in computer networking in all dimensions especially if your company has employees working remotely. It determines the best path for data between your businesses and Branches. It helps ensure reliable communication in your LAN and WAN.
+                                         </p>
+                                         <p class="text-gray-400">
+                                          Our team can help you find the best way to communicate between all your offices, whether that’s through MPLS IPVPN, Ethernet, or wireless.  We offer switching and routing services where the Packet fusion assesses the switches in your LAN ensuring that unified communication is enabled for seamless productivity. We at Value Point systems ensures that your wireless system has all it takes to serve and protect clients, organisation and the employees.
+                                         </p>
+                                        </div>
+                                       </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                   </div>
+                                  </div>
+                                 </div>
+                                </div>
+                               </div>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </section>
+                       <section>
+                        <div class="grid grid-cols-1 md:grid-cols-2 py-8">
+                         <div class="w-full md:relative flex justify-center items-center p-8">
+                            <div class=" md:absolute top-0 md:top-[50px] left-0 md:left-[100px] bg-white p-12 w-full h-full">
+                                <div>
+                            <div>
+                             <h3 class="text-4xl font-bold text-[#1b2b4e] py-6">
+                              Managed Firewall
+                             </h3>
+                            </div>
+                           </div>
+                           <div>
+                            <div>
+                             <div>
+                              <div>
+                               <p class="text-gray-400">
+                                A Managed firewall is a type of firewall that protects your network from attacks and unwanted traffic, making sure only safe access is allowed. Managed Firewall has many benefits for any business, including:
+                               </p>
+                               <ul class="text-gray-400">
+                                <li>
+                                 Protection against data leaks
+                                </li>
+                                <li>
+                                 Improved productivity by allowing staff to access only approved applications and websites.
+                                </li>
+                               </ul>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                         <div>
+                          <div>
+                           <div>
+                            <div>
+                             <img class="w-full p-8" alt="" height="502" sizes="(max-width: 666px) 100vw, 666px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Warranty-support.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Warranty-support.png 666w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Warranty-support-300x226.png 300w" width="666"/>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </section>
+                       <section>
+                        <div class="grid grid-cols-1 md:grid-cols-2 py-8">
+                         <div>
+                          <div>
+                           <div>
+                            <div>
+                             <img class="w-full p-8" alt="" height="502" sizes="(max-width: 666px) 100vw, 666px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cloud-Security-1.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cloud-Security-1.png 666w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cloud-Security-1-300x226.png 300w" width="666"/>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                         <div class="w-full md:relative flex justify-center items-center p-8">
+                            <div class=" md:absolute top-0 md:top-[50px] left-0 md:left-[-100px] bg-white p-12 w-full h-full">
+                                <div>
+                            <div>
+                             <h3 class="text-4xl font-bold text-[#1b2b4e] py-6">
+                              Routing services
+                             </h3>
+                            </div>
+                           </div>
+                           <div>
+                            <div>
+                             <div>
+                              <div>
+                               <div>
+                                <div>
+                                 <div>
+                                  <div>
+                                   <div>
+                                    <div>
+                                     <div>
+                                      <div>
+                                       <div>
+                                        <div>
+                                         <p class="text-gray-400">
+                                          Our team can also provide routing and VPN services to support the entire business. They will create a secure connection between your office and all your branch networks – with support for MPLS IPVPN, Ethernet, and wireless – no matter where they are located.
+                                         </p>
+                                         <p class="text-gray-400">
+                                          Network security needs to be strong but not intrusive, as any unnecessary services and access points into your network can create vulnerabilities. Our team will check your needs to ensure you have a secure and user-friendly solution.
+                                         </p>
+                                        </div>
+                                       </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                   </div>
+                                  </div>
+                                 </div>
+                                </div>
+                               </div>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </section>
+                       <section>
+                        <div class="grid grid-cols-1 md:grid-cols-2 py-8">
+                         <div class="w-full md:relative flex justify-center items-center p-8">
+                            <div class=" md:absolute top-0 md:top-[50px] left-0 md:left-[100px] bg-white p-12 w-full h-full">
+                                <div>
+                            <div>
+                             <h3 class="text-4xl font-bold text-[#1b2b4e] py-6">
+                              Meeting room and conferencing solutions
+                             </h3>
+                            </div>
+                           </div>
+                           <div>
+                            <div>
+                             <div>
+                              <div>
+                               <div>
+                                <div>
+                                 <div>
+                                  <div>
+                                   <div>
+                                    <div>
+                                     <div>
+                                      <div>
+                                       <div>
+                                        <div>
+                                         <p class="text-gray-400">
+                                          Our team can provide a managed meeting room and conferencing solutions that are set up according to your requirements.
+                                         </p>
+                                         <p class="text-gray-400">
+                                          We use video-conference technology for meetings, which can be an effective business tool. For example, it brings people together at the same time without the restrictions of location or travel arrangements. Our experts will configure a solution that meets all your business needs.
+                                         </p>
+                                        </div>
+                                       </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                   </div>
+                                  </div>
+                                 </div>
+                                </div>
+                               </div>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                         <div>
+                          <div>
+                           <div>
+                            <div>
+                             <img class="w-full p-8" alt="" height="502" sizes="(max-width: 666px) 100vw, 666px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Network-Operations-Center.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Network-Operations-Center.png 666w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Network-Operations-Center-300x226.png 300w" width="666"/>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </section>
+                       <section>
+                        <div class="grid grid-cols-1 md:grid-cols-2 py-8">
+                         <div>
+                          <div>
+                           <div>
+                            <div>
+                             <img class="w-full p-8" alt="" height="502" sizes="(max-width: 666px) 100vw, 666px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cloud-Monitoring.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cloud-Monitoring.png 666w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cloud-Monitoring-300x226.png 300w" width="666"/>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                         <div class="w-full md:relative flex justify-center items-center p-8">
+                            <div class=" md:absolute top-0 md:top-[50px] left-0 md:left-[-100px] bg-white p-12 w-full h-full">
+                                <div>
+                            <div>
+                             <h3 class="text-4xl font-bold text-[#1b2b4e] py-6">
+                              IoT Services
+                             </h3>
+                            </div>
+                           </div>
+                           <div>
+                            <div>
+                             <div>
+                              <div>
+                               <div>
+                                <div>
+                                 <div>
+                                  <div>
+                                   <div>
+                                    <div>
+                                     <div>
+                                      <div>
+                                       <div>
+                                        <div>
+                                         <div>
+                                          <div>
+                                           <p class="text-gray-400">
+                                            Internet of Things (IoT) is a network infrastructure that connects physical objects and software systems, allowing interaction among the various devices.
+                                           </p>
+                                           <p class="text-gray-400">
+                                            IoT will become an integral part of digital transformation as it becomes increasingly adopted by businesses, supporting cost savings, heightened productivity, and improved customer service. At the same time, it can also create numerous opportunities for cyber-criminals to launch attacks on your business.
+                                           </p>
+                                          </div>
+                                         </div>
+                                        </div>
+                                       </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                   </div>
+                                  </div>
+                                 </div>
+                                </div>
+                               </div>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </section>
+                       <section>
+                        <div class="grid grid-cols-1 md:grid-cols-2 py-8">
+                         <div class="w-full md:relative flex justify-center items-center p-8">
+                            <div class=" md:absolute top-0 md:top-[50px] left-0 md:left-[100px] bg-white p-12 w-full h-full">
+                                <div>
+                            <div>
+                             <h3 class="text-4xl font-bold text-[#1b2b4e] py-6">
+                              Network monitoring services
+                             </h3>
+                            </div>
+                           </div>
+                           <div>
+                            <div>
+                             <div>
+                              <div>
+                               <div>
+                                <div>
+                                 <div>
+                                  <div>
+                                   <div>
+                                    <div>
+                                     <div>
+                                      <div>
+                                       <div>
+                                        <div>
+                                         <div>
+                                          <div>
+                                           <p class="text-gray-400">
+                                            Our Network Operations Centre (NOC) is staffed with trained, experienced engineers who monitor your connectivity at all times. They act swiftly to ensure that you can continue carrying out business activities without any disruption.
+                                           </p>
+                                           <p class="text-gray-400">
+                                            We use state-of-the-art technology and tools to analyze network traffic across multiple sites, allowing us to pinpoint the source of potential problems.
+                                           </p>
+                                          </div>
+                                         </div>
+                                        </div>
+                                       </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                   </div>
+                                  </div>
+                                 </div>
+                                </div>
+                               </div>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                         <div>
+                          <div>
+                           <div>
+                            <div>
+                             <img class="w-full p-8" alt="" height="502" sizes="(max-width: 666px) 100vw, 666px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Technical-Services-1-1.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Technical-Services-1-1.png 666w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Technical-Services-1-1-300x226.png 300w" width="666"/>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </section>
+                       <section>
+                        <div class="grid grid-cols-1 md:grid-cols-2 py-8">
+                         <div>
+                          <div>
+                           <div>
+                            <div>
+                             <img class="w-full p-8" alt="" height="502" sizes="(max-width: 666px) 100vw, 666px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Managed-Cloud-Services.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Managed-Cloud-Services.png 666w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Managed-Cloud-Services-300x226.png 300w" width="666"/>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                         <div class="w-full md:relative flex justify-center items-center p-8">
+                            <div class=" md:absolute top-0 md:top-[50px] left-0 md:left-[-100px] bg-white p-12 w-full h-full">
+                                <div>
+                            <div>
+                             <h3 class="text-4xl font-bold text-[#1b2b4e] py-6">
+                              Managed Network Security services
+                             </h3>
+                            </div>
+                           </div>
+                           <div>
+                            <div>
+                             <div>
+                              <div>
+                               <div>
+                                <div>
+                                 <div>
+                                  <div>
+                                   <div>
+                                    <div>
+                                     <div>
+                                      <div>
+                                       <div>
+                                        <div>
+                                         <div>
+                                          <div>
+                                           <p class="text-gray-400">
+                                            We can help you strengthen the cyber security of all your business networks by offering customized managed network security services that are tailored to meet your needs. Some of the benefits from this include:
+                                           </p>
+                                           <ul class="text-gray-400">
+                                            <li>
+                                             Protection against the latest cyber threats
+                                            </li>
+                                            <li>
+                                             Fast detection of breaches preventing further damage to your business
+                                            </li>
+                                            <li>
+                                             24/7 managed security that is fully scalable for businesses of any size
+                                            </li>
+                                           </ul>
+                                          </div>
+                                         </div>
+                                        </div>
+                                       </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                   </div>
+                                  </div>
+                                 </div>
+                                </div>
+                               </div>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </section>
+                       <section>
+                        <div class="grid grid-cols-1 md:grid-cols-2 py-8">
+                         <div class="w-full md:relative flex justify-center items-center p-8">
+                            <div class=" md:absolute top-0 md:top-[50px] left-0 md:left-[100px] bg-white p-12 w-full h-full">
+                                <div>
+                            <div>
+                             <h3 class="text-4xl font-bold text-[#1b2b4e] py-6">
+                              Network assessment and consulting services
+                             </h3>
+                            </div>
+                           </div>
+                           <div>
+                            <div>
+                             <div>
+                              <div>
+                               <div>
+                                <div>
+                                 <div>
+                                  <div>
+                                   <div>
+                                    <div>
+                                     <div>
+                                      <div>
+                                       <div>
+                                        <div>
+                                         <div>
+                                          <div>
+                                           <div>
+                                            <div>
+                                             <div>
+                                              <div>
+                                               <div>
+                                                <div>
+                                                 <div>
+                                                  <div>
+                                                   <div>
+                                                    <div>
+                                                     <div>
+                                                      <div>
+                                                       <p class="text-gray-400">
+                                                        All sizes of businesses can benefit from our network consulting and assessment services. Our services in network assessment and consulting will bring a lot of benefits to your business, including:
+                                                       </p>
+                                                       <ul class="text-gray-400">
+                                                        <li>
+                                                         An in-depth analysis of your current network design and infrastructure
+                                                        </li>
+                                                        <li>
+                                                         Detailed reports on all areas of your business, which will help you monitor the performance of various networks across different sites
+                                                        </li>
+                                                        <li>
+                                                         A detailed recommendation of how best to improve your networking setup using cost-effective technologies
+                                                        </li>
+                                                       </ul>
+                                                      </div>
+                                                     </div>
+                                                    </div>
+                                                   </div>
+                                                  </div>
+                                                 </div>
+                                                </div>
+                                               </div>
+                                              </div>
+                                             </div>
+                                            </div>
+                                           </div>
+                                          </div>
+                                         </div>
+                                        </div>
+                                       </div>
+                                      </div>
+                                     </div>
+                                    </div>
+                                   </div>
+                                  </div>
+                                 </div>
+                                </div>
+                               </div>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                         <div>
+                          <div>
+                           <div>
+                            <div>
+                             <img class="w-full p-8" alt="" height="502" sizes="(max-width: 666px) 100vw, 666px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cloud-Migration.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cloud-Migration.png 666w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cloud-Migration-300x226.png 300w" width="666"/>
+                            </div>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </section>
+                      </div>
+                     </div>
+                    </div>
+                   </section>
+
+
+                <section>
+                    <div id="parallax-2" class="parallax bg-cover bg-center" style="background-image: url('https://www.valuepointsystems.com/wp-content/uploads/2021/11/young-lady-using-voice-assistant-on-cellphone-and-pc.jpg')">
+                        <div class="w-full h-full bg-black bg-opacity-60  text-white flex flex-col justify-center items-center px-4 py-32">
+                            <div class="w-full max-w-7xl flex  flex-col justify-center items-center">
+                                <div>
+                                    <p class="text-3xl font-bold text-center text-white">Want to know how your business can benefit from our deliverables?</p>
+                                    <div><p class="text-lg break-words font-medium text-center px-16 lg:px-40 py-6">Value Point Systems is helping global businesses on their digital transformation journeys: one business at a time.</p></div>
+                                </div>
+            
+                                <div class="text-sm px-6 py-5 font-bold text-white bg-[#0133b6] hover:bg-green-500 w-64 rounded-tl-[20px] rounded-br-[20px] text-center mt-4 mb-6 "><a href="contact.html">Request a free Consultation</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>   
+               </div>
+        </main>
     </div>
+
 
 
 
@@ -189,7 +1126,7 @@
                 <div class="grid grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 lg:gap-4">
                     <div class="col-span-3 grid grid-rows-3 md:grid-cols-3 gap-1 md:grid-rows-1 md:gap-4 sm:w-full md:w-auto justify-around md:flex-row space-x-3">
                         <div class="text-center p-3">
-                            <a href="homepage.html"><img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" alt="Placeholder Image" class="mx-auto mb-4 py-2 md:py-10"></a>
+                            <a href="../homepage.html"><img src="..\images\xclogo.png" class="w-48 md:w-80 lg:w-48 py-2" /></a>
                             <p class="mb-4 text-lg text-medium text-green-950">Accelerating our clients’ business transformation journeys through our competence in Consulting, Integration, Security by delivering Next-Gen Digital Infrastructure Solutions.</p>
                             <div class="flex justify-center space-x-2">
                                 <a href="#" class="rounded-full bg-white p-2 w-10 h-10 flex justify--center items-center">
@@ -209,23 +1146,23 @@
                         <div class="text-green-950">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Quick Links</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
-                                <li><a href="About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
-                                <li><a href="Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
+                                <li><a href="../homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
+                                <li><a href="../About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
+                                <li><a href="../Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
                                 <li><a href="#" class="hover:text-[#0133b6] text-lg font-medium">Shop</a></li>
-                                <li><a href="Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
-                                <li><a href="contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
+                                <li><a href="../Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
+                                <li><a href="../contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
                             </ul>
                         </div>
                         <div class="text-green-950 my-10">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Portfolio</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
-                                <li><a href="Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
-                                <li><a href="Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
-                                <li><a href="Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
-                                <li><a href="Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
-                                <li><a href="IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
+                                <li><a href="../CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
+                                <li><a href="../Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
+                                <li><a href="../Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
+                                <li><a href="../Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
+                                <li><a href="../Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
+                                <li><a href="../IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
                             </ul>
                         </div>
                     </div>
@@ -255,7 +1192,7 @@
                 <div class="flex flex-col space-y-6">
                     <div class="grid-cols-3 gap-1 grid-rows-1 gap-4 sm:w-full md:w-auto justify-around">
                         <div class="text-center p-3">
-                            <img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" alt="Placeholder Image" class="mx-auto mb-4 py-2 md:py-10">
+                            <img src="..\images\xclogo.png" alt="Logo Image" class="mx-auto mb-4 py-2 md:py-10" />
                             <p class="mb-4 text-lg text-medium text-green-950">Accelerating our clients’ business transformation journeys through our competence in Consulting, Integration, Security by delivering Next-Gen Digital Infrastructure Solutions.</p>
                             <div class="flex justify-center space-x-2">
                                 <a href="#" class="rounded-full bg-white p-2 w-10 h-10 flex justify--center items-center">
@@ -275,23 +1212,23 @@
                         <div class="text-green-950">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Quick Links</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
-                                <li><a href="About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
-                                <li><a href="Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
+                                <li><a href="../homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
+                                <li><a href="../About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
+                                <li><a href="../Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
                                 <li><a href="#" class="hover:text-[#0133b6] text-lg font-medium">Shop</a></li>
-                                <li><a href="Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
-                                <li><a href="contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
+                                <li><a href="../Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
+                                <li><a href="../contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
                             </ul>
                         </div>
                         <div class="text-green-950 my-10">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Portfolio</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
-                                <li><a href="Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
-                                <li><a href="Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
-                                <li><a href="Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
-                                <li><a href="Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
-                                <li><a href="IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
+                                <li><a href="../CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
+                                <li><a href="../Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
+                                <li><a href="../Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
+                                <li><a href="../Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
+                                <li><a href="../Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
+                                <li><a href="../IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
                             </ul>
                         </div>
                     </div>
@@ -321,13 +1258,13 @@
             <!--Forth section-->
             <div class="flex flex-col md:flex-row justify-between py-10">
                 <div>
-                    <div class="container text-center">
-                        <div class="flex items-center space-x-4">
-                            <img src="images/OCT-2022-–-OCT-2023-176x300.png" alt="Image 1" class="w-12 object-cover rounded-lg">
-                            <img src="images/value30-white-logo-2.png" alt="Image 2" class="h-12 object-cover rounded-lg">
-                            <object data="images/iso-logo-vector.svg" type="image/svg+xml" class="w-16">
+                    <div cl class="my-12"ass="container text-center">
+                        <div class="flex flex-col md:flex-row items-center space-x-4">
+                            <img src="../images/OCT-2022-–-OCT-2023-176x300.png" alt="Image 1" class="w-12 object-cover rounded-lg">
+                            <img src="../images/value30-white-logo-2.png" alt="Image 2" class="h-12 object-cover rounded-lg">
+                            <object data="../images/iso-logo-vector.svg" type="image/svg+xml" class="w-16">
                                 <!-- SVG fallback -->
-                                <img src="images/iso-logo-vector.svg" alt="SVG" class="w-6 h-full object-contain">
+                                <img src="../images/iso-logo-vector.svg" alt="SVG" class="w-6 h-full object-contain">
                             </object>
                         </div>
                     </div>
@@ -377,7 +1314,7 @@
 
     <!-- Sliding Form from right side -->
     <div class="fixed top-1/2 mr-11 mb-24 right-0 transform -translate-y-1/2 w-900px z-20" style="margin-top: -115px;">
-        <div id="formSlideOut" class="hidden bg-blue-50 border-2 border-blue-100 p-5 w-900px rounded-lg absolute top-0 right-0 flex flex-col justify-center items-center transition-all duration-100 ease-in-out">
+        <div id="formSlideOut" class="hidden bg-blue-50 border-2 border-blue-100 p-5 w-900px rounded-lg md:absolute top-0 right-0 flex flex-col justify-center items-center transition-all duration-100 ease-in-out">
             <div class="flex justify-between w-full">
                 <p class="flex text-blue-800 font-medium">Free Consultation</p>
                 <button id="close-toggle2" class="flex text-xl focus:outline-none text-red">&times;</button>
@@ -393,7 +1330,7 @@
     </div>
     <!-- Sliding Form from bottom side -->
     <div class="fixed top-1/2 right-0 transform -translate-y-1/2 lg:mr-11 lg:mb-24 lg:top-auto lg:translate-y-0 w-full lg:hidden z-20" style="margin-top: 0px">
-        <div id="formSlideOut2" class="hidden bg-blue-100 border border-grey-50 p-5 w-auto w-full rounded-tl-2xl rounded-tr-2xl absolute top-0 right-0 hover:flex flex flex-col justify-center items-center transition-all duration-100 ease-in-out">
+        <div id="formSlideOut2" class="hidden bg-blue-100 border border-grey-50 p-5 w-auto w-full rounded-tl-2xl rounded-tr-2xl md:absolute top-0 right-0 hover:flex flex flex-col justify-center items-center transition-all duration-100 ease-in-out">
             <div class="flex justify-between w-full font-medium">
                 <p class="flex text-blue-800">Free Consultation</p>
                 <button id="clsbtn3" class="flex text-xl focus:outline-none">&times;</button>
@@ -434,7 +1371,7 @@
     <!-- Include JavaScript File -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>

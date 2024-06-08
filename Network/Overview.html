@@ -3,93 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar and Sidebar</title>
+    <title>
+        Network Transformation enables Digital Transformation
+       </title>   
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Include CSS File -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        @keyframes slide {
+        0%, 20% { transform: translateX(0%); }
+        25%, 45% { transform: translateX(-100%); }
+        50%, 70% { transform: translateX(-200%); }
+        75%, 95% { transform: translateX(-300%); }
+        100% { transform: translateX(-300%); }
+        }
 
+        .carousel-container {
+        max-width: 2xl;
+        margin: auto;
+        overflow: hidden;
+        }
+
+        .carousel-track {
+        display: flex;
+        animation: slide 16s infinite;
+        }
+
+        .carousel-item {
+        flex-shrink: 0;
+        width: 100%;
+        }
+
+        .carousel-item img {
+        width: 100%;
+        object-fit: cover;
+        }
+
+    </style>
 </head>
 <body class="bg-gray-100">
 
-    <!-- Fixed Top Navigation -->
-    <nav class="fixed top-0 w-full bg-white shadow-md z-50 py-4">
-        <div class="container max-w-7xl mx-auto px-4 py-2 flex justify-between md:flex-col lg:flex-row lg:justify-between items-center">
-            <div class="">
-                <div class="text-xl font-bold"><img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" class="w-48 md:w-80 lg:w-48" /></div>
-            </div>
-            <div class="md:w-full lg:w-auto flex justify-between md:pt-2 lg:pt-0">
-                <div class="flex space-x-6">
-                    <div class="lg:hidden">
-                        <button id="menu-toggle" class="text-3xl focus:outline-none text-blue-800">&#9776;</button>
-                    </div>
-                    <div class="hidden lg:flex space-x-5 font-light">
-                        <!-- Portfolio Accordion -->
-                        <div class="relative inline-block text-left">
-                            <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
-                                <p>PORTFOLIO</p>
-                                <svg class=" ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
-                                    <a href="cybersecurity/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cyber Security</a>
-                                    <a href="Data Center/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Data Center Modernization</a>
-                                    <a href="Network/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Network Transformation</a>
-                                    <a href="Cloud Transform/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cloud Transformation</a>
-                                    <a href="Digital Workplace/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Digital Workplace</a>
-                                    <a href="IT managed/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">IT Managed Services</a>
-                                </div>
+  <!-- Fixed Top Navigation -->
+  <nav class="fixed top-0 w-full bg-white shadow-sm z-50 pt-4 pb-0">
+    <div class="container max-w-7xl mx-auto px-4 py-2 flex justify-between md:flex-col lg:flex-row lg:justify-between items-center">
+        <div class="">
+            <div class="text-xl font-bold"><a href="../homepage.html"><img src="..\images\xclogo.png" class="w-48 md:w-80 lg:w-48" /></a></div>
+        </div>
+        <div class="md:w-full lg:w-auto flex justify-between md:pt-2 lg:pt-0">
+            <div class="flex space-x-6">
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="text-3xl focus:outline-none text-blue-800">&#9776;</button>
+                </div>
+                <div class="hidden lg:flex space-x-5 font-light">
+                    <!-- Portfolio Accordion -->
+                    <div class="relative inline-block text-left">
+                        <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
+                            <p>PORTFOLIO</p>
+                            <svg class=" ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
+                                <a href="../cybersecurity/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cyber Security</a>
+                                <a href="../Data Center/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Data Center Modernization</a>
+                                <a href="../Network/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Network Transformation</a>
+                                <a href="../Cloud Transform/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cloud Transformation</a>
+                                <a href="../Digital Workplace/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Digital Workplace</a>
+                                <a href="../IT managed/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">IT Managed Services</a>
                             </div>
                         </div>
-                        <!-- About Accordion -->
-                        <div class="relative inline-block text-left">
-                            <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
-                                <p>ABOUT</p>
-                                <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
-                                    <a href="About.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">About ValuePoint</a>
-                                    <a href="About.html/#why-valuepoint" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Why ValuePoint</a>
-                                    <a href="About.html/#the-board" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">The Board</a>
-                                    <a href="About.html/#our-leadership" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Our Leadership</a>
-                                    <a href="About.html/#awards-recognition" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Awards & Recognition</a>
-                                </div>
+                    </div>
+                    <!-- About Accordion -->
+                    <div class="relative inline-block text-left">
+                        <a href="About.html" class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
+                            <p>ABOUT</p>
+                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
+                                <a href="../About.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">About ValuePoint</a>
+                                <a href="../About.html/#why-valuepoint" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Why ValuePoint</a>
+                                <a href="../About.html/#the-board" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">The Board</a>
+                                <a href="../About.html/#our-leadership" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Our Leadership</a>
+                                <a href="../About.html/#awards-recognition" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Awards & Recognition</a>
                             </div>
                         </div>
-                        <a href="Partners.html" class="hover:text-blue-800">PARTNERS</a>
-                        <a href="Industries.html" class="hover:text-blue-800">INDUSTRIES</a>
-                        <a href="Blogs.html" class="hover:text-blue-800">BLOGS</a>
-                        <a href="Career.html" class="hover:text-blue-800">CAREERS</a>
-                        <a href="contact.html" class="hover:text-blue-800">CONTACT</a>
                     </div>
-                </div>
-                <div class="hidden md:flex lg:hidden w-128 bg-[#0133b6] hover:bg-green-950 rounded-tl-2xl rounded-br-2xl ">
-                    <div class="ml-2 p-4 mx-5 text-white font-bold">
-                        +917899900121
-                    </div>
-                    
+                    <a href="../Partners.html" class="hover:text-blue-800">PARTNERS</a>
+                    <a href="../Industries.html" class="hover:text-blue-800">INDUSTRIES</a>
+                    <a href="../Blogs.html" class="hover:text-blue-800">BLOGS</a>
+                    <a href="../Career.html" class="hover:text-blue-800">CAREERS</a>
+                    <a href="../contact.html" class="hover:text-blue-800">CONTACT</a>
                 </div>
             </div>
-            <div class="hidden  lg:flex w-128 bg-[#0133b6] hover:bg-green-950 rounded-tl-2xl rounded-br-2xl  ">
+            <div class="hidden md:flex lg:hidden w-128 bg-[#0133b6] hover:bg-green-500 rounded-tl-2xl rounded-br-2xl ">
                 <div class="ml-2 p-4 mx-5 text-white font-bold">
                     +917899900121
                 </div>
                 
             </div>
         </div>
+        <div class="hidden  lg:flex w-128 bg-[#0133b6] hover:bg-green-500 rounded-tl-2xl rounded-br-2xl  ">
+            <div class="ml-2 p-4 mx-5 text-white font-bold">
+                +917899900121
+            </div>
+            
+        </div>
+    </div>
+
+        <!-- Fixed Top Navigation2 -->
+        <div class="w-full bg-gray-400 shadow-md">
+            <div class="relative container mx-auto  justify-center items-center py-1 px-6 ">
+                <!-- Page Name -->
+                <div class=" absolute text-lg top-0 left-0 font-medium text-gray-700 p-1">
+                    Network Transformation
+                </div>
+                <!-- Navigation Links -->
+                <div class="flex space-x-8 pt-6 md:pt-0 justify-center">
+                    <a href="Overview.html" class="text-gray-700 hover:text-blue-700">Overview</a>
+                    <a href="ActiiveSolutions.html" class="text-gray-700 hover:text-blue-700">Active Solutions</a>
+                    <a href="NetworkInfra.html" class="text-gray-700 hover:text-blue-700">Network Infra & Integration</a>
+                    <a href="CaseStudies.html" class="text-gray-700 hover:text-blue-700">Case Studies</a>
+                </div>
+            </div>
+        </div>
     </nav>
     
+    
     <!-- Sidebar -->
-    <div id="sidebar" class="fixed top-0 left-0 w-[360px] bg-white shadow-md h-full z-50 transform -translate-x-full transition-transform duration-200 lg:hidden">
+    <div id="sidebar" class="fixed top-0 left-0 w-[360px] bg-white shadow-md h-full z-50 transform -translate-x-full transition-transform duration-200 lg:hidden z-20">
         <div class="mt-5 mb-6 ml-72 w-12 p-0 bg-blue-700 rounded-tl-lg rounded-br-lg flex justify-center items-center">
             <div id="menu-close" class=" font-bold text-2xl text-white">&times;</div>
         </div>
-        <img  src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\clogo.png" class="w-full " />
+        <a href="../homepage.html"><img   src="..\images\xclogo.png" class="w-full " /></a>
         <nav class="mt-3 mx-5">
         <!-- Accordion -->
         <div class="w-full max-w-lg mx-auto bg-white rounded-lg">
@@ -102,83 +152,752 @@
                     </svg>
                 </button>
                 <div class="accordion-content hidden px-4 py-2 text-gray-700">
-                    <a href="cybersecurity/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cyber Security</a>
-                    <a href="Data Center/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Data Center Modernization</a>
-                    <a href="Network/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Network Transformation</a>
-                    <a href="Cloud Transform/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cloud Transformation</a>
-                    <a href="Digital Workplace/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Digital Workplace</a>
-                    <a href="IT managed/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">IT Managed Services</a>
+                    <a href="../cybersecurity/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cyber Security</a>
+                    <a href="../Data Center/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Data Center Modernization</a>
+                    <a href="../Network/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Network Transformation</a>
+                    <a href="../Cloud Transform/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cloud Transformation</a>
+                    <a href="../Digital Workplace/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Digital Workplace</a>
+                    <a href="../IT managed/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">IT Managed Services</a>
                 </div>
             </div>
             <!-- Accordion Item 2 -->
             <div class="border-b">
-                <button class="accordion-button w-full text-left px-4 py-2 text-gray-800 hover:text-blue-800 font-medium focus:outline-none flex justify-between"">
+                <a  href="About.html"  class="accordion-button w-full text-left px-4 py-2 text-gray-800 hover:text-blue-800 font-medium focus:outline-none flex justify-between"">
                     <p>About</p>
                     <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
-                </button>
+                </a>
                 <div class="accordion-content hidden px-4 py-2 text-gray-700">
-                    <a href="About.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">About ValuePoint</a>
-                    <a href="About.html/#why-valuepoint" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Why ValuePoint</a>
-                    <a href="About.html/#the-board" class="block py-2 text-sm text-gray-700 hover:text-blue-800">The Board</a>
-                    <a href="About.html/#our-leadership" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Our Leadership</a>
-                    <a href="About.html/#awards-recognition" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Awards & Recognition</a>
+                    <a href="../About.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">About ValuePoint</a>
+                    <a href="../About.html/#why-valuepoint" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Why ValuePoint</a>
+                    <a href="../About.html/#the-board" class="block py-2 text-sm text-gray-700 hover:text-blue-800">The Board</a>
+                    <a href="../About.html/#our-leadership" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Our Leadership</a>
+                    <a href="../About.html/#awards-recognition" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Awards & Recognition</a>
                 </div>
             </div>
             <!-- Additional Accordion Items can be added here following the same structure -->
         </div>
 
-        <a href="Partners.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Partner</a>
-        <a href="Industries.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Industries</a>
-        <a href="Blogs.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Blog</a>
-        <a href="Career.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Career</a>
-        <a href="contact.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Contact</a>
+        <a href="../Partners.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Partner</a>
+        <a href="../Industries.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Industries</a>
+        <a href="../Blogs.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Blog</a>
+        <a href="../Career.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Career</a>
+        <a href="../contact.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Contact</a>
     </nav>
     </div>
 
     <!-- Main Content -->
-    <div id="main-content" class="container mx-auto p-4 h-full">
-        <div class="pt-24 md:pt-48 lg:pt-24"></div>
-        <h1 class="text-2xl font-bold">Welcome to MyWebsite</h1>
-        <p class="mt-4">Content goes here...</p>
-
-        <div class="w-1/2">
-            <div class="flex flex-col items-center">
-                <!-- Large Box with Text -->
-                <div class="relative bg-blue-500 w-24 h-72 flex justify-center items-center cursor-pointer">
-                    <p class="absolute -right-8 transform -rotate-90 text-white">Hello Kid</p>
-                </div>
-                <!-- Square Boxes with Icon -->
-                <div class="relative bg-green-500 w-12 h-12 flex justify-center items-center transition-all duration-500 hover:w-24">
-                    <div class="flex items-center justify-center w-full h-full">
-                        <i class="fas fa-phone text-white"></i>
-                    </div>
-                    <p class="absolute right-0 transform translate-x-full text-white opacity-0 transition-opacity duration-500">Hello again</p>
-                </div>
-                <div class="relative bg-yellow-500 w-12 h-12 flex justify-center items-center transition-all duration-500 hover:w-24">
-                    <div class="flex items-center justify-center w-full h-full">
-                        <i class="fas fa-phone text-white"></i>
-                    </div>
-                    <p class="absolute right-0 transform translate-x-full text-white opacity-0 transition-opacity duration-500">Hello again</p>
-                </div>
-            </div>
+    <div id="main-content" class="">
+        <div class="mt-24 md:mt-48 lg:mt-32"></div>
+        <main class="mt-8 md:mt-5">
+            <div>
+                <section class="w-full">
+                    <div class="bg-cover bg-start bg-no-repeat  w-full flex items-center justify-center text-white" style="background-image: url('https://www.valuepointsystems.com/wp-content/uploads/2021/11/360_F_283376458_DygTvGCaBgrKNR3UKK1c8ktdTRwKvd0y.webp');">
+                     <div class="bg-gradient-to-r from-indigo-500 py-16 md:py-24 lg:py-32 w-full flex justify-center ">
+                      <div class="w-full md:max-w-6xl flex justify-start">
+                       <div class="w-full p-6">
+                         <P class="text-lg font-medium text-white">SIMPLIFY NETWORK DEPLOYMENTS</P>
+                         <h2 class="text-4xl md:text-5xl lg:text-6xl font-medium text-white py-2 md:py-4 lg:py-6">
+                            Network Transformation
+                         </h2>
+                         <p class="text-white">
+                            We reduce your hardware and operating costs with future-ready infrastructure.                         </p>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                </section> 
             
-            <!-- Consultation Form Popup -->
-            <div id="consultation-form" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-bold mb-4">Consultation Form</h2>
-                    <!-- Form fields go here -->
-                    <button id="close-toggle" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 focus:outline-none">&times;</button>
+                <section class="w-full bg-white flex flex-col justify-center">
+                 <div>
+                  <div>
+                   <div class="w-full flex flex-col justify-center items-center">
+                    <div class="md:relative">
+                     <div class="md:absolute  md:top-[-60px] md:left-[-170px] bg-white p-6 w-[320px]">
+                      <h4 class="text-xl font-bold text-center">
+                       Active Solutions Partners
+                      </h4>
+                     </div>
+                    </div>
+                    <section class="w-full md:max-w-6xl p-6">
+                     <div class="grid grid-cols-1 md:grid-cols-5 gap-4 ">
+                      
+                          <img class="w-full" alt="" height="86" sizes="(max-width: 327px) 100vw, 327px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/aruba.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/aruba.png 327w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/aruba-300x79.png 300w" width="327"/>
+                         
+                      
+                          <img class="w-full" alt="" height="81" sizes="(max-width: 316px) 100vw, 316px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/cisco.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/cisco.png 316w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/cisco-300x77.png 300w" width="316"/>
+                         
+                      
+                          <img class="w-full" alt="" height="50" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cisco-Meraki-01-e1557822904186.png" width="188"/>
+                         
+                      
+                          <img class="w-full" alt="ruckus" height="71" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/ruckus.png" width="170"/>
+                         
+                      
+                          <img class="w-full" alt="" height="104" sizes="(max-width: 362px) 100vw, 362px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/silverpeak.jpg" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/12/silverpeak.jpg 362w, https://www.valuepointsystems.com/wp-content/uploads/2021/12/silverpeak-300x86.jpg 300w" width="362"/>
+                        
+                      
+                          <img class="w-full" alt="nivetti-systems-logo" height="90" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/nivetti-systems-logo.png" width="267"/>
+                         
+                      
+                          <img class="w-full" alt="" height="206" sizes="(max-width: 433px) 100vw, 433px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/versa.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/versa.png 433w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/versa-300x143.png 300w" width="433"/>
+                         
+                      
+                          <img class="w-full" alt="" height="50" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Viptela-01-e1557823659661.png" width="188"/>
+                         
+                      
+                          <img class="w-full" alt="" height="50" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Fortinet-01-e1557823017338.png" width="188"/>
+                         
+                      
+                          <img class="w-full" alt="" height="61" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/logitech.png" width="225"/>
+                         
+                     </div>
+                     <hr>
+                    </section>
+                    <div>
+                     <div class="bg-white p-6">
+                      <h4 class="text-xl font-bold text-center">
+                       Network Infra &amp; Integration Partners
+                      </h4>
+                     </div>
+                    </div>
+                    <section  class="w-full md:max-w-6xl p-6">
+                     <div class="grid grid-cols-1 md:grid-cols-5 gap-4">  
+                      
+                          <img class="w-full" alt="" height="66" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/Dlink.jpg" width="255"/>
+                         
+                      
+                          <img class="w-full" alt="" height="44" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/R-and-M.jpg" width="117"/>
+                         
+                      
+                          <img class="w-full" alt="" height="35" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/commscope.png" width="183"/>
+                         
+                      
+                          <img class="w-full" alt="" height="51" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/Belden.jpg" width="137"/>
+                         
+                      
+                          <img class="w-full" alt="" height="105" sizes="(max-width: 478px) 100vw, 478px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/panduit.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/12/panduit.png 478w, https://www.valuepointsystems.com/wp-content/uploads/2021/12/panduit-300x66.png 300w" width="478"/>
+                         
+                      
+                          <img class="w-full" alt="" height="512" sizes="(max-width: 1024px) 100vw, 1024px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/schneider-1024x512.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/12/schneider-1024x512.png 1024w, https://www.valuepointsystems.com/wp-content/uploads/2021/12/schneider-300x150.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2021/12/schneider-768x384.png 768w, https://www.valuepointsystems.com/wp-content/uploads/2021/12/schneider.png 1500w" width="1024"/>
+                         
+                      
+                          <img class="w-full" alt="" height="50" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/honeywell.jpg" width="200"/>
+                         
+                      
+                          <img class="w-full" alt="" height="141" sizes="(max-width: 520px) 100vw, 520px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/logitech.jpg" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/12/logitech.jpg 520w, https://www.valuepointsystems.com/wp-content/uploads/2021/12/logitech-300x81.jpg 300w" width="520"/>
+                         
+                      
+                          <img class="w-full" alt="" height="113" sizes="(max-width: 446px) 100vw, 446px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/Vertiv.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/12/Vertiv.png 446w, https://www.valuepointsystems.com/wp-content/uploads/2021/12/Vertiv-300x76.png 300w" width="446"/>
+                         
+                      
+                          <img class="w-full" alt="" height="56" src="https://www.valuepointsystems.com/wp-content/uploads/2021/12/netrack.jpg" width="177"/>
+                         
+                     </div>
+                    </section>
+                   </div>
+                  </div>
+                 </div>
+                </section>
+                <section  class="w-full bg-white flex justify-center py-20">
+                 <div>
+                  <div>
+                   <div>
+                    <div>
+                     <div>
+                      <a href="https://www.valuepointsystems.com/network/hpe-financial-services/">
+                       <img alt="HPE financial services banner" height="225" sizes="(max-width: 1024px) 100vw, 1024px" src="https://www.valuepointsystems.com/wp-content/uploads/2022/02/hpe-financial-services-banner-1024x225.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2022/02/hpe-financial-services-banner-1024x225.png 1024w, https://www.valuepointsystems.com/wp-content/uploads/2022/02/hpe-financial-services-banner-300x66.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2022/02/hpe-financial-services-banner-768x168.png 768w, https://www.valuepointsystems.com/wp-content/uploads/2022/02/hpe-financial-services-banner.png 1140w" width="1024"/>
+                      </a>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </section>
+                <section class="bg-[#f0f5f6] text-center py-12">
+                 <div>
+                  <div>
+                   <div>
+                    <div>
+                     <div>
+                      <h2 class="text-4xl font-medium text-[#1b2b4e] py-4">
+                       Network transformation Services
+                      </h2>
+                     </div>
+                    </div>
+                    <section class="w-full p-4 md:pt-4 md:pb-8 flex flex-col justify-center items-center text-[#1b2b4e]">
+                        <div class="w-full md:max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 border-2 border-gray-300 md:border-none">
+                            <div class=" border-gray-600 md:border-r-2 md:border-[#1b2b4e]">
+                                
+                                            <div class="flex flex-col justify-center items-center px-12">
+                                                <div class="w-32 h-32 my-12 rounded-3xl bg-[#1b2b4e] p-8 flex justify-center items-center">
+                                                    <a href="https://www.valuepointsystems.com/network/network-active-solutions/">
+                                                        <span class="text-orange-500">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-snow3" viewBox="0 0 16 16">
+                                                                <path d="M8 7.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1"/>
+                                                                <path d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793v-1.51l-2.053-1.232-1.348.778-.495 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.883-.237a.5.5 0 1 1 .258-.966l1.85.495L5 9.155v-2.31l-1.4-.808-1.85.495a.5.5 0 1 1-.259-.966l.884-.237-1.12-.646a.5.5 0 0 1 .5-.866l1.12.646-.237-.883a.5.5 0 1 1 .966-.258l.495 1.849 1.348.778L7.5 4.717v-1.51L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 0 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v1.51l2.053 1.232 1.348-.778.495-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495-1.4.808v2.31l1.4.808 1.849-.495a.5.5 0 1 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-1.348-.778L8.5 11.283v1.51l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5m2-6.783V6.783l-2-1.2-2 1.2v2.434l2 1.2z"/>
+                                                              </svg>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            
+                                                <h3 class="text-[#1b2b4e] text-2xl font-bold mb-8">
+                                                    <a href="https://www.valuepointsystems.com/network/network-active-solutions/">
+                                                        Network Active Solutions
+                                                    </a>
+                                                </h3>
+                                            
+                                                
+                                                <p class="text-gray-400">
+                                                    Device endpoint solutions including laptops, desktops, workstations and more
+                                                </p>
+                                                                                           
+                                                <div class="bg-[#1b2b4e] w-40 p-3 rounded-xl my-8">
+                                                    <a href="https://www.valuepointsystems.com/network/network-active-solutions/">
+                                                        <span>
+                                                            <span class="text-white">
+                                                                Check it out
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        
+                            </div>
+                    
+                            <div class="">
+                               
+                                <div class="flex flex-col justify-center items-center px-12">
+                                    <div class="w-32 h-32 my-12 rounded-3xl bg-[#1b2b4e] p-8 flex justify-center items-center">
+                                                <a href="https://www.valuepointsystems.com/network/network-infra-integration-services/">
+                                                   <span class="text-orange-500">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
+                                                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8"/>
+                                                      </svg>
+                                                   </span> 
+                                                </a>
+                                            </div>
+                                        
+                                            <h3 class="text-[#1b2b4e] text-2xl font-bold mb-8">
+                                                <a href="https://www.valuepointsystems.com/network/network-infra-integration-services/">
+                                                    Network Infra &amp; Integration
+                                                </a>
+                                            </h3>
+                                            <p class="text-gray-400">
+                                                Latest products &amp; devices to keep your workforce connected from any location
+                                            </p>
+                                                                                           
+                                        
+                                            <div class="bg-[#1b2b4e] w-40 p-3 rounded-xl my-8">
+                                                <a href="https://www.valuepointsystems.com/network/network-active-solutions/">
+                                                    <span>
+                                                        <span class="text-white">
+                                                            Check it out
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                    
+                            </div>
+                        </div>
+                    </section>
+                    
+                   </div>
+                  </div>
+                 </div>
+                </section>
+                <section class="bg-white flex justify-center">
+                 <div class="w-full md:max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12">
+                  <div>
+                   <div>
+                    <div>
+                     <div>
+                      <h6 class="font-bold text-blue-500 mt-12">
+                       DYNAMIC AND AGILE
+                      </h6>
+                     </div>
+                    </div>
+                    <div>
+                     <div>
+                      <h2 class="text-4xl font-medium text-red-500 pt-4" >
+                       Our support services lead the way
+                      </h2>
+                     </div>
+                    </div>
+                    <section class="py-4">
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-4">
+                      <div class="flex flex-col space-y-12 py-12">
+                       
+                        <div>
+                         <div>
+                          <div class="flex space-x-3">
+                           <div class="flex justify-center items-center rounded-full bg-[#1b2b4e]">
+                            <span class="m-4 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+                                    <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
+                                    <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+                                    <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>
+                                  </svg>
+                            </span>
+                           </div>
+                           <div class="flex items-center">
+                            <h6 class="font-bold text-[#1b2b4e]">
+                             <span>
+                              Lower hardware and operating costs
+                             </span>
+                            </h6>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div>
+                         <div>
+                          <div class="flex space-x-3">
+                            <div class="flex justify-center items-center rounded-full bg-[#1b2b4e]">
+                                <span class="m-4 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-toggle2-on" viewBox="0 0 16 16">
+                                    <path d="M7 5H3a3 3 0 0 0 0 6h4a5 5 0 0 1-.584-1H3a2 2 0 1 1 0-4h3.416q.235-.537.584-1"/>
+                                    <path d="M16 8A5 5 0 1 1 6 8a5 5 0 0 1 10 0"/>
+                                  </svg>
+                            </span>
+                           </div>
+                           <div class="flex items-center">
+                            <h6 class="font-bold text-[#1b2b4e]">
+                             <span>
+                              Easy-to-manage centralized controls
+                             </span>
+                            </h6>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       
+                      </div>
+                      <div class="flex flex-col space-y-12 py-12">
+                       
+                        <div>
+                         <div>
+                          <div class="flex space-x-3">
+                            <div class="flex justify-center items-center rounded-full bg-[#1b2b4e]">
+                                <span class="m-4 text-white">
+                                
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                                  </svg>
+                            </span>
+                           </div>
+                           <div class="flex items-center">
+                            <h6 class="font-bold text-[#1b2b4e]">
+                             <span>
+                              Future-ready infrastructure
+                             </span>
+                            </h6>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div>
+                         <div>
+                          <div class="flex space-x-3">
+                            <div class="flex justify-center items-center rounded-full bg-[#1b2b4e]">
+                                <span class="m-4 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                                    <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5M12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0M1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1M1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25"/>
+                                  </svg>
+                            </span>
+                           </div>
+                           <div class="flex items-center">
+                            <h6 class="font-bold text-[#1b2b4e]">
+                             <span>
+                              Access anytime, anywhere
+                             </span>
+                            </h6>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       
+                      </div>
+                     </div>
+                    </section>
+                   </div>
+                  </div>
+                  <div class="mt-20 mb-12">
+                    <div class="w-full h-full">
+                        <img class=" p-8 w-full h-full object-cover" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/it-networking.webp" />
+                    </div>
                 </div>
-            </div>
+                
+                  
+                 </div>
+                </section>
+                <section class="w-full bg-white py-12 flex justify-center"> 
+                 <div class="w-full md:max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div>
+                   <div>
+                    <div>
+                     <div>
+                      <img class="w-full max-w-lg md:w-3/4 md:h-full object-cover" alt="" height="1024" sizes="(max-width: 682px) 100vw, 682px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/man-using-app-on-smart-phone-to-control-central-he-79H3GA6-682x1024.jpg" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/man-using-app-on-smart-phone-to-control-central-he-79H3GA6-682x1024.jpg 682w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/man-using-app-on-smart-phone-to-control-central-he-79H3GA6-200x300.jpg 200w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/man-using-app-on-smart-phone-to-control-central-he-79H3GA6-768x1153.jpg 768w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/man-using-app-on-smart-phone-to-control-central-he-79H3GA6.jpg 866w" width="682"/>
+                     </div>
+                    </div>
+                    <div>
+                     <div class="relative">
+                      <img  class="absolute bottom-[-100px] right-[-40px]" height="703" sizes="(max-width: 900px) 100vw, 900px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/LU3KTGW.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/LU3KTGW.png 900w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/LU3KTGW-300x234.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/LU3KTGW-768x600.png 768w" width="900"/>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="p-4 md:p-12">
+                   <div>
+                    <div>
+                     <div>
+                      <div class="text-blue-500">
+                       NETWORK BENEFITS
+                      </div>
+                     
+                      <h2 class="text-4xl font-medium text-[#1b2b4e] pt-4 mb-8">
+                       Transform your networks for the benefits
+                      </h2>
+                     </div>
+                    
+                     <div>
+                      <ul>
+                       <li class="flex space-x-2">
+                        <span>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+                            <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.44 12.44 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049"/>
+                            <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+                        </svg>
+                        </span>
+                        <span>
+                         Optimize your network’s performance and efficiency—help your business achieve its full potential.
+                        </span>
+                       </li>
+                       <li class="flex space-x-2">
+                        <span>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+                            <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.44 12.44 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049"/>
+                            <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+                        </svg>
+                        </span>
+                        <span>
+                         Modernized networks provide your business more stability and reliability than aging legacy systems, making your business more agile and efficient
+                        </span>
+                       </li>
+                       <li class="flex space-x-2">
+                        <span>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+                            <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.44 12.44 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049"/>
+                            <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+                        </svg>
+                        </span>
+                        <span>
+                         Take advantage of automation and deliver next-gen services efficiently to your clients and do away with faulty and outdated routine manual tasks
+                        </span>
+                       </li>
+                       <li class="flex space-x-2">
+                        <span>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+                            <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.44 12.44 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049"/>
+                            <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+                        </svg>
+                        </span>
+                        <span>
+                         Streamline the deployment and maintenance of your IT infrastructures with a set of automation tools
+                        </span>
+                       </li>
+                       <li class="flex space-x-2">
+                        <span>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+                            <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.44 12.44 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049"/>
+                            <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+                        </svg>
+                        </span>
+                        <span>
+                         Eliminate time-consuming queues between consecutive steps in the automation process
+                        </span>
+                       </li>
+                       <li class="flex space-x-2">
+                        <span>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+                            <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.44 12.44 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049"/>
+                            <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+                        </svg>
+                        </span>
+                        <span>
+                         Experience significant increases in operational speed and efficiency—do away with downtime and save time, effort, and money
+                        </span>
+                       </li>
+                      </ul>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </section>
+                <section class="">
+                    <section>
+                        <div class="text-center pt-20 pb-4">
+                            <p class="text-[#1b2b4e] text-4xl font-medium">
+                                Our Accomplishments
+                            </p>
+                        </div>
+                    </section>
+                    <section class=" w-full flex justify-center items-center">
+                        <div class="w-full pb-12 h-auto md:max-w-6xl flex justify-center items-center">
+                            <div class="w-full flex flex-col justify-center items-center px-3">
+                                <div class="grid grid-cols-1 pb-12 md:grid-cols-3 bg-gray-100 p-5 justify-among items-center gap-20">
+                                    <div class="flex space-x-5  p-3 justify-center items-center">
+                                        
+                                        <div class="text-6xl font-light text-gray-300"><span class=" homepagenumn" data-target="100">0</span>%</div>
+                                        <div class="text-xl text-[#1b2b4e] font-bold text-center flex justify-center items-center"><p>Customer Satisfaction</p></div>
+                                    </div>
+                                    <div class="flex space-x-5  p-3 justify-center items-center">
+                                        
+                                        <div class="text-6xl font-light text-gray-300"><span class=" homepagenumn" data-target="1225">0</span></div>
+                                        <div class="text-xl text-[#1b2b4e] font-bold text-center flex justify-center items-center"><p>Solutions implemented</p></div>
+                                    </div>
+                                    <div class="flex space-x-5  p-3 justify-center items-center">
+                                        
+                                        <div class="text-6xl font-light text-gray-300"><span class=" homepagenumn" data-target="50">0</span></div>
+                                        <div class="text-xl text-[#1b2b4e] font-bold text-center flex justify-center items-center"><p>Sites Monitored</p></div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                
+                <section class="bg-white">
+                 <div>
+                  <div>
+                   <div>
+                    <div>
+                     <div class="text-center py-12">
+                      <div class="text-blue-500 font-bold">
+                       TESTIMONIALS
+                      </div>
+                     
+                      <h2 class="text-3xl font-bold text-[#1b2b4e]">
+                       How ValuePoint made a real difference
+                      </h2>
+                     </div>
+                    </div>
+                    <div class="carousel-container w-full max-w-6xl  overflow-hidden relative">
+                        <div class=" bg-white carousel-track flex transition-transform duration-500 ease-in-out">
+                            <div class="carousel-item flex-shrink-0 w-full max-w-2xl mx-auto border-2 border-white">
+                                <img src="https://www.valuepointsystems.com/wp-content/uploads/elementor/thumbs/controlling-smart-home-devices-using-a-digital-tab-RNGMSRR-qo6rys3dkc0u7tonkax5idvdv1zh93pt0ocucwp4pc.jpg" class="object-cover w-full">
+                            </div>
+                            <div class="carousel-item flex-shrink-0 w-full max-w-2xl mx-auto border-2 border-white">
+                                <img src="https://www.valuepointsystems.com/wp-content/uploads/elementor/thumbs/smartphone-with-smart-home-application-to-turn-on-G4G8H5K-qo6rys3dkc0u7tonkax5idvdv1zh93pt0ocucwp4pc.jpg" class="object-cover w-full">
+                            </div>
+                            <div class="carousel-item flex-shrink-0 w-full max-w-2xl mx-auto border-2 border-white">
+                                <img src="https://www.valuepointsystems.com/wp-content/uploads/elementor/thumbs/cotrolling-coffe-machine-with-a-smart-phone-XEXBWNJ-qo6rys3dkc0u7tonkax5idvdv1zh93pt0ocucwp4pc.jpg" class="object-cover w-full">
+                            </div>
+                            <div class="carousel-item flex-shrink-0 w-full max-w-2xl mx-auto border-2 border-white">
+                                <img src="https://www.valuepointsystems.com/wp-content/uploads/elementor/thumbs/mature-man-using-app-on-phone-to-control-digital-c-UMNVJ7X-qo6rys3dkc0u7tonkax5idvdv1zh93pt0ocucwp4pc.jpg" class="object-cover w-full">
+                            </div>
+                            <div class="carousel-item flex-shrink-0 w-full max-w-2xl mx-auto border-2 border-white">
+                                <img src="https://www.valuepointsystems.com/wp-content/uploads/elementor/thumbs/controlling-smart-home-devices-using-a-digital-tab-RNGMSRR-qo6rys3dkc0u7tonkax5idvdv1zh93pt0ocucwp4pc.jpg" class="object-cover w-full">
+                            </div>
+                            <div class="carousel-item flex-shrink-0 w-full max-w-2xl mx-auto border-2 border-white">
+                                <img src="https://www.valuepointsystems.com/wp-content/uploads/elementor/thumbs/smartphone-with-smart-home-application-to-turn-on-G4G8H5K-qo6rys3dkc0u7tonkax5idvdv1zh93pt0ocucwp4pc.jpg" class="object-cover w-full">
+                            </div>
+                            <div class="carousel-item flex-shrink-0 w-full max-w-2xl mx-auto border-2 border-white">
+                                <img src="https://www.valuepointsystems.com/wp-content/uploads/elementor/thumbs/cotrolling-coffe-machine-with-a-smart-phone-XEXBWNJ-qo6rys3dkc0u7tonkax5idvdv1zh93pt0ocucwp4pc.jpg" class="object-cover w-full">
+                            </div>
+                            <div class="carousel-item flex-shrink-0 w-full max-w-2xl mx-auto border-2 border-white">
+                                <img src="https://www.valuepointsystems.com/wp-content/uploads/elementor/thumbs/mature-man-using-app-on-phone-to-control-digital-c-UMNVJ7X-qo6rys3dkc0u7tonkax5idvdv1zh93pt0ocucwp4pc.jpg" class="object-cover w-full">
+                            </div>
+                        </div>
+                    </div>
+                    
+                   </div>
+                  </div>
+                 </div>
+                </section>
+                <section class="w-full bg-white py-12">
+                 <div>
+                  <div class="w-full flex justify-center">
+                   <div class="w-full md:max-w-6xl ">
+                    <section class="w-full max-w-7xl p-4">
+                     <div class="flex flex-col md:flex-row items-center space-x-6 py-4 ">
+                      <div>
+                       <div>
+                        <div>
+                         <div>
+                          <div class="flex flex-col items-center md:flex-row-reverse  space-x-3">
+                           <figure class="w-24 h-24 md:w-20 md:h-20 ">
+                            <img alt="customer testimonials" height="1280" sizes="(max-width: 1280px) 100vw, 1280px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon.png 1280w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-300x300.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-1024x1024.png 1024w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-150x150.png 150w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-768x768.png 768w" width="1280"/>
+                           </figure>
+                           <div class="flex flex-col justify-end items-center py-3 w-48">
+                            <h3 class="text-lg font-bold ">
+                             Surjay Singh
+                            </h3>
+                            <p class="text-gray-400 font-bold "> 
+                             CTO - Banking Domain
+                            </p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div>
+                       <div>
+                        <div>
+                         <div>
+                          <div>
+                           <div class="text-2xl font-bold">
+                            "I have used Value Point services for years now and in 2 different companies. The value and service cannot be beat. Much better than OEM support."
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </section>
+                    <section>
+                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                      <div>
+                       <div class="flex flex-col md:flex-row items-center md:items-start space-x-0 space-y-4 md:space-x-3 md:space-y-0 justify-center">
+                        <div>
+                         <div>
+                          <div class="flex ">
+                           <figure class="w-24 h-24 md:w-16 md:h-16 ">
+                            <img alt="customer testimonials" height="1280" sizes="(max-width: 1280px) 100vw, 1280px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon.png 1280w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-300x300.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-1024x1024.png 1024w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-150x150.png 150w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-768x768.png 768w" width="1280"/>
+                           </figure>
+                           
+                          </div>
+                         </div>
+                        </div>
+                        <div class="flex flex-col items-center md:items-start space-x-0 space-y-4 md:space-x-3 md:space-y-0 justify-center">
+                            <div>
+                                <p class="text-lg text-gray-500">
+                                    "Value Point has always been there for me with what I need. I can always count on my account manager to provide me with good solutions for hardware I need, when I need it, at a price point that is hard to beat with a lifetime warranty to boot!"
+                                </p>
+                                </div>
+                         <div>
+                          <p class="font-bold pt-6">
+                           Amit Mishra
+                          </p>
+                         </div>
+                        
+                         <div>
+                          <h5 class="font-bold text-gray-400">
+                           IT Director –
+                           <em>
+                            Healthcare Company
+                           </em>
+                          </h5>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div>
+                        <div class="flex flex-col md:flex-row items-center md:items-start space-x-0 space-y-4 md:space-x-3 md:space-y-0 justify-center">
+                            <div>
+                         <div>
+                          <div class="flex space-x-3">
+                           <figure class="w-24 h-24 md:w-16 md:h-16 ">
+                            <img alt="customer testimonials" height="1280" sizes="(max-width: 1280px) 100vw, 1280px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon.png 1280w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-300x300.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-1024x1024.png 1024w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-150x150.png 150w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-768x768.png 768w" width="1280"/>
+                           </figure>
+                           
+                          </div>
+                         </div>
+                        </div>
+                        <div class="flex flex-col items-center md:items-start space-x-0 space-y-4 md:space-x-3 md:space-y-0 justify-center">
+                            <div>
+                                <p class="text-lg text-gray-500">
+                                 "I’ve worked with numerous IT firms throughout my career and I can say that Value Point is, by far, the best one I have worked with. They do whatever it takes to accomplish what I need them to do, and do so “behind the scenes” as best they can, realizing we need to focus on the day-to-day demands of our business"
+                                </p>
+                               </div>
+                         <div>
+                          <p class="font-bold pt-6">
+                           Deepika Reddy
+                          </p>
+                         </div>
+                        
+                         <div>
+                          <h5 class="font-bold text-gray-400">
+                           IT Manager
+                           <em>
+                            , Website Solutions Company
+                           </em>
+                          </h5>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                      <div>
+                        <div class="flex flex-col md:flex-row items-center md:items-start space-x-0 space-y-4 md:space-x-3 md:space-y-0 justify-center">
+                            <div>
+                         <div>
+                          <div class="flex space-x-3">
+                           <figure class="w-24 h-24 md:w-16 md:h-16 ">
+                            <img alt="customer testimonials" height="1280" sizes="(max-width: 1280px) 100vw, 1280px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon.png 1280w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-300x300.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-1024x1024.png 1024w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-150x150.png 150w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-768x768.png 768w" width="1280"/>
+                           </figure>
+                           
+                          </div>
+                         </div>
+                        </div>
+                        <div class="flex flex-col items-center md:items-start space-x-0 space-y-4 md:space-x-3 md:space-y-0 justify-center">
+                            <div>
+                                <p class="text-lg text-gray-500">
+                                 "Value Point sets the bar very high in quality of product, service and pricing. Value Point strives to re-invent themselves to keep pace with the changes and advancements in technology."
+                                </p>
+                               </div>
+                         <div>
+                          <p class="font-bold pt-6">
+                           Manjunath VS
+                          </p>
+                         </div>
+                        
+                         <div>
+                          <h5 class="font-bold text-gray-400">
+                           Network Manager
+                           <em>
+                            , Educational Institution
+                           </em>
+                          </h5>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </section>
+                   </div>
+                  </div>
+                 </div>
+                </section>
+                <section>
+                    <div id="parallax-2" class="parallax bg-cover bg-center" style="background-image: url('https://www.valuepointsystems.com/wp-content/uploads/2021/11/young-lady-using-voice-assistant-on-cellphone-and-pc.jpg')">
+                        <div class="w-full h-full bg-black bg-opacity-60  text-white flex flex-col justify-center items-center px-4 py-32">
+                            <div class="w-full max-w-7xl flex  flex-col justify-center items-center">
+                                <div>
+                                    <p class="text-3xl font-bold text-center text-white">Want to know how your business can benefit from our deliverables?</p>
+                                    <div><p class="text-lg break-words font-medium text-center px-16 lg:px-40 py-6">Value Point Systems is helping global businesses on their digital transformation journeys: one business at a time.</p></div>
+                                </div>
             
-        </div>    
-        
-        
+                                <div class="text-sm px-6 py-5 font-bold text-white bg-[#0133b6] hover:bg-green-500 w-64 rounded-tl-[20px] rounded-br-[20px] text-center mt-4 mb-6 "><a href="contact.html">Contact Us Today</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>   
+               </div>
+        </main>
     </div>
 
-    
+
+
+
     <!-- Footer Section -->
     <footer class="bg-white w-full">
         <div class="bg-green-100 rounded-br-[220px] flex justify-center items-center">
@@ -222,7 +941,7 @@
                 <div class="grid grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 lg:gap-4">
                     <div class="col-span-3 grid grid-rows-3 md:grid-cols-3 gap-1 md:grid-rows-1 md:gap-4 sm:w-full md:w-auto justify-around md:flex-row space-x-3">
                         <div class="text-center p-3">
-                            <img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" alt="Placeholder Image" class="mx-auto mb-4 py-2 md:py-10">
+                            <a href="../homepage.html"><img src="..\images\xclogo.png" class="w-48 md:w-80 lg:w-48 py-2" /></a>
                             <p class="mb-4 text-lg text-medium text-green-950">Accelerating our clients’ business transformation journeys through our competence in Consulting, Integration, Security by delivering Next-Gen Digital Infrastructure Solutions.</p>
                             <div class="flex justify-center space-x-2">
                                 <a href="#" class="rounded-full bg-white p-2 w-10 h-10 flex justify--center items-center">
@@ -242,23 +961,23 @@
                         <div class="text-green-950">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Quick Links</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
-                                <li><a href="About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
-                                <li><a href="Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
+                                <li><a href="../homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
+                                <li><a href="../About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
+                                <li><a href="../Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
                                 <li><a href="#" class="hover:text-[#0133b6] text-lg font-medium">Shop</a></li>
-                                <li><a href="Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
-                                <li><a href="contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
+                                <li><a href="../Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
+                                <li><a href="../contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
                             </ul>
                         </div>
                         <div class="text-green-950 my-10">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Portfolio</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
-                                <li><a href="Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
-                                <li><a href="Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
-                                <li><a href="Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
-                                <li><a href="Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
-                                <li><a href="IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
+                                <li><a href="../CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
+                                <li><a href="../Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
+                                <li><a href="../Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
+                                <li><a href="../Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
+                                <li><a href="../Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
+                                <li><a href="../IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
                             </ul>
                         </div>
                     </div>
@@ -288,7 +1007,7 @@
                 <div class="flex flex-col space-y-6">
                     <div class="grid-cols-3 gap-1 grid-rows-1 gap-4 sm:w-full md:w-auto justify-around">
                         <div class="text-center p-3">
-                            <img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" alt="Placeholder Image" class="mx-auto mb-4 py-2 md:py-10">
+                            <img src="..\images\xclogo.png" alt="Logo Image" class="mx-auto mb-4 py-2 md:py-10" />
                             <p class="mb-4 text-lg text-medium text-green-950">Accelerating our clients’ business transformation journeys through our competence in Consulting, Integration, Security by delivering Next-Gen Digital Infrastructure Solutions.</p>
                             <div class="flex justify-center space-x-2">
                                 <a href="#" class="rounded-full bg-white p-2 w-10 h-10 flex justify--center items-center">
@@ -308,23 +1027,23 @@
                         <div class="text-green-950">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Quick Links</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
-                                <li><a href="About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
-                                <li><a href="Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
+                                <li><a href="../homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
+                                <li><a href="../About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
+                                <li><a href="../Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
                                 <li><a href="#" class="hover:text-[#0133b6] text-lg font-medium">Shop</a></li>
-                                <li><a href="Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
-                                <li><a href="contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
+                                <li><a href="../Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
+                                <li><a href="../contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
                             </ul>
                         </div>
                         <div class="text-green-950 my-10">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Portfolio</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
-                                <li><a href="Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
-                                <li><a href="Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
-                                <li><a href="Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
-                                <li><a href="Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
-                                <li><a href="IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
+                                <li><a href="../CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
+                                <li><a href="../Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
+                                <li><a href="../Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
+                                <li><a href="../Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
+                                <li><a href="../Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
+                                <li><a href="../IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
                             </ul>
                         </div>
                     </div>
@@ -356,11 +1075,11 @@
                 <div>
                     <div class="container text-center">
                         <div class="flex items-center space-x-4">
-                            <img src="images/OCT-2022-–-OCT-2023-176x300.png" alt="Image 1" class="w-12 object-cover rounded-lg">
-                            <img src="images/value30-white-logo-2.png" alt="Image 2" class="h-12 object-cover rounded-lg">
-                            <object data="images/iso-logo-vector.svg" type="image/svg+xml" class="w-16">
+                            <img src="../images/OCT-2022-–-OCT-2023-176x300.png" alt="Image 1" class="w-12 object-cover rounded-lg">
+                            <img src="../images/value30-white-logo-2.png" alt="Image 2" class="h-12 object-cover rounded-lg">
+                            <object data="../images/iso-logo-vector.svg" type="image/svg+xml" class="w-16">
                                 <!-- SVG fallback -->
-                                <img src="images/iso-logo-vector.svg" alt="SVG" class="w-6 h-full object-contain">
+                                <img src="../images/iso-logo-vector.svg" alt="SVG" class="w-6 h-full object-contain">
                             </object>
                         </div>
                     </div>
@@ -372,8 +1091,9 @@
         </div>
     </footer>
 
+
      <!-- Fixed Bottom Bar / Sticky Side Bar -->
-    <div id="bottom-bar" class="fixed bottom-0 left-0 w-full bg-white shadow-md grid grid-cols-3 justify-around items-center lg:hidden">
+    <div id="bottom-bar" class="fixed bottom-0 left-0 w-full bg-white shadow-md grid grid-cols-3 justify-around items-center lg:hidden z-20">
         <div id="consultationSection2" class="flex flex-col items-center bg-blue-800">
             <span class="fas fa-envelope text-white  mt-1"></span>
             <span class="text-white text-sm font-light" style="font-size: 12px">Free Consult</span>
@@ -386,7 +1106,7 @@
         </a>
     </div>
 
-    <div id="side-bar" class="hidden lg:flex fixed top-1/2 right-0 transform -translate-y-1/2 flex justify-end text-white">
+    <div id="side-bar" class="hidden lg:flex fixed top-1/2 right-0 transform -translate-y-1/2 flex justify-end text-white z-20">
         <div class="flex flex-col items-end">
             <div id="consultationSection" class="bg-blue-800 w-11 h-40 rounded-tl-2xl flex justify-center items-center">
                 <span class="text-sm transform -rotate-90 whitespace-nowrap"><span class="fas fa-envelope mx-2 py-1"></span>Free Consult</span>
@@ -408,7 +1128,7 @@
 
 
     <!-- Sliding Form from right side -->
-    <div class="fixed top-1/2 mr-11 mb-24 right-0 transform -translate-y-1/2 w-900px" style="margin-top: -115px;">
+    <div class="fixed top-1/2 mr-11 mb-24 right-0 transform -translate-y-1/2 w-900px z-20" style="margin-top: -115px;">
         <div id="formSlideOut" class="hidden bg-blue-50 border-2 border-blue-100 p-5 w-900px rounded-lg absolute top-0 right-0 flex flex-col justify-center items-center transition-all duration-100 ease-in-out">
             <div class="flex justify-between w-full">
                 <p class="flex text-blue-800 font-medium">Free Consultation</p>
@@ -424,7 +1144,7 @@
         </div>
     </div>
     <!-- Sliding Form from bottom side -->
-    <div class="fixed top-1/2 right-0 transform -translate-y-1/2 lg:mr-11 lg:mb-24 lg:top-auto lg:translate-y-0 w-full lg:hidden" style="margin-top: 0px">
+    <div class="fixed top-1/2 right-0 transform -translate-y-1/2 lg:mr-11 lg:mb-24 lg:top-auto lg:translate-y-0 w-full lg:hidden z-20" style="margin-top: 0px">
         <div id="formSlideOut2" class="hidden bg-blue-100 border border-grey-50 p-5 w-auto w-full rounded-tl-2xl rounded-tr-2xl absolute top-0 right-0 hover:flex flex flex-col justify-center items-center transition-all duration-100 ease-in-out">
             <div class="flex justify-between w-full font-medium">
                 <p class="flex text-blue-800">Free Consultation</p>
@@ -465,8 +1185,9 @@
     
     <!-- Include JavaScript File -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="index.js"></script>
-
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="../index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

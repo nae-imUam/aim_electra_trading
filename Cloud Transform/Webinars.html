@@ -3,93 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar and Sidebar</title>
+    <title>
+        Cloud Computing Webinars
+    </title>   
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Include CSS File -->
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body class="bg-gray-100">
 
-    <!-- Fixed Top Navigation -->
-    <nav class="fixed top-0 w-full bg-white shadow-md z-50 py-4">
-        <div class="container max-w-7xl mx-auto px-4 py-2 flex justify-between md:flex-col lg:flex-row lg:justify-between items-center">
-            <div class="">
-                <div class="text-xl font-bold"><img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" class="w-48 md:w-80 lg:w-48" /></div>
-            </div>
-            <div class="md:w-full lg:w-auto flex justify-between md:pt-2 lg:pt-0">
-                <div class="flex space-x-6">
-                    <div class="lg:hidden">
-                        <button id="menu-toggle" class="text-3xl focus:outline-none text-blue-800">&#9776;</button>
-                    </div>
-                    <div class="hidden lg:flex space-x-5 font-light">
-                        <!-- Portfolio Accordion -->
-                        <div class="relative inline-block text-left">
-                            <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
-                                <p>PORTFOLIO</p>
-                                <svg class=" ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
-                                    <a href="cybersecurity/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cyber Security</a>
-                                    <a href="Data Center/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Data Center Modernization</a>
-                                    <a href="Network/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Network Transformation</a>
-                                    <a href="Cloud Transform/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cloud Transformation</a>
-                                    <a href="Digital Workplace/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Digital Workplace</a>
-                                    <a href="IT managed/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">IT Managed Services</a>
-                                </div>
+  <!-- Fixed Top Navigation -->
+  <nav class="fixed top-0 w-full bg-white shadow-sm z-50 pt-4 pb-0">
+    <div class="container max-w-7xl mx-auto px-4 py-2 flex justify-between md:flex-col lg:flex-row lg:justify-between items-center">
+        <div class="">
+            <div class="text-xl font-bold"><a href="../homepage.html"><img src="..\images\xclogo.png" class="w-48 md:w-80 lg:w-48" /></a></div>
+        </div>
+        <div class="md:w-full lg:w-auto flex justify-between md:pt-2 lg:pt-0">
+            <div class="flex space-x-6">
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="text-3xl focus:outline-none text-blue-800">&#9776;</button>
+                </div>
+                <div class="hidden lg:flex space-x-5 font-light">
+                    <!-- Portfolio Accordion -->
+                    <div class="relative inline-block text-left">
+                        <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
+                            <p>PORTFOLIO</p>
+                            <svg class=" ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
+                                <a href="../cybersecurity/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cyber Security</a>
+                                <a href="../Data Center/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Data Center Modernization</a>
+                                <a href="../Network/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Network Transformation</a>
+                                <a href="../Cloud Transform/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cloud Transformation</a>
+                                <a href="../Digital Workplace/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Digital Workplace</a>
+                                <a href="../IT managed/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">IT Managed Services</a>
                             </div>
                         </div>
-                        <!-- About Accordion -->
-                        <div class="relative inline-block text-left">
-                            <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
-                                <p>ABOUT</p>
-                                <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
-                                    <a href="About.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">About ValuePoint</a>
-                                    <a href="About.html/#why-valuepoint" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Why ValuePoint</a>
-                                    <a href="About.html/#the-board" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">The Board</a>
-                                    <a href="About.html/#our-leadership" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Our Leadership</a>
-                                    <a href="About.html/#awards-recognition" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Awards & Recognition</a>
-                                </div>
+                    </div>
+                    <!-- About Accordion -->
+                    <div class="relative inline-block text-left">
+                        <a href="About.html" class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
+                            <p>ABOUT</p>
+                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
+                                <a href="../About.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">About ValuePoint</a>
+                                <a href="../About.html/#why-valuepoint" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Why ValuePoint</a>
+                                <a href="../About.html/#the-board" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">The Board</a>
+                                <a href="../About.html/#our-leadership" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Our Leadership</a>
+                                <a href="../About.html/#awards-recognition" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Awards & Recognition</a>
                             </div>
                         </div>
-                        <a href="Partners.html" class="hover:text-blue-800">PARTNERS</a>
-                        <a href="Industries.html" class="hover:text-blue-800">INDUSTRIES</a>
-                        <a href="Blogs.html" class="hover:text-blue-800">BLOGS</a>
-                        <a href="Career.html" class="hover:text-blue-800">CAREERS</a>
-                        <a href="contact.html" class="hover:text-blue-800">CONTACT</a>
                     </div>
-                </div>
-                <div class="hidden md:flex lg:hidden w-128 bg-[#0133b6] hover:bg-green-950 rounded-tl-2xl rounded-br-2xl ">
-                    <div class="ml-2 p-4 mx-5 text-white font-bold">
-                        +917899900121
-                    </div>
-                    
+                    <a href="../Partners.html" class="hover:text-blue-800">PARTNERS</a>
+                    <a href="../Industries.html" class="hover:text-blue-800">INDUSTRIES</a>
+                    <a href="../Blogs.html" class="hover:text-blue-800">BLOGS</a>
+                    <a href="../Career.html" class="hover:text-blue-800">CAREERS</a>
+                    <a href="../contact.html" class="hover:text-blue-800">CONTACT</a>
                 </div>
             </div>
-            <div class="hidden  lg:flex w-128 bg-[#0133b6] hover:bg-green-950 rounded-tl-2xl rounded-br-2xl  ">
+            <div class="hidden md:flex lg:hidden w-128 bg-[#0133b6] hover:bg-green-500 rounded-tl-2xl rounded-br-2xl ">
                 <div class="ml-2 p-4 mx-5 text-white font-bold">
                     +917899900121
                 </div>
                 
             </div>
         </div>
+        <div class="hidden  lg:flex w-128 bg-[#0133b6] hover:bg-green-500 rounded-tl-2xl rounded-br-2xl  ">
+            <div class="ml-2 p-4 mx-5 text-white font-bold">
+                +917899900121
+            </div>
+            
+        </div>
+    </div>
+
+        <!-- Fixed Top Navigation2 -->
+        <div class="w-full bg-gray-400 shadow-md">
+            <div class="relative container mx-auto  justify-center items-center py-1 px-6 ">
+                <!-- Page Name -->
+                <div class=" absolute text-lg top-0 left-0 font-medium text-gray-700 p-1">
+                    Network Transformation
+                </div>
+                <!-- Navigation Links -->
+                <div class="flex space-x-8 pt-6 md:pt-0 justify-center">
+                    <a href="Overview.html" class="text-gray-700 hover:text-blue-700">Overview</a>
+                    <a href="Services.html" class="text-gray-700 hover:text-blue-700">Services</a>
+                    <a href="CaseStudies.html" class="text-gray-700 hover:text-blue-700">Case Studies</a>
+                    <a href="Webinars.html" class="text-gray-700 hover:text-blue-700">Webinars</a>
+
+                </div>
+            </div>
+        </div>
     </nav>
     
+    
     <!-- Sidebar -->
-    <div id="sidebar" class="fixed top-0 left-0 w-[360px] bg-white shadow-md h-full z-50 transform -translate-x-full transition-transform duration-200 lg:hidden">
+    <div id="sidebar" class="fixed top-0 left-0 w-[360px] bg-white shadow-md h-full z-50 transform -translate-x-full transition-transform duration-200 lg:hidden z-20">
         <div class="mt-5 mb-6 ml-72 w-12 p-0 bg-blue-700 rounded-tl-lg rounded-br-lg flex justify-center items-center">
             <div id="menu-close" class=" font-bold text-2xl text-white">&times;</div>
         </div>
-        <img  src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\clogo.png" class="w-full " />
+        <a href="../homepage.html"><img   src="..\images\xclogo.png" class="w-full " /></a>
         <nav class="mt-3 mx-5">
         <!-- Accordion -->
         <div class="w-full max-w-lg mx-auto bg-white rounded-lg">
@@ -102,83 +122,352 @@
                     </svg>
                 </button>
                 <div class="accordion-content hidden px-4 py-2 text-gray-700">
-                    <a href="cybersecurity/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cyber Security</a>
-                    <a href="Data Center/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Data Center Modernization</a>
-                    <a href="Network/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Network Transformation</a>
-                    <a href="Cloud Transform/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cloud Transformation</a>
-                    <a href="Digital Workplace/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Digital Workplace</a>
-                    <a href="IT managed/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">IT Managed Services</a>
+                    <a href="../cybersecurity/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cyber Security</a>
+                    <a href="../Data Center/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Data Center Modernization</a>
+                    <a href="../Network/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Network Transformation</a>
+                    <a href="../Cloud Transform/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cloud Transformation</a>
+                    <a href="../Digital Workplace/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Digital Workplace</a>
+                    <a href="../IT managed/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">IT Managed Services</a>
                 </div>
             </div>
             <!-- Accordion Item 2 -->
             <div class="border-b">
-                <button class="accordion-button w-full text-left px-4 py-2 text-gray-800 hover:text-blue-800 font-medium focus:outline-none flex justify-between"">
+                <a  href="About.html"  class="accordion-button w-full text-left px-4 py-2 text-gray-800 hover:text-blue-800 font-medium focus:outline-none flex justify-between"">
                     <p>About</p>
                     <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
-                </button>
+                </a>
                 <div class="accordion-content hidden px-4 py-2 text-gray-700">
-                    <a href="About.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">About ValuePoint</a>
-                    <a href="About.html/#why-valuepoint" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Why ValuePoint</a>
-                    <a href="About.html/#the-board" class="block py-2 text-sm text-gray-700 hover:text-blue-800">The Board</a>
-                    <a href="About.html/#our-leadership" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Our Leadership</a>
-                    <a href="About.html/#awards-recognition" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Awards & Recognition</a>
+                    <a href="../About.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">About ValuePoint</a>
+                    <a href="../About.html/#why-valuepoint" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Why ValuePoint</a>
+                    <a href="../About.html/#the-board" class="block py-2 text-sm text-gray-700 hover:text-blue-800">The Board</a>
+                    <a href="../About.html/#our-leadership" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Our Leadership</a>
+                    <a href="../About.html/#awards-recognition" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Awards & Recognition</a>
                 </div>
             </div>
             <!-- Additional Accordion Items can be added here following the same structure -->
         </div>
 
-        <a href="Partners.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Partner</a>
-        <a href="Industries.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Industries</a>
-        <a href="Blogs.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Blog</a>
-        <a href="Career.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Career</a>
-        <a href="contact.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Contact</a>
+        <a href="../Partners.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Partner</a>
+        <a href="../Industries.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Industries</a>
+        <a href="../Blogs.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Blog</a>
+        <a href="../Career.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Career</a>
+        <a href="../contact.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Contact</a>
     </nav>
     </div>
 
     <!-- Main Content -->
-    <div id="main-content" class="container mx-auto p-4 h-full">
-        <div class="pt-24 md:pt-48 lg:pt-24"></div>
-        <h1 class="text-2xl font-bold">Welcome to MyWebsite</h1>
-        <p class="mt-4">Content goes here...</p>
+    <div id="main-content" class="">
+        <div class="mt-24 md:mt-48 lg:mt-32"></div>
+        <main class="mt-8 md:mt-5">
+            <div>
 
-        <div class="w-1/2">
-            <div class="flex flex-col items-center">
-                <!-- Large Box with Text -->
-                <div class="relative bg-blue-500 w-24 h-72 flex justify-center items-center cursor-pointer">
-                    <p class="absolute -right-8 transform -rotate-90 text-white">Hello Kid</p>
-                </div>
-                <!-- Square Boxes with Icon -->
-                <div class="relative bg-green-500 w-12 h-12 flex justify-center items-center transition-all duration-500 hover:w-24">
-                    <div class="flex items-center justify-center w-full h-full">
-                        <i class="fas fa-phone text-white"></i>
+                <section class="w-full bg-[#e3f4fc]">
+                    <div class="w-full flex flex-col md:flex-row items-center bg-[#e3f4fc] py-12 md:py-16 lg:py-20" >
+                        <img class="w-[30%]" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/elements-isometric-distributed-cloud-vector-concept-24V2XK7-2020-01-18.png" />
+                        <div class="w-full flex justify-center items-center text-[#263351] text-5xl lg:text-[80px] font-bold">
+                            <p>Webinars</p>
+                        </div>
                     </div>
-                    <p class="absolute right-0 transform translate-x-full text-white opacity-0 transition-opacity duration-500">Hello again</p>
-                </div>
-                <div class="relative bg-yellow-500 w-12 h-12 flex justify-center items-center transition-all duration-500 hover:w-24">
-                    <div class="flex items-center justify-center w-full h-full">
-                        <i class="fas fa-phone text-white"></i>
+                   </section>
+
+            </section>
+            <section>
+             <div>
+              <div>
+               <div class="grid grid-cols-1 gap-8">
+                <section class="w-full flex justify-center my-12 items-center">
+                 <div class="w-full px-4 md:max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8  bg-gray-300 p-8 rounded-2xl">
+                  <div>
+                   <div>
+                    <div>
+                     <div>
+                      <img alt="cloud comparison webinar" height="621" sizes="(max-width: 1024px) 100vw, 1024px" src="https://www.valuepointsystems.com/wp-content/uploads/2022/01/cloud-comparison-webinar-1024x621.jpg" srcset="https://www.valuepointsystems.com/wp-content/uploads/2022/01/cloud-comparison-webinar-1024x621.jpg 1024w, https://www.valuepointsystems.com/wp-content/uploads/2022/01/cloud-comparison-webinar-300x182.jpg 300w, https://www.valuepointsystems.com/wp-content/uploads/2022/01/cloud-comparison-webinar-768x465.jpg 768w, https://www.valuepointsystems.com/wp-content/uploads/2022/01/cloud-comparison-webinar.jpg 1188w" width="1024"/>
+                     </div>
                     </div>
-                    <p class="absolute right-0 transform translate-x-full text-white opacity-0 transition-opacity duration-500">Hello again</p>
-                </div>
+                   </div>
+                  </div>
+                  <div>
+                   <div>
+                    <div>
+                     <div>
+                      <h4 class="text-xl text-medium py-2">
+                       <strong>DATE:</strong> 28-FEB-2022 | Time: 11 AM – 12 PM
+                      </h4>
+                     </div>
+                    </div>
+                    <div>
+                     <div>
+                      <h2 class="text-3xl font-medium py-2">
+                       Public cloud Comparison (AWS-Azure-Google cloud)
+                      </h2>
+                     </div>
+                    </div>
+                    <div>
+                     <div class="py-2">
+                      <p>
+                       <strong>
+                        Duration:
+                       </strong>
+                       One Hour |
+                       <strong>
+                        Cost:
+                       </strong>
+                       Free
+                       <br/>
+                       <strong>
+                        Agenda:
+                       </strong>
+                      </p>
+                      <ul class="pl-12">
+                       <li>
+                        Public Cloud – Regions and Availability Zones
+                       </li>
+                       <li>
+                        Public Cloud – Compute solutions
+                       </li>
+                       <li>
+                        Public Cloud – Storage Solutions
+                       </li>
+                       <li>
+                        Public Cloud-  Database solutions
+                       </li>
+                       <li>
+                        Public Cloud – Network and security solutions
+                       </li>
+                      </ul>
+                      <p class="py-2">
+                       <strong>
+                        Live Demo:
+                       </strong>
+                       Deploying production-grade web infrastructure on AWS cloud – VM’s, load balancer, and cloud DNS
+                      </p>
+                     </div>
+                    </div>
+                    <div>
+                     <div class="mt-8">
+                      <div class="bg-[#0133b6] py-3 text-center text-white">
+                       <a href="https://teams.microsoft.com/registration/Kf3da_qT5U61cAxAfFMIlg,q7yS3ityOEiGyu4QR8BiWA,PMvYGJjrU0KuVP0iSI99Yg,fvboCOaJA0qdQenqp7qIZg,IsTGeIsMKkGFu4fF6yFbbQ,lWS80aaSVEK6UBis1K0M9w?mode=read&amp;tenantId=6bddfd29-93fa-4ee5-b570-0c407c530896" rel="noopener" target="_blank">
+                        <span>
+                         <span>
+                          Register Now
+                         </span>
+                        </span>
+                       </a>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </section>
+               </div>
+              </div>
+             </div>
+            </section>
+            <section>
+             <div>
+              <div>
+               <div>
+                <section class="w-full flex justify-center my-12 items-center">
+                 <div class="w-full px-4 md:max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8  bg-gray-300 p-8 rounded-2xl">
+                  <div>
+                   <div>
+                    <div>
+                     <div>
+                      <img alt="" height="498" sizes="(max-width: 1024px) 100vw, 1024px" src="https://www.valuepointsystems.com/wp-content/uploads/2022/01/devops-webinar-1-1024x498.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2022/01/devops-webinar-1-1024x498.png 1024w, https://www.valuepointsystems.com/wp-content/uploads/2022/01/devops-webinar-1-300x146.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2022/01/devops-webinar-1-768x374.png 768w, https://www.valuepointsystems.com/wp-content/uploads/2022/01/devops-webinar-1-1536x747.png 1536w, https://www.valuepointsystems.com/wp-content/uploads/2022/01/devops-webinar-1-2048x997.png 2048w" width="1024"/>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div>
+                   <div>
+                    <div>
+                     <div>
+                      <h4 class="text-xl text-medium py-2">
+                       <strong>DATE:</strong> 03-MAR-2022 | Time: 03 PM – 04 PM
+                      </h4>
+                     </div>
+                    </div>
+                    <div>
+                     <div>
+                      <h2 class="text-3xl font-medium py-2">
+                       Demystifying Devops
+                      </h2>
+                     </div>
+                    </div>
+                    <div>
+                     <div class="py-2">
+                      <p>
+                       <strong>
+                        Duration:
+                       </strong>
+                       One Hour |
+                       <strong>
+                        Cost:
+                       </strong>
+                       Free
+                       <br/>
+                       <strong>
+                        Agenda:
+                       </strong>
+                      </p>
+                      <ul class="pl-12">
+                       <li>
+                        Define DevOps
+                       </li>
+                       <li>
+                        Continuous Integration and Continuous Deployment
+                       </li>
+                       <li>
+                        Dev tools – Introduction ( Git, Sonarqube, Jenkins, Nexus)
+                       </li>
+                       <li>
+                        Ops tools – Introduction ( terraform, ansible, chef, and Puppet)
+                       </li>
+                       <li>
+                        Containerization: Docker and Kubernetes
+                       </li>
+                      </ul>
+                      <p class="py-2">
+                       <strong>
+                        Live Demo:
+                       </strong>
+                       VM’s, load balancer, and cloud DNS
+                      </p>
+                     </div>
+                    </div>
+                    <div>
+                     <div class="mt-8">
+                      <div class="bg-[#0133b6] py-3 text-center text-white">
+                       <a href="https://teams.microsoft.com/registration/Kf3da_qT5U61cAxAfFMIlg,q7yS3ityOEiGyu4QR8BiWA,PMvYGJjrU0KuVP0iSI99Yg,CpTCgNmSXk6XIOPrfa2IsQ,pa0HZsMLI0G97tFfnQhpRw,waQ1ZBVLrESNlhLcKQtiig?mode=read&amp;tenantId=6bddfd29-93fa-4ee5-b570-0c407c530896" rel="noopener" target="_blank">
+                        <span>
+                         <span>
+                          Register Now
+                         </span>
+                        </span>
+                       </a>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </section>
+               </div>
+              </div>
+             </div>
+            </section>
+            <section>
+             <div>
+              <div>
+               <div>
+                <section class="w-full flex justify-center my-12 items-center">
+                 <div class="w-full px-4 md:max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8  bg-gray-300 p-8 rounded-2xl">
+                  <div>
+                   <div>
+                    <div>
+                     <div>
+                      <img alt="" height="731" sizes="(max-width: 1024px) 100vw, 1024px" src="https://www.valuepointsystems.com/wp-content/uploads/2022/01/ai-ml-webinar-1024x731.jpg" srcset="https://www.valuepointsystems.com/wp-content/uploads/2022/01/ai-ml-webinar-1024x731.jpg 1024w, https://www.valuepointsystems.com/wp-content/uploads/2022/01/ai-ml-webinar-300x214.jpg 300w, https://www.valuepointsystems.com/wp-content/uploads/2022/01/ai-ml-webinar-768x549.jpg 768w, https://www.valuepointsystems.com/wp-content/uploads/2022/01/ai-ml-webinar.jpg 1536w" width="1024"/>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div>
+                   <div>
+                    <div>
+                     <div>
+                      <h4 class="text-xl text-medium py-2">
+                       <strong>DATE:</strong> 16-MAR-2022 | Time: 04 PM – 05 PM
+                      </h4>
+                     </div>
+                    </div>
+                    <div>
+                     <div>
+                      <h2 class="text-3xl font-medium py-2">
+                       Introduction to Machine Learning and AI
+                      </h2>
+                     </div>
+                    </div>
+                    <div>
+                     <div class="py-2">
+                      <p>
+                       <strong>
+                        Duration:
+                       </strong>
+                       One Hour |
+                       <strong>
+                        Cost:
+                       </strong>
+                       Free
+                       <br/>
+                       <strong>
+                        Agenda:
+                       </strong>
+                      </p>
+                      <ul class="pl-12">
+                       <li>
+                        Evolution of Machine Learning
+                       </li>
+                       <li>
+                        Define Machine Learning (ML)
+                       </li>
+                       <li>
+                        Define Supervised Learning
+                       </li>
+                       <li>
+                        Define Unsupervised Learning
+                       </li>
+                       <li>
+                        Define Deep Learning and Artificial Intelligence (AI)
+                       </li>
+                       <li>
+                        Difference between ML and AI
+                       </li>
+                       <li>
+                        ML use cases
+                       </li>
+                      </ul>
+                      <p class="py-2">
+                       <strong>
+                        Live Demo:
+                       </strong>
+                       Image Analysis, Video Analytics
+                      </p>
+                     </div>
+                    </div>
+                    <div>
+                     <div class="mt-8">
+                      <div class="bg-[#0133b6] py-3 text-center text-white">
+                       <a href="https://teams.microsoft.com/registration/Kf3da_qT5U61cAxAfFMIlg,q7yS3ityOEiGyu4QR8BiWA,PMvYGJjrU0KuVP0iSI99Yg,WGb7rbbAtUqhYDVTG3AEQg,b9OV5TKB1UC1vFrUgp240w,gm4qmreQzkKmpLyXaaKkHA?mode=read&amp;tenantId=6bddfd29-93fa-4ee5-b570-0c407c530896" rel="noopener" target="_blank">
+                        <span>
+                         <span>
+                          Register Now
+                         </span>
+                        </span>
+                       </a>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </section>
+               </div>
+              </div>
+             </div>
+            </section>
             </div>
-            
-            <!-- Consultation Form Popup -->
-            <div id="consultation-form" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-bold mb-4">Consultation Form</h2>
-                    <!-- Form fields go here -->
-                    <button id="close-toggle" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 focus:outline-none">&times;</button>
-                </div>
-            </div>
-            
-        </div>    
-        
-        
+
+
+
+        </main>
     </div>
 
-    
+
+
+
     <!-- Footer Section -->
     <footer class="bg-white w-full">
         <div class="bg-green-100 rounded-br-[220px] flex justify-center items-center">
@@ -222,7 +511,7 @@
                 <div class="grid grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 lg:gap-4">
                     <div class="col-span-3 grid grid-rows-3 md:grid-cols-3 gap-1 md:grid-rows-1 md:gap-4 sm:w-full md:w-auto justify-around md:flex-row space-x-3">
                         <div class="text-center p-3">
-                            <img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" alt="Placeholder Image" class="mx-auto mb-4 py-2 md:py-10">
+                            <a href="../homepage.html"><img src="..\images\xclogo.png" class="w-48 md:w-80 lg:w-48 py-2" /></a>
                             <p class="mb-4 text-lg text-medium text-green-950">Accelerating our clients’ business transformation journeys through our competence in Consulting, Integration, Security by delivering Next-Gen Digital Infrastructure Solutions.</p>
                             <div class="flex justify-center space-x-2">
                                 <a href="#" class="rounded-full bg-white p-2 w-10 h-10 flex justify--center items-center">
@@ -242,23 +531,23 @@
                         <div class="text-green-950">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Quick Links</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
-                                <li><a href="About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
-                                <li><a href="Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
+                                <li><a href="../homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
+                                <li><a href="../About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
+                                <li><a href="../Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
                                 <li><a href="#" class="hover:text-[#0133b6] text-lg font-medium">Shop</a></li>
-                                <li><a href="Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
-                                <li><a href="contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
+                                <li><a href="../Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
+                                <li><a href="../contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
                             </ul>
                         </div>
                         <div class="text-green-950 my-10">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Portfolio</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
-                                <li><a href="Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
-                                <li><a href="Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
-                                <li><a href="Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
-                                <li><a href="Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
-                                <li><a href="IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
+                                <li><a href="../CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
+                                <li><a href="../Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
+                                <li><a href="../Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
+                                <li><a href="../Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
+                                <li><a href="../Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
+                                <li><a href="../IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
                             </ul>
                         </div>
                     </div>
@@ -288,7 +577,7 @@
                 <div class="flex flex-col space-y-6">
                     <div class="grid-cols-3 gap-1 grid-rows-1 gap-4 sm:w-full md:w-auto justify-around">
                         <div class="text-center p-3">
-                            <img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" alt="Placeholder Image" class="mx-auto mb-4 py-2 md:py-10">
+                            <img src="..\images\xclogo.png" alt="Logo Image" class="mx-auto mb-4 py-2 md:py-10" />
                             <p class="mb-4 text-lg text-medium text-green-950">Accelerating our clients’ business transformation journeys through our competence in Consulting, Integration, Security by delivering Next-Gen Digital Infrastructure Solutions.</p>
                             <div class="flex justify-center space-x-2">
                                 <a href="#" class="rounded-full bg-white p-2 w-10 h-10 flex justify--center items-center">
@@ -308,23 +597,23 @@
                         <div class="text-green-950">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Quick Links</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
-                                <li><a href="About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
-                                <li><a href="Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
+                                <li><a href="../homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
+                                <li><a href="../About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
+                                <li><a href="../Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
                                 <li><a href="#" class="hover:text-[#0133b6] text-lg font-medium">Shop</a></li>
-                                <li><a href="Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
-                                <li><a href="contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
+                                <li><a href="../Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
+                                <li><a href="../contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
                             </ul>
                         </div>
                         <div class="text-green-950 my-10">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Portfolio</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
-                                <li><a href="Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
-                                <li><a href="Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
-                                <li><a href="Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
-                                <li><a href="Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
-                                <li><a href="IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
+                                <li><a href="../CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
+                                <li><a href="../Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
+                                <li><a href="../Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
+                                <li><a href="../Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
+                                <li><a href="../Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
+                                <li><a href="../IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
                             </ul>
                         </div>
                     </div>
@@ -356,11 +645,11 @@
                 <div>
                     <div class="container text-center">
                         <div class="flex items-center space-x-4">
-                            <img src="images/OCT-2022-–-OCT-2023-176x300.png" alt="Image 1" class="w-12 object-cover rounded-lg">
-                            <img src="images/value30-white-logo-2.png" alt="Image 2" class="h-12 object-cover rounded-lg">
-                            <object data="images/iso-logo-vector.svg" type="image/svg+xml" class="w-16">
+                            <img src="../images/OCT-2022-–-OCT-2023-176x300.png" alt="Image 1" class="w-12 object-cover rounded-lg">
+                            <img src="../images/value30-white-logo-2.png" alt="Image 2" class="h-12 object-cover rounded-lg">
+                            <object data="../images/iso-logo-vector.svg" type="image/svg+xml" class="w-16">
                                 <!-- SVG fallback -->
-                                <img src="images/iso-logo-vector.svg" alt="SVG" class="w-6 h-full object-contain">
+                                <img src="../images/iso-logo-vector.svg" alt="SVG" class="w-6 h-full object-contain">
                             </object>
                         </div>
                     </div>
@@ -372,8 +661,9 @@
         </div>
     </footer>
 
+
      <!-- Fixed Bottom Bar / Sticky Side Bar -->
-    <div id="bottom-bar" class="fixed bottom-0 left-0 w-full bg-white shadow-md grid grid-cols-3 justify-around items-center lg:hidden">
+    <div id="bottom-bar" class="fixed bottom-0 left-0 w-full bg-white shadow-md grid grid-cols-3 justify-around items-center lg:hidden z-20">
         <div id="consultationSection2" class="flex flex-col items-center bg-blue-800">
             <span class="fas fa-envelope text-white  mt-1"></span>
             <span class="text-white text-sm font-light" style="font-size: 12px">Free Consult</span>
@@ -386,7 +676,7 @@
         </a>
     </div>
 
-    <div id="side-bar" class="hidden lg:flex fixed top-1/2 right-0 transform -translate-y-1/2 flex justify-end text-white">
+    <div id="side-bar" class="hidden lg:flex fixed top-1/2 right-0 transform -translate-y-1/2 flex justify-end text-white z-20">
         <div class="flex flex-col items-end">
             <div id="consultationSection" class="bg-blue-800 w-11 h-40 rounded-tl-2xl flex justify-center items-center">
                 <span class="text-sm transform -rotate-90 whitespace-nowrap"><span class="fas fa-envelope mx-2 py-1"></span>Free Consult</span>
@@ -408,7 +698,7 @@
 
 
     <!-- Sliding Form from right side -->
-    <div class="fixed top-1/2 mr-11 mb-24 right-0 transform -translate-y-1/2 w-900px" style="margin-top: -115px;">
+    <div class="fixed top-1/2 mr-11 mb-24 right-0 transform -translate-y-1/2 w-900px z-20" style="margin-top: -115px;">
         <div id="formSlideOut" class="hidden bg-blue-50 border-2 border-blue-100 p-5 w-900px rounded-lg absolute top-0 right-0 flex flex-col justify-center items-center transition-all duration-100 ease-in-out">
             <div class="flex justify-between w-full">
                 <p class="flex text-blue-800 font-medium">Free Consultation</p>
@@ -424,7 +714,7 @@
         </div>
     </div>
     <!-- Sliding Form from bottom side -->
-    <div class="fixed top-1/2 right-0 transform -translate-y-1/2 lg:mr-11 lg:mb-24 lg:top-auto lg:translate-y-0 w-full lg:hidden" style="margin-top: 0px">
+    <div class="fixed top-1/2 right-0 transform -translate-y-1/2 lg:mr-11 lg:mb-24 lg:top-auto lg:translate-y-0 w-full lg:hidden z-20" style="margin-top: 0px">
         <div id="formSlideOut2" class="hidden bg-blue-100 border border-grey-50 p-5 w-auto w-full rounded-tl-2xl rounded-tr-2xl absolute top-0 right-0 hover:flex flex flex-col justify-center items-center transition-all duration-100 ease-in-out">
             <div class="flex justify-between w-full font-medium">
                 <p class="flex text-blue-800">Free Consultation</p>
@@ -465,8 +755,9 @@
     
     <!-- Include JavaScript File -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="index.js"></script>
-
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="../index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

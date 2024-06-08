@@ -3,93 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar and Sidebar</title>
+    <title>
+        Digital Transformation Catalyst - Value Point Systems Pvt Ltd
+    </title>    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Include CSS File -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 
 </head>
 <body class="bg-gray-100">
 
-    <!-- Fixed Top Navigation -->
-    <nav class="fixed top-0 w-full bg-white shadow-md z-50 py-4">
-        <div class="container max-w-7xl mx-auto px-4 py-2 flex justify-between md:flex-col lg:flex-row lg:justify-between items-center">
-            <div class="">
-                <div class="text-xl font-bold"><img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" class="w-48 md:w-80 lg:w-48" /></div>
-            </div>
-            <div class="md:w-full lg:w-auto flex justify-between md:pt-2 lg:pt-0">
-                <div class="flex space-x-6">
-                    <div class="lg:hidden">
-                        <button id="menu-toggle" class="text-3xl focus:outline-none text-blue-800">&#9776;</button>
-                    </div>
-                    <div class="hidden lg:flex space-x-5 font-light">
-                        <!-- Portfolio Accordion -->
-                        <div class="relative inline-block text-left">
-                            <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
-                                <p>PORTFOLIO</p>
-                                <svg class=" ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
-                                    <a href="cybersecurity/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cyber Security</a>
-                                    <a href="Data Center/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Data Center Modernization</a>
-                                    <a href="Network/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Network Transformation</a>
-                                    <a href="Cloud Transform/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cloud Transformation</a>
-                                    <a href="Digital Workplace/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Digital Workplace</a>
-                                    <a href="IT managed/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">IT Managed Services</a>
-                                </div>
+  <!-- Fixed Top Navigation -->
+  <nav class="fixed top-0 w-full bg-white shadow-sm z-50 pt-4 pb-0">
+    <div class="container max-w-7xl mx-auto px-4 py-2 flex justify-between md:flex-col lg:flex-row lg:justify-between items-center">
+        <div class="">
+            <div class="text-xl font-bold"><a href="../homepage.html"><img src="..\images\xclogo.png" class="w-48 md:w-80 lg:w-48" /></a></div>
+        </div>
+        <div class="md:w-full lg:w-auto flex justify-between md:pt-2 lg:pt-0">
+            <div class="flex space-x-6">
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="text-3xl focus:outline-none text-blue-800">&#9776;</button>
+                </div>
+                <div class="hidden lg:flex space-x-5 font-light">
+                    <!-- Portfolio Accordion -->
+                    <div class="relative inline-block text-left">
+                        <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
+                            <p>PORTFOLIO</p>
+                            <svg class=" ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
+                                <a href="../cybersecurity/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cyber Security</a>
+                                <a href="../Data Center/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Data Center Modernization</a>
+                                <a href="../Network/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Network Transformation</a>
+                                <a href="../Cloud Transform/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Cloud Transformation</a>
+                                <a href="../Digital Workplace/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">Digital Workplace</a>
+                                <a href="../IT managed/Overview.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem">IT Managed Services</a>
                             </div>
                         </div>
-                        <!-- About Accordion -->
-                        <div class="relative inline-block text-left">
-                            <button class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
-                                <p>ABOUT</p>
-                                <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                            <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
-                                    <a href="About.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">About ValuePoint</a>
-                                    <a href="About.html/#why-valuepoint" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Why ValuePoint</a>
-                                    <a href="About.html/#the-board" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">The Board</a>
-                                    <a href="About.html/#our-leadership" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Our Leadership</a>
-                                    <a href="About.html/#awards-recognition" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Awards & Recognition</a>
-                                </div>
+                    </div>
+                    <!-- About Accordion -->
+                    <div class="relative inline-block text-left">
+                        <a href="About.html" class="accordion-button1 w-full text-left text-gray-800 hover:text-blue-800 focus:outline-none flex justify-between">
+                            <p>ABOUT</p>
+                            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <div class="accordion-content hidden origin-top-right absolute mt-2 w-56 rounded-md  bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <div class="py-1 font-medium" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
+                                <a href="../About.html" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">About ValuePoint</a>
+                                <a href="../About.html/#why-valuepoint" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Why ValuePoint</a>
+                                <a href="../About.html/#the-board" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">The Board</a>
+                                <a href="../About.html/#our-leadership" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Our Leadership</a>
+                                <a href="../About.html/#awards-recognition" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-800" role="menuitem2">Awards & Recognition</a>
                             </div>
                         </div>
-                        <a href="Partners.html" class="hover:text-blue-800">PARTNERS</a>
-                        <a href="Industries.html" class="hover:text-blue-800">INDUSTRIES</a>
-                        <a href="Blogs.html" class="hover:text-blue-800">BLOGS</a>
-                        <a href="Career.html" class="hover:text-blue-800">CAREERS</a>
-                        <a href="contact.html" class="hover:text-blue-800">CONTACT</a>
                     </div>
-                </div>
-                <div class="hidden md:flex lg:hidden w-128 bg-[#0133b6] hover:bg-green-950 rounded-tl-2xl rounded-br-2xl ">
-                    <div class="ml-2 p-4 mx-5 text-white font-bold">
-                        +917899900121
-                    </div>
-                    
+                    <a href="../Partners.html" class="hover:text-blue-800">PARTNERS</a>
+                    <a href="../Industries.html" class="hover:text-blue-800">INDUSTRIES</a>
+                    <a href="../Blogs.html" class="hover:text-blue-800">BLOGS</a>
+                    <a href="../Career.html" class="hover:text-blue-800">CAREERS</a>
+                    <a href="../contact.html" class="hover:text-blue-800">CONTACT</a>
                 </div>
             </div>
-            <div class="hidden  lg:flex w-128 bg-[#0133b6] hover:bg-green-950 rounded-tl-2xl rounded-br-2xl  ">
+            <div class="hidden md:flex lg:hidden w-128 bg-[#0133b6] hover:bg-green-500 rounded-tl-2xl rounded-br-2xl ">
                 <div class="ml-2 p-4 mx-5 text-white font-bold">
                     +917899900121
                 </div>
                 
             </div>
         </div>
-    </nav>
+        <div class="hidden  lg:flex w-128 bg-[#0133b6] hover:bg-green-500 rounded-tl-2xl rounded-br-2xl  ">
+            <div class="ml-2 p-4 mx-5 text-white font-bold">
+                +917899900121
+            </div>
+            
+        </div>
+    </div>
+
+        <!-- Fixed Top Navigation2 -->
+        <div class="w-full bg-gray-400 shadow-md">
+            <div class="relative container mx-auto  justify-center items-center py-1 md:py-2 px-6 text-lg font-medium">
+                <!-- Page Name -->
+                <div class=" absolute  top-0 left-0 text-xl font-bold text-gray-700 p-1 md:p-2">
+                    Data Centers
+                </div>
+                <!-- Navigation Links -->
+                <div class="flex space-x-8 pt-6 md:pt-0 justify-center">
+                    <a href="Overview.html" class="text-gray-700 hover:text-blue-700">Overview</a>
+                    <a href="Services.html" class="text-gray-700 hover:text-blue-700">Services</a>
+                    <a href="CaseStudies.html" class="text-gray-700 hover:text-blue-700">Case Studies</a>
+                </div>
+            </div>
+        </div>
+    </nav >
+    
     
     <!-- Sidebar -->
-    <div id="sidebar" class="fixed top-0 left-0 w-[360px] bg-white shadow-md h-full z-50 transform -translate-x-full transition-transform duration-200 lg:hidden">
+    <div id="sidebar" class="fixed top-0 left-0 w-[360px] bg-white shadow-md h-full z-50 transform -translate-x-full transition-transform duration-200 lg:hidden z-20">
         <div class="mt-5 mb-6 ml-72 w-12 p-0 bg-blue-700 rounded-tl-lg rounded-br-lg flex justify-center items-center">
             <div id="menu-close" class=" font-bold text-2xl text-white">&times;</div>
         </div>
-        <img  src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\clogo.png" class="w-full " />
+        <a href="../homepage.html"><img   src="..\images\xclogo.png" class="w-full " /></a>
         <nav class="mt-3 mx-5">
         <!-- Accordion -->
         <div class="w-full max-w-lg mx-auto bg-white rounded-lg">
@@ -102,83 +121,792 @@
                     </svg>
                 </button>
                 <div class="accordion-content hidden px-4 py-2 text-gray-700">
-                    <a href="cybersecurity/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cyber Security</a>
-                    <a href="Data Center/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Data Center Modernization</a>
-                    <a href="Network/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Network Transformation</a>
-                    <a href="Cloud Transform/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cloud Transformation</a>
-                    <a href="Digital Workplace/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Digital Workplace</a>
-                    <a href="IT managed/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">IT Managed Services</a>
+                    <a href="../cybersecurity/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cyber Security</a>
+                    <a href="../Data Center/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Data Center Modernization</a>
+                    <a href="../Network/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Network Transformation</a>
+                    <a href="../Cloud Transform/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Cloud Transformation</a>
+                    <a href="../Digital Workplace/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Digital Workplace</a>
+                    <a href="../IT managed/Overview.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">IT Managed Services</a>
                 </div>
             </div>
             <!-- Accordion Item 2 -->
             <div class="border-b">
-                <button class="accordion-button w-full text-left px-4 py-2 text-gray-800 hover:text-blue-800 font-medium focus:outline-none flex justify-between"">
+                <a  href="About.html"  class="accordion-button w-full text-left px-4 py-2 text-gray-800 hover:text-blue-800 font-medium focus:outline-none flex justify-between"">
                     <p>About</p>
                     <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
-                </button>
+                </a>
                 <div class="accordion-content hidden px-4 py-2 text-gray-700">
-                    <a href="About.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">About ValuePoint</a>
-                    <a href="About.html/#why-valuepoint" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Why ValuePoint</a>
-                    <a href="About.html/#the-board" class="block py-2 text-sm text-gray-700 hover:text-blue-800">The Board</a>
-                    <a href="About.html/#our-leadership" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Our Leadership</a>
-                    <a href="About.html/#awards-recognition" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Awards & Recognition</a>
+                    <a href="../About.html" class="block py-2 text-sm text-gray-700 hover:text-blue-800">About ValuePoint</a>
+                    <a href="../About.html/#why-valuepoint" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Why ValuePoint</a>
+                    <a href="../About.html/#the-board" class="block py-2 text-sm text-gray-700 hover:text-blue-800">The Board</a>
+                    <a href="../About.html/#our-leadership" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Our Leadership</a>
+                    <a href="../About.html/#awards-recognition" class="block py-2 text-sm text-gray-700 hover:text-blue-800">Awards & Recognition</a>
                 </div>
             </div>
             <!-- Additional Accordion Items can be added here following the same structure -->
         </div>
 
-        <a href="Partners.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Partner</a>
-        <a href="Industries.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Industries</a>
-        <a href="Blogs.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Blog</a>
-        <a href="Career.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Career</a>
-        <a href="contact.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Contact</a>
+        <a href="../Partners.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Partner</a>
+        <a href="../Industries.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Industries</a>
+        <a href="../Blogs.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Blog</a>
+        <a href="../Career.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Career</a>
+        <a href="../contact.html" class="block px-4 py-2 text-gray-800 hover:text-blue-800 w-64">Contact</a>
     </nav>
     </div>
 
-    <!-- Main Content -->
-    <div id="main-content" class="container mx-auto p-4 h-full">
-        <div class="pt-24 md:pt-48 lg:pt-24"></div>
-        <h1 class="text-2xl font-bold">Welcome to MyWebsite</h1>
-        <p class="mt-4">Content goes here...</p>
-
-        <div class="w-1/2">
-            <div class="flex flex-col items-center">
-                <!-- Large Box with Text -->
-                <div class="relative bg-blue-500 w-24 h-72 flex justify-center items-center cursor-pointer">
-                    <p class="absolute -right-8 transform -rotate-90 text-white">Hello Kid</p>
-                </div>
-                <!-- Square Boxes with Icon -->
-                <div class="relative bg-green-500 w-12 h-12 flex justify-center items-center transition-all duration-500 hover:w-24">
-                    <div class="flex items-center justify-center w-full h-full">
-                        <i class="fas fa-phone text-white"></i>
+    <!-- Main Content --> bg-gray
+    <div id="main-content" class="">
+        <div class="mt-24 md:mt-40 lg:mt-32"></div>
+        <main class="mt-8 md:mt-5">
+            <section class="relative w-full overflow-hidden flex items-center justify-center pb-0">
+                <div class="w-full flex justify-center items-center z-5 bg-gradient-to-r from-blue-500 to-cyan-500 pb-0 md:pb-40">
+                    <div class="container w-full md:max-w-6xl relative z-5 bg-transparent p-3 flex">
+                        <div class="flex flex-col md:flex-row w-full md:flex-row items-center text-white">
+                            <div class="flex flex-col w-full justify-start pl-0 md:pl-5 ">
+                                <p class="text-3xl md:text-5xl text-white drop-shadow-2xl font-bold">Data Center </p>
+                                <p class="text-3xl md:text-5xl text-white drop-shadow-2xl font-bold">Solutions</p>
+                                <br class="text-md md:text-md mt-3 drop-shadow-2xl font-bold">We design and modernize data centers to meet your needs </br>and balance cost with efficiency.</p>
+                            </div>
+                            <div class="pl-48 md:pl-0 md:pr-10 w-full md:flex justify-center md:justify-end"><img src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/new-server.png" class=""></div>
+                        </div>
                     </div>
-                    <p class="absolute right-0 transform translate-x-full text-white opacity-0 transition-opacity duration-500">Hello again</p>
                 </div>
-                <div class="relative bg-yellow-500 w-12 h-12 flex justify-center items-center transition-all duration-500 hover:w-24">
-                    <div class="flex items-center justify-center w-full h-full">
-                        <i class="fas fa-phone text-white"></i>
+            </section>
+            <section >
+                <div class="relative flex items-center justify-center">
+                    <!-- Box main -->
+                    <div class="w-full flex flex-col items-center bg-white justify-center">
+                        <!-- Box relative -->
+                        <div class="relative top-0 md:-top-32 pt-6 w-full h-auto md:h-48 md:w-[90%] mx-3 flex items-center justify-center">
+                            <!-- content of relative box -->
+                            <div class="w-full grid grid-cols-1 md:grid-cols-3 md:grid-rows-1 justify-center z-10 bg-white">
+                                <!-- First Row -->
+                                   <div class="w-full flex flex-col justify-center items-center">
+                                    
+                                        <figure>
+                                         <img class="w-80 md:w-32" alt="" height="512" sizes="(max-width: 512px) 100vw, 512px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cloud-server-3A96CS-1.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cloud-server-3A96CS-1.png 512w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cloud-server-3A96CS-1-300x300.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Cloud-server-3A96CS-1-150x150.png 150w" width="512"/>
+                                        </figure>
+                                        <div class="p-4 md:p-2 text-center">
+                                         <h4 class="text-xl font-bold">
+                                          Private
+                                          <br/>
+                                          Cloud
+                                         </h4>
+                                         <p class="text-gray-400">
+                                          A dedicated server is one that’s exclusively yours and tailored specifically for your requirements
+                                         </p>
+                                        </div>
+                                       
+                                   </div>
+                                   <div class="w-full flex flex-col justify-center items-center">
+                                    
+                                        <figure>
+                                         <img class="w-80 md:w-32" alt="" height="512" sizes="(max-width: 512px) 100vw, 512px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Data-center-3A96CS.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Data-center-3A96CS.png 512w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Data-center-3A96CS-300x300.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Data-center-3A96CS-150x150.png 150w" width="512"/>
+                                        </figure>
+                                        <div class="p-4 md:p-2 text-center">
+                                         <h4 class="text-xl font-bold">
+                                          Pay as you
+                                          <br/>
+                                          use
+                                         </h4>
+                                         <p class="text-gray-400">
+                                          We manage your servers, including the support needed for remote office working, within our SLA
+                                         </p>
+                                        </div>
+                                       
+                                   </div>
+                                   <div class="w-full flex flex-col justify-center items-center">
+                                    
+                                        <figure>
+                                         <img class="w-80 md:w-32" alt="" height="512" sizes="(max-width: 512px) 100vw, 512px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Domain-registration-3A96CS.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Domain-registration-3A96CS.png 512w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Domain-registration-3A96CS-300x300.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/Domain-registration-3A96CS-150x150.png 150w" width="512"/>
+                                        </figure>
+                                        <div class="p-4 md:p-2 text-center">
+                                         <h4 class="text-xl font-bold">
+                                          Hyper Converged Infrastructure
+                                         </h4>
+                                         <p class="text-gray-400">
+                                          A modern solution that is smarter, simpler, smaller – and more efficient than ever before!
+                                         </p>
+                                        </div>
+                                    </div>
+                                      
+                            </div>
+                        </div>
                     </div>
-                    <p class="absolute right-0 transform translate-x-full text-white opacity-0 transition-opacity duration-500">Hello again</p>
+                
+            </section>  
+        <section>
+         <div class="flex flex-col text-center bg-white justify-center items-center w-full overflow-hidden">
+          
+              <h2 class="text-xl font-bold">
+               Top Technology Partners
+              </h2>
+            
+              
+                <div class="max-w-4xl">
+                <p class="text-lg text-gray-400">
+                We design data center solutions with redundancy to preserve your data and scalability at the forefront. And we use leading technology with fully licensed hardware and software with partners such as these
+                </p>
+                </div>
+                        
+            
+            
+                   <div class="bg-white flex justify-center">
+                    <div class="py-12">
+                        <div class="container mx-auto max-w-6xl w-full flex justify-start items-center relative overflow-hidden">
+                            <div class="flex items-center slide-track">
+                        <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="crowdstrike-logo" src="https://www.valuepointsystems.com/wp-content/uploads/2022/04/crowdstrike-logo-1.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="zscaler" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Picture5.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="securonix" src="https://www.valuepointsystems.com/wp-content/uploads/2022/10/securonix.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="cloudflare" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Picture7.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="proofpoint" src="https://www.valuepointsystems.com/wp-content/uploads/2022/10/proofpoint.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="okta" src="https://www.valuepointsystems.com/wp-content/uploads/2022/10/okta.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="netskope" src="https://www.valuepointsystems.com/wp-content/uploads/2023/06/netskope.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="tenable" src="https://www.valuepointsystems.com/wp-content/uploads/2023/06/tenable.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="Trend-Micro-50px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Trend-Micro-50px.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="cyble" src="https://www.valuepointsystems.com/wp-content/uploads/2022/10/cyble.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="cisco" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/cisco.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="forcepoint" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Picture2.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="versa" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/versa.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="Skybox-01-e1557817504199" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Skybox-01-e1557817504199.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="radware" src="https://www.valuepointsystems.com/wp-content/uploads/2022/10/radware.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="forescout" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Picture14-1.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="fortinet" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Picture4.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="paloalto" src="https://www.valuepointsystems.com/wp-content/uploads/2023/06/paloalto.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="trellix" src="https://www.valuepointsystems.com/wp-content/uploads/2022/10/trellix.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="beyondtrust" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Picture11-1.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="helpsystems" src="https://www.valuepointsystems.com/wp-content/uploads/2022/10/helpsystems.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="safe security" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Picture17.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="lookout" src="https://www.valuepointsystems.com/wp-content/uploads/2022/10/lookout.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="broadcom" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/Picture15-1.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                       <div>
+                        <div class="flex-none w-40 mx-2 ">
+                            <figure class="w-full h-full flex justify-center items-center">
+                                <img   class="object-contain h-full" alt="skyhigh" src="https://www.valuepointsystems.com/wp-content/uploads/2022/10/skyhigh.png"/>
+                            </figure>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  
+         </div>
+        </section>
+        <section>
+         <div>
+          <div>
+           <div>
+            <section>
+             <div>
+              <div>
+               <div>
+                <div class="flex flex-col md:flex-row justify-center items-center px-8">
+                 <div class="w-full flex flex-col justify-start text-start">
+                  <div class="text-[#14bfe7] py-4">
+                   DESIGN DATA CENTERS
+                  </div>
+                 
+                  <h2 class="text-3xl font-bold">
+                   Modernize your Disaster Recovery
+                  </h2>
+                 
+                  <p class="text-gray-400">
+                   Can your data center quickly recover from a natural disaster? Most cannot. And when a disaster causes 10 days of data center power outages, 93% of companies file for bankruptcy less than a year later.
+                  </p>
+                 </div>
+                 <div class="w-full">
+                    <div>
+                     <div>
+                      <div>
+                       <div>
+                        <div class="relative">
+                         <img class="p-2 md:p-6 w-full min-w-[500px]" alt="" height="221" sizes="(max-width: 400px) 100vw, 400px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/valuepoint-cybersecurity-YouTube.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/valuepoint-cybersecurity-YouTube.png 400w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/valuepoint-cybersecurity-YouTube-300x166.png 300w" width="400"/>
+                         <div class="absolute top-[33%] left-[40%] text-white opacity-50">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                              <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </section>
+           </div>
+          </div>
+         </div>
+        </section>
+        <section class="bg-cyan-400 py-4 mx-4 md:mx-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center text-center text-5xl font-bold text-white">
+                <div class="w-full p-4 py-8 flex flex-col justify-center">
+                    <div class="text-6xl font-extrabold"><span data-target="10">0</span>K+</div>
+                    <p class="mt-2 text-xl font-bold">Customers</p>
+                </div>
+                <div class="w-full p-4 py-8 flex flex-col justify-center">
+                    <div class="text-6xl font-extrabold"><span data-target="99">0</span>%</div>
+                    <p class="mt-2 text-xl font-bold">Server Uptime</p>
+                </div>
+                <div class="w-full p-4 py-8 flex flex-col justify-center">
+                    <div class="text-6xl font-extrabold"><span data-target="100">0</span>+</div>
+                    <p class="mt-2 text-xl font-bold">Deployments</p>
+                </div>
+                <div class="w-full p-4 py-8 flex flex-col justify-center">
+                    <div class="text-6xl font-extrabold"><span data-target="20">0</span>+</div>
+                    <p class="mt-2 text-xl font-bold">Data Centers</p>
                 </div>
             </div>
+        
+    </section>
+        
+        <section class="w-full flex flex-col justify-center items-center">
+            <section class="w-full felx justify-center">
+             
+                <div class=" w-full flex flex-col justify-center text-center pt-12 bg-white pb-8">
+                 <div class="text-[#14bfe7] font-bold">
+                  OUR FEATURES
+                 </div>
+                 <div class=" w-full flex justify-center text-center bg-white ">
+                    <h2 class="text-3xl font-bold py-6 max-w-2xl">
+                  Right solution for your applications &amp; Business Outcomes
+                 </h2>
+                </div>
+                </div>
+       </section>
+       <section class="bg-white w-full p-4 md:pt-4 md:pb-8 flex flex-col justify-center items-center">
+           <div class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8">
             
-            <!-- Consultation Form Popup -->
-            <div id="consultation-form" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-bold mb-4">Consultation Form</h2>
-                    <!-- Form fields go here -->
-                    <button id="close-toggle" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 focus:outline-none">&times;</button>
+           
+               <div>
+               <div class="w-full flex flex-col">
+               <div>
+               <span class="text-5xl text-white">
+                <div  class=" w-16 p-4 rounded-full bg-indigo-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                    <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5M12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0M1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1M1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25"/>
+                  </svg></div>
+               </span>
+               </div>
+               <div>
+               <h4 class="text-2xl font-bold py-4">
+                   <span>
+                   VDI - Virtual Desktop
+                   </span>
+               </h4>
+               <p class="text-lg text-gray-400">
+                   A technology that is used to host desktop environments on a centralized server on-premises or on cloud
+               </p>
+               </div>
+               </div>
+               </div>
+          
+               <div>
+               <div class="w-full flex flex-col">
+               <div>
+               <span class="text-5xl text-white">
+                <div  class=" w-16 p-4 rounded-full bg-indigo-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-database-add" viewBox="0 0 16 16">
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0"/>
+                    <path d="M12.096 6.223A5 5 0 0 0 13 5.698V7c0 .289-.213.654-.753 1.007a4.5 4.5 0 0 1 1.753.25V4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.5 4.5 0 0 1-.813-.927Q8.378 15 8 15c-1.464 0-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13h.027a4.6 4.6 0 0 1 0-1H8c-1.464 0-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10q.393 0 .774-.024a4.5 4.5 0 0 1 1.102-1.132C9.298 8.944 8.666 9 8 9c-1.464 0-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777M3 4c0-.374.356-.875 1.318-1.313C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4"/>
+                  </svg></div>
+               </span>
+               </div>
+               <div>
+               <h4 class="text-2xl font-bold py-4">
+                   <span>
+                   Software Defined Storage
+                   </span>
+               </h4>
+               <p class="text-lg text-gray-400">
+                   a storage architecture that decouples storage software from its hardware, giving you greater scalability, flexibility
+               </p>
+               </div>
+               </div>
+               </div>
+          
+               <div>
+               <div class="w-full flex flex-col">
+               <div>
+               <span class="text-5xl text-white">
+                <div  class=" w-16 p-4 rounded-full bg-indigo-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-rocket-takeoff" viewBox="0 0 16 16">
+                    <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532"/>
+                    <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z"/>
+                    <path d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"/>
+                  </svg></div>
+               </span>
+               </div>
+               <div>
+               <h4 class="text-2xl font-bold py-4">
+                   <span>
+                   High Performance Blades
+                   </span>
+               </h4>
+               <p class="text-lg text-gray-400">
+                   Resource-Saving Architecture with High Performance, Density and Efficiency to serve complex computing needs.
+               </p>
+               </div>
+               </div>
+               </div>
+           
+           </div>
+           <div>
+            <div>
+             <div class="px-5 py-3 bg-indigo-500 rounded-xl mt-20 mb-12">
+              <a href="https://www.valuepointsystems.com/datacenter/services/">
+               <span>
+                <span class="text-white">
+                 All Services
+                </span>
+               </span>
+              </a>
+             </div>
+            </div>
+           </div>
+       </section>
+       
+        </section>
+        <section class="bg-white flex justify-center">
+         <div class="grid grid-cols-1 md:grid-cols-7 max-w-6xl">
+          <div class="relative col-span-1 md:col-span-4 p-4 flex justify-center items-center">
+           <div class="relative my-20">
+            <section class="relative bg-white">
+             <div class="p-12 bg-white bg-opacity-100 grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+               <div>
+                <div>
+                 <div>
+                  <div class="w-full p-2 flex flex-col justify-center items-center">
+                   <div>
+                    <span class="text-indigo-500 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-building-lock" viewBox="0 0 16 16">
+                            <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6.5a.5.5 0 0 1-1 0V1H3v14h3v-2.5a.5.5 0 0 1 .5-.5H8v4H3a1 1 0 0 1-1-1z"/>
+                            <path d="M4.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM9 13a1 1 0 0 1 1-1v-1a2 2 0 1 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1"/>
+                          </svg>
+                    </span>
+                   </div>
+                   <div>
+                    <h3 class="text-2xl font-bold py-4">
+                     <span>
+                      Safe &amp; Secure
+                     </span>
+                    </h3>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div>
+               <div>
+                <div>
+                 <div>
+                  <div class="w-full p-2 flex flex-col justify-center items-center">
+                   <div>
+                    <span class="text-indigo-500 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
+                            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/>
+                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/>
+                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/>
+                          </svg>
+                    </span>
+                   </div>
+                   <div>
+                    <h3 class="text-2xl font-bold py-4">
+                     <span>
+                      24/7/365 Support
+                     </span>
+                    </h3>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div>
+               <div>
+                <div>
+                 <div>
+                  <div class="w-full p-2 flex flex-col justify-center items-center">
+                   <div>
+                    <span class="text-indigo-500 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cloud-upload" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383"/>
+                            <path fill-rule="evenodd" d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708z"/>
+                          </svg>
+                    </span>
+                   </div>
+                   <div>
+                    <h3 class="text-2xl font-bold py-4">
+                     <span>
+                      Uptime Guarantee
+                     </span>
+                    </h3>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div>
+               <div>
+                <div>
+                 <div>
+                  <div class="w-full p-2 flex flex-col justify-center items-center">
+                   <div>
+                    <span class="text-indigo-500 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-rocket-takeoff" viewBox="0 0 16 16">
+                            <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532"/>
+                            <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z"/>
+                            <path d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"/>
+                          </svg>
+                    </span>
+                   </div>
+                   <div>
+                    <h3 class="text-2xl font-bold py-4">
+                     <span>
+                      Beyond Experienced
+                     </span>
+                    </h3>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </section>
+            <!--
+            <div class="absolute top-0 left-0 w-64">
+                <div>
+                 <img alt="" height="512" sizes="(max-width: 512px) 100vw, 512px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/2-Pattern.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/2-Pattern.png 512w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/2-Pattern-300x300.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/2-Pattern-150x150.png 150w" width="512"/>
                 </div>
             </div>
-            
-        </div>    
-        
-        
+           -->
+           </div>
+          </div>
+          <div class="col-span-1 md:col-span-3 p-4 flex justify-center items-center">
+           <div>
+            <div>
+             <div>
+              <div class="text-[#14bfe7] font-bold">
+               Why Choose us?
+              </div>
+             </div>
+            </div>
+            <div>
+             <div>
+              <h2 class="text-3xl font-bold">
+               Scale Your Modern Data Center
+              </h2>
+             </div>
+            </div>
+            <div>
+             <div>
+              <p class="text-lg text-gray-400">
+               Modern data centers may be physical facilities, cloud-based (private or public), or hybrid infrastructure. Each has advantages and disadvantages based on the intended use. Don’t worry, though; we’ll help you find the best fit for your organization.
+              </p>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+        <section class="bg-[#14bfe7] flex flex-col justify-center items-center py-20">
+         <div>
+          <div>
+           <div>
+            <section class="w-full flex justify-center items-center">
+             <div>
+              <div>
+               <div class="text-center text-white "> 
+                <div>
+                 <div>
+                  <div class="font-bold">
+                   TESTIMONIALS
+                  </div>
+                 </div>
+                </div>
+                <div>
+                 <div>
+                  <h2 class="text-3xl font-bold">
+                   What our customers say
+                  </h2>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </section>
+            <section class="w-full max-w-6xl flex justify-center items-center py-12 px-8">
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 p-4">
+              <div class="p-8 bg-white">
+               <div>
+                <div>
+                 <div>
+                  <div >
+                   <div class="text-gray-400">
+                    "Working with Value Point was a breath of fresh air. I enjoy their personalities as well as their style of business. It resonates with the way we do business at Intuitive IT Solutions. With Value Point, we feel like we finally have someone in our corner to help us find the best solutions. I love how Value Point is all about taking care of the client, and how they improve and add more value."
+                   </div>
+                   <div>
+                    <div class="flex items-center py-5">
+                     <div class="w-20 h-20">
+                      <img alt="customer testimonials" height="1280" sizes="(max-width: 1280px) 100vw, 1280px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon.png 1280w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-300x300.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-1024x1024.png 1024w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-150x150.png 150w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-768x768.png 768w" width="1280"/>
+                     </div>
+                     <div class="ml-4">
+                      <div class="text-2xl font-light">
+                       Darshan Bhat
+                      </div>
+                      <div class="text-gray-400 text-lg">
+                       VP of Technology, Startup
+                      </div> 
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="p-8 bg-white">
+                <div>
+                <div>
+                 <div>
+                  <div>
+                    <div class="text-gray-400">
+                        "Value Point is a great provider. They truly understand the technology and operational needs of a law firm. Our firm relies on them to fully manage and support all of our data center infrastructure and they always deliver. Their commitment to support corporate customers like us is second to none. Value Point’s level of service and support always exceeds our expectations, and we couldn’t be happier.!"
+                   </div>
+                   <div>
+                    <div class="flex items-center py-5">
+                        <div class="w-20 h-20">
+                            <img alt="customer testimonials" height="1280" sizes="(max-width: 1280px) 100vw, 1280px" src="https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon.png" srcset="https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon.png 1280w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-300x300.png 300w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-1024x1024.png 1024w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-150x150.png 150w, https://www.valuepointsystems.com/wp-content/uploads/2021/11/customer-icon-768x768.png 768w" width="1280"/>
+                     </div>
+                     <div class="ml-4">
+                        <div class="text-2xl font-light">
+                            Aastha Mishra
+                      </div>
+                      <div class="text-gray-400 text-lg">
+                        Sr. Lawyer
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </section>
+           </div>
+          </div>
+         </div>
+        </section>
+        <section>
+         
+            <div class="w-full flex bg-cover bg-center justify-center items-center py-12 md:py-20 lg:py-40" style="background-image: url('https://www.valuepointsystems.com/wp-content/uploads/2021/11/Image-XUBEKYR.jpg')">                 <div>
+                <div class="p-8  max-w-6xl">
+           <div class="w-full md:w-1/2 text-white p-4">
+            <div>
+             <div>
+              <div class="text-lg font-medium">
+               Data Center Solutions
+              </div>
+             </div>
+            </div>
+            <div>
+             <div>
+              <h2 class="text-2xl font-bold py-5">
+               design a data center solution that’s right for you
+              </h2>
+             </div>
+            </div>
+            <div>
+             <div>
+              <p class="text-lg ">
+               Our end-to-end professional services begin with an IT environment assessment. We then establish Proof-of-Value through our custom data center solution. Next, we develop the supporting architecture and deployment plans. Lastly, we launch your data center and keep it operational and stable, even when disaster strikes.
+              </p>
+             </div>
+            </div>
+            <div class="">
+             <div class="py-12 max-w-6xl">
+              <div class="bg-indigo-500 text-white rounded-full p-3 px-5 w-64 flex justify-center">
+               <a href="https://www.valuepointsystems.com/contact/">
+                <span>
+                 <span>
+                  Request a free consultation
+                 </span>
+                </span>
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div>
+           <div>
+           </div>
+          </div>
+         </div>
+        </section>
+        </main>
     </div>
 
-    
+
+
+
     <!-- Footer Section -->
     <footer class="bg-white w-full">
         <div class="bg-green-100 rounded-br-[220px] flex justify-center items-center">
@@ -222,7 +950,7 @@
                 <div class="grid grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 lg:gap-4">
                     <div class="col-span-3 grid grid-rows-3 md:grid-cols-3 gap-1 md:grid-rows-1 md:gap-4 sm:w-full md:w-auto justify-around md:flex-row space-x-3">
                         <div class="text-center p-3">
-                            <img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" alt="Placeholder Image" class="mx-auto mb-4 py-2 md:py-10">
+                            <a href="../homepage.html"><img src="..\images\xclogo.png" class="w-48 md:w-80 lg:w-48 py-2" /></a>
                             <p class="mb-4 text-lg text-medium text-green-950">Accelerating our clients’ business transformation journeys through our competence in Consulting, Integration, Security by delivering Next-Gen Digital Infrastructure Solutions.</p>
                             <div class="flex justify-center space-x-2">
                                 <a href="#" class="rounded-full bg-white p-2 w-10 h-10 flex justify--center items-center">
@@ -242,23 +970,23 @@
                         <div class="text-green-950">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Quick Links</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
-                                <li><a href="About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
-                                <li><a href="Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
+                                <li><a href="../homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
+                                <li><a href="../About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
+                                <li><a href="../Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
                                 <li><a href="#" class="hover:text-[#0133b6] text-lg font-medium">Shop</a></li>
-                                <li><a href="Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
-                                <li><a href="contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
+                                <li><a href="../Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
+                                <li><a href="../contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
                             </ul>
                         </div>
                         <div class="text-green-950 my-10">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Portfolio</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
-                                <li><a href="Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
-                                <li><a href="Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
-                                <li><a href="Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
-                                <li><a href="Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
-                                <li><a href="IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
+                                <li><a href="../CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
+                                <li><a href="../Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
+                                <li><a href="../Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
+                                <li><a href="../Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
+                                <li><a href="../Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
+                                <li><a href="../IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
                             </ul>
                         </div>
                     </div>
@@ -288,7 +1016,7 @@
                 <div class="flex flex-col space-y-6">
                     <div class="grid-cols-3 gap-1 grid-rows-1 gap-4 sm:w-full md:w-auto justify-around">
                         <div class="text-center p-3">
-                            <img src="D:\Collab with Rohit RLA\Project Value Point\Project Value Point todo\mywebdesign\images\xclogo.png" alt="Placeholder Image" class="mx-auto mb-4 py-2 md:py-10">
+                            <img src="..\images\xclogo.png" alt="Logo Image" class="mx-auto mb-4 py-2 md:py-10" />
                             <p class="mb-4 text-lg text-medium text-green-950">Accelerating our clients’ business transformation journeys through our competence in Consulting, Integration, Security by delivering Next-Gen Digital Infrastructure Solutions.</p>
                             <div class="flex justify-center space-x-2">
                                 <a href="#" class="rounded-full bg-white p-2 w-10 h-10 flex justify--center items-center">
@@ -308,23 +1036,23 @@
                         <div class="text-green-950">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Quick Links</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
-                                <li><a href="About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
-                                <li><a href="Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
+                                <li><a href="../homepage.html" class="hover:text-[#0133b6] text-lg font-medium">Home</a></li>
+                                <li><a href="../About.html" class="hover:text-[#0133b6] text-lg font-medium">About</a></li>
+                                <li><a href="../Career.html" class="hover:text-[#0133b6] text-lg font-medium">Career</a></li>
                                 <li><a href="#" class="hover:text-[#0133b6] text-lg font-medium">Shop</a></li>
-                                <li><a href="Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
-                                <li><a href="contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
+                                <li><a href="../Blogs.html" class="hover:text-[#0133b6] text-lg font-medium">Blog</a></li>
+                                <li><a href="../contact.html" class="hover:text-[#0133b6] text-lg font-medium">Contact</a></li>
                             </ul>
                         </div>
                         <div class="text-green-950 my-10">
                             <h3 class="font-medium mb-2 text-[1.5rem] hover:text-[#0133b6]">Portfolio</h3>
                             <ul class="space-y-2 flex flex-col items-start">
-                                <li><a href="CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
-                                <li><a href="Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
-                                <li><a href="Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
-                                <li><a href="Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
-                                <li><a href="Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
-                                <li><a href="IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
+                                <li><a href="../CyberSecurity/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cyber Security</a></li>
+                                <li><a href="../Data Center/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Data Center Modernization</a></li>
+                                <li><a href="../Network/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Network Transformation</a></li>
+                                <li><a href="../Cloud Transform/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Cloud Transformation</a></li>
+                                <li><a href="../Digital Workplace/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">Digital Workplace</a></li>
+                                <li><a href="../IT managed/Overview.html" class="hover:text-[#0133b6] text-lg font-medium">IT Managed Services</a></li>
                             </ul>
                         </div>
                     </div>
@@ -356,11 +1084,11 @@
                 <div>
                     <div class="container text-center">
                         <div class="flex items-center space-x-4">
-                            <img src="images/OCT-2022-–-OCT-2023-176x300.png" alt="Image 1" class="w-12 object-cover rounded-lg">
-                            <img src="images/value30-white-logo-2.png" alt="Image 2" class="h-12 object-cover rounded-lg">
-                            <object data="images/iso-logo-vector.svg" type="image/svg+xml" class="w-16">
+                            <img src="../images/OCT-2022-–-OCT-2023-176x300.png" alt="Image 1" class="w-12 object-cover rounded-lg">
+                            <img src="../images/value30-white-logo-2.png" alt="Image 2" class="h-12 object-cover rounded-lg">
+                            <object data="../images/iso-logo-vector.svg" type="image/svg+xml" class="w-16">
                                 <!-- SVG fallback -->
-                                <img src="images/iso-logo-vector.svg" alt="SVG" class="w-6 h-full object-contain">
+                                <img src="../images/iso-logo-vector.svg" alt="SVG" class="w-6 h-full object-contain">
                             </object>
                         </div>
                     </div>
@@ -372,8 +1100,9 @@
         </div>
     </footer>
 
+
      <!-- Fixed Bottom Bar / Sticky Side Bar -->
-    <div id="bottom-bar" class="fixed bottom-0 left-0 w-full bg-white shadow-md grid grid-cols-3 justify-around items-center lg:hidden">
+    <div id="bottom-bar" class="fixed bottom-0 left-0 w-full bg-white shadow-md grid grid-cols-3 justify-around items-center lg:hidden z-20">
         <div id="consultationSection2" class="flex flex-col items-center bg-blue-800">
             <span class="fas fa-envelope text-white  mt-1"></span>
             <span class="text-white text-sm font-light" style="font-size: 12px">Free Consult</span>
@@ -386,7 +1115,7 @@
         </a>
     </div>
 
-    <div id="side-bar" class="hidden lg:flex fixed top-1/2 right-0 transform -translate-y-1/2 flex justify-end text-white">
+    <div id="side-bar" class="hidden lg:flex fixed top-1/2 right-0 transform -translate-y-1/2 flex justify-end text-white z-20">
         <div class="flex flex-col items-end">
             <div id="consultationSection" class="bg-blue-800 w-11 h-40 rounded-tl-2xl flex justify-center items-center">
                 <span class="text-sm transform -rotate-90 whitespace-nowrap"><span class="fas fa-envelope mx-2 py-1"></span>Free Consult</span>
@@ -408,7 +1137,7 @@
 
 
     <!-- Sliding Form from right side -->
-    <div class="fixed top-1/2 mr-11 mb-24 right-0 transform -translate-y-1/2 w-900px" style="margin-top: -115px;">
+    <div class="fixed top-1/2 mr-11 mb-24 right-0 transform -translate-y-1/2 w-900px z-20" style="margin-top: -115px;">
         <div id="formSlideOut" class="hidden bg-blue-50 border-2 border-blue-100 p-5 w-900px rounded-lg absolute top-0 right-0 flex flex-col justify-center items-center transition-all duration-100 ease-in-out">
             <div class="flex justify-between w-full">
                 <p class="flex text-blue-800 font-medium">Free Consultation</p>
@@ -424,7 +1153,7 @@
         </div>
     </div>
     <!-- Sliding Form from bottom side -->
-    <div class="fixed top-1/2 right-0 transform -translate-y-1/2 lg:mr-11 lg:mb-24 lg:top-auto lg:translate-y-0 w-full lg:hidden" style="margin-top: 0px">
+    <div class="fixed top-1/2 right-0 transform -translate-y-1/2 lg:mr-11 lg:mb-24 lg:top-auto lg:translate-y-0 w-full lg:hidden z-20" style="margin-top: 0px">
         <div id="formSlideOut2" class="hidden bg-blue-100 border border-grey-50 p-5 w-auto w-full rounded-tl-2xl rounded-tr-2xl absolute top-0 right-0 hover:flex flex flex-col justify-center items-center transition-all duration-100 ease-in-out">
             <div class="flex justify-between w-full font-medium">
                 <p class="flex text-blue-800">Free Consultation</p>
@@ -465,8 +1194,9 @@
     
     <!-- Include JavaScript File -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="index.js"></script>
-
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="../index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
