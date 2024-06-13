@@ -3,20 +3,7 @@
 
 const consultationSection = document.getElementById('consultationSection');
 const formSlideOut = document.getElementById('formSlideOut');
-/*  
-consultationSection.addEventListener('mouseenter', () => {
-    formSlideOut.classList.remove('hidden');
-});
 
-formSlideOut.addEventListener('mouseleave', () => {
-    formSlideOut.classList.add('hidden')
-});
-$(document).ready(function() {
-    $('#close-toggle2').click(function() {
-        formSlideOut.classList.add('hidden');
-    });
-});
-*/
 formSlideOut.addEventListener('mouseleave', () => {
     formSlideOut.classList.add('hidden')
 });
@@ -360,3 +347,99 @@ document.addEventListener('DOMContentLoaded', () => {
         counterObserver.observe(counter);
     });
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const observerOptions = {
+        root: null,
+        threshold: 0.5
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-down-active');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    const fadeElements = document.querySelectorAll('.fade-in-down');
+    fadeElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const observerOptions = {
+        root: null,
+        threshold: 0.5
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-up-active');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    const fadeElements = document.querySelectorAll('.fade-in-up');
+    fadeElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const observerOptions = {
+        root: null,
+        threshold: 0.5
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-right-active');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    const fadeElements = document.querySelectorAll('.fade-in-right');
+    fadeElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const observerOptions = {
+        root: null,
+        threshold: 0.5
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-left-active');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    const fadeElements = document.querySelectorAll('.fade-in-left');
+    fadeElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
